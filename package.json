@@ -1,0 +1,25 @@
+{
+  "name": "@empasy/sync-portal",
+  "version": "1.0.0",
+  "description": "SyncSeries Ecosystem Demo Gateway & Product Showcase Portal (demo.empasy.io / sync.empasy.io)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5170",
+    "build": "vue-tsc --noEmit && vite build && node scripts/prerender-gh-pages.mjs",
+    "preview": "vite preview --port 5170",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "vue": "^3.5.35",
+    "vue-i18n": "^11.4.23",
+    "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "typescript": "^6.0.2",
+    "vite": "^8.1.1",
+    "vue-tsc": "3.3.3"
+  }
+}

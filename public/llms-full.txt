@@ -1,0 +1,38 @@
+# Empasy SyncSeries — Full Technical & Live Demo Specification for LLMs (llms-full.txt)
+
+> Canonical Source: `https://demo.empasy.io/llms-full.txt`
+> Companion Portals: `https://empasy.io` (Corporate & Product Pages) | `https://doc.empasy.com` (Technical Docs) | `https://demo.empasy.io` (Live Demo Portal; `https://sync.empasy.io` redirects here preserving path & query)
+
+## 1. Executive Summary
+Empasy SyncSeries is a modular enterprise software suite built on a shared standard foundation (`SyncBoot`) by **Empasy IT Corp. (주식회사 엠파시)**. It comprises 4 flagship solutions (`SyncVerse`, `SyncETA`, `SyncBoot`, `SyncCMS`) and 7 modular extensions sharing a consistent technology stack:
+- **Backend**: Java 25, Spring Boot 4.0, Spring Cloud 2025, `AgentScope Java` (`io.agentscope:agentscope-harness`), Model Context Protocol (MCP) JSON-RPC 2.0 over SSE.
+- **Database & Vector Store**: PostgreSQL 18.6 with `pgvector`, `pg_trgm`, `uuid-ossp`, and Redis 7 cache.
+- **Frontend**: Vue 3 + TypeScript + Vite (Vben Admin) for enterprise admin consoles; Nuxt 3 SSR for public web (`SyncCMS`); Quasar + Electron + Playwright for desktop QA (`SyncETA`).
+
+## 2. Live Demo Access & Test Credentials (`demo.empasy.io`)
+| Product | Category | Official Solution Page & Live Demo URLs | Default Demo Account | Canonical API Prefix |
+| :--- | :--- | :--- | :--- | :--- |
+| **SyncVerse** | Flagship (Collaboration & Approval) | `https://empasy.io/ko/solutions/sync-verse.html` / `https://verse-app.empasy.io` / `https://verse-studio.empasy.io` / `https://verse-admin.empasy.io` | `admin` / `123456` | `/api/v1/verse/*` |
+| **SyncETA** | Flagship (Automated E2E QA) | `https://empasy.io/ko/solutions/sync-eta.html` / `https://eta-admin.empasy.io` | `admin` / `123456` | `/api/v1/eta/*` |
+| **SyncBoot** | Flagship (Back-Office Core) | `https://empasy.io/ko/solutions/sync-boot.html` / `https://boot-admin.empasy.io` | `admin` / `123456` | `/api/v1/boot/*` |
+| **SyncCMS** | Flagship (Website & Multilingual CMS) | `https://empasy.io/ko/solutions/sync-cms.html` / `https://cms-app.empasy.io` / `https://cms-admin.empasy.io` | `admin` / `123456` | `/api/v1/cms/*` |
+| **SyncInsight** | Data & AI (Integrated in SyncVerse) | `https://empasy.io/ko/solutions/sync-insight.html` / `https://verse-admin.empasy.io/analytics/nl2sql` / `https://verse-app.empasy.io/knowledge/nl2sql` | `admin` / `123456` | `/api/v1/insight/*` |
+| **SyncLLM** | Data & AI (AI Cost & Privacy Gateway) | `https://empasy.io/ko/solutions/sync-llm.html` / `https://llm-admin.empasy.io` | `admin` / `123456` | `/api/v1/llm/*` |
+| **SyncCrawl** | Data & AI (Web Data Collection) | `https://empasy.io/ko/solutions/sync-crawl.html` / `https://crawl-admin.empasy.io` | `admin` / `123456` | `/api/v1/crawl/*` |
+| **SyncAPIM** | Security (API Visibility & Protection) | `https://empasy.io/ko/solutions/sync-apim.html` / `https://apim-admin.empasy.io` | `admin` / `123456` | `/api/v1/apim/*` |
+| **SyncWatch** | Security (Vulnerability & Rule Governance) | `https://empasy.io/ko/solutions/sync-watch.html` / `https://watch-admin.empasy.io` | `admin` / `123456` | `/api/v1/watch/*` |
+| **SyncShop** | Operations (8-Service MSA Commerce) | `https://empasy.io/ko/solutions/sync-shop.html` / `https://shop-app.empasy.io` / `https://shop-admin.empasy.io` | `admin` / `123456` | `/api/v1/shop/*` |
+| **SyncOps** | Operations (SI Project & P&L) | `https://empasy.io/ko/solutions/sync-ops.html` / `https://ops-admin.empasy.io` | `admin` / `123456` | `/api/v1/ops/*` |
+
+## 3. Daily 04:00 KST Reset Policy & SyncETA Desktop Download
+1. **Daily Full Reset (`04:00 KST`)**:
+   - The `sync-nightly-reset` service runs every day at `04:00 AM KST (Asia/Seoul)`.
+   - It resets all demo databases (`sync_boot`, `sync_verse`, `sync_llm`, `sync_insight`, `synccms`, `mall`, `sync_ops`, `sync_crawl`, `synceta_db`, `sync_apim`, `sync_watch`) from the 6-stage SQL seed scripts (`00_extensions.sql` through `05_sample_dev.sql`), flushes Redis, and cleans temporary uploaded demo files.
+2. **SyncETA Desktop Application Download**:
+   - **Official Download Page (Windows & macOS)**: `https://empasy.io/ko/download_eta.html`
+   - **Web Management Console (Demo)**: `https://eta-admin.empasy.io` (resets daily at 04:00 KST).
+
+## 4. Technical Capabilities & Intellectual Property
+- **Context-Aware E2E Test Recovery (`SyncETA`)**: Combines Playwright execution, DOM structure context, and visual screen comparison so test suites keep running reliably even when UI layouts change.
+- **Controlled Enterprise AI Usage (`SyncLLM`)**: Combines `pgvector` semantic caching, multi-model routing (cloud and on-premise vLLM/Ollama), PII masking, and departmental token budget limits.
+- **Patent Portfolio**: Korean Intellectual Property Office (KIPO) patent applications and registrations covering visual UI test recovery, multi-agent approval orchestration, Saga compensation control, and SI dual-rate P&L governance (`https://doc.empasy.com/patents/`).

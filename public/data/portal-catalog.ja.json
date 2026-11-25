@@ -1,0 +1,1997 @@
+{
+  "portalMeta": {
+    "title": "Empasy SyncSeries 統合デモポータル",
+    "portalSubdomain": "demo.empasy.io",
+    "corporateSiteUrl": "https://empasy.io",
+    "techDocsUrl": "https://doc.empasy.com/ja/",
+    "resetScheduleNotice": "デモ環境で入力・変更されたデータは、毎日午前4時（韓国時間）に初期状態へリセットされます。",
+    "defaultMasterId": "admin",
+    "defaultMasterCode": "123456"
+  },
+  "productGroups": [
+    {
+      "key": "flagship",
+      "navLabel": "主力ソリューション",
+      "title": "主力ソリューション 4種",
+      "description": "現場プロジェクトで最も多く導入されている中核製品です。インストール不要で実際の画面をすぐにお試しいただけます。"
+    },
+    {
+      "key": "data-ai",
+      "navLabel": "データ・AIモジュール",
+      "title": "データ・AI 拡張モジュール",
+      "description": "自然言語によるデータ照会、社内AIのコスト・個人情報管理、公開Webデータの自動収集を支援します。"
+    },
+    {
+      "key": "security",
+      "navLabel": "セキュリティ管理モジュール",
+      "title": "セキュリティ管理 拡張モジュール",
+      "description": "管理漏れ連携経路の把握・遮断と、最新セキュリティ脆弱性の収集・点検ルール管理を支援します。"
+    },
+    {
+      "key": "operations",
+      "navLabel": "業務・サービスモジュール",
+      "title": "業務・サービス 拡張モジュール",
+      "description": "最低利益基準を守るECサイト運営と、SIプロジェクトの損益・保証保険期限管理を支援します。"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scenario-backoffice-flow",
+      "categoryBadge": "主力構成 · 社内業務システム",
+      "title": "社内管理画面の構築と協業・段階別承認",
+      "painPoint": "社内管理画面を新しく作るたびにログイン・権限・決裁を繰り返し開発し、変更履歴の追跡も煩雑になりがちです。",
+      "expectedOutcome": "標準の権限・電子決裁基盤ですばやく立ち上げ、統合ワークスペースで整理した変更を差分比較のうえ安全に承認できます。",
+      "targetPersona": "IT企画担当 · 開発リーダー · システム管理者",
+      "summary": "SyncBootの標準組織・権限・電子決裁画面を確認した後、SyncVerseの統合ワークスペースと承認センターで変更比較・段階別承認フローを続けて体験します。",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 組織・権限・電子決裁 (SyncBoot) → 2. 要件・タスク協業 (SyncVerse) → 3. 変更比較・段階別承認 (SyncVerse)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-boot",
+          "productName": "SyncBoot",
+          "actionTitle": "組織図連動メニュー権限および電子決裁の確認",
+          "actionDetail": "部署・役割別のメニュー権限設定、実務向け電子決裁、運用レポート画面を直接ご確認いただけます。",
+          "subdomain": "boot-admin.empasy.io",
+          "demoUrl": "https://boot-admin.empasy.io/showcase/approval-wizard",
+          "menuPath": "サンプル > 電子決裁 · システム管理 > ユーザー・権限",
+          "tryPoint": "起案・多段階承認ルートの指定フローと役割別メニュー権限設定を操作してみてください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-verse",
+          "productName": "SyncVerse",
+          "actionTitle": "統合ワークスペースでの要件・タスク協業確認",
+          "actionDetail": "企画・開発・QA担当者が対話形式で要件を整理し、課題やリリース状況を追跡するメイン作業空間を体験します。",
+          "subdomain": "verse-app.empasy.io",
+          "demoUrl": "https://verse-app.empasy.io",
+          "secondaryLink": {
+            "label": "コードスタジオ ↗",
+            "url": "https://verse-studio.empasy.io"
+          },
+          "menuPath": "ワークスペース · イシューボード · 承認",
+          "tryPoint": "対話型ワークスペースと課題・デプロイ状況を確認し、必要に応じてコードスタジオも併せてご覧ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-verse",
+          "productName": "SyncVerse",
+          "actionTitle": "変更前後の比較および担当者段階別承認",
+          "actionDetail": "修正依頼の変更前後の差分を比較し、担当者承認を経て反映・履歴を残す管理コンソールの流れを体験します。",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/governance/hitl-approval",
+          "menuPath": "システム管理コンソール > 承認センター",
+          "tryPoint": "承認待ち一覧を開き、変更前後の比較表示と承認・差し戻しボタンをご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-web-qa-flow",
+      "categoryBadge": "主力構成 · Webサイト · 品質点検",
+      "title": "Webサイト公開と自動品質・再検証",
+      "painPoint": "ホームページや多言語ページを更新するたびに、検索設定の漏れや画面崩れを人が目視で確認する必要があります。",
+      "expectedOutcome": "公開前に検索・アクセシビリティ項目を点検し、リリース直後はSyncETAでリンク・文字重なりを全数検査してバグカンバンで即時再検証できます。",
+      "targetPersona": "Web運用担当 · 広報・マーケティング · 品質管理担当",
+      "summary": "SyncCMSで原稿検収・多言語管理・品質点検を確認した後、SyncETAでリンク・文字重なりの全数検査とバグカンバン再検証の流れを確認します。",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. コンテンツ検収・多言語・品質点検 (SyncCMS) → 2. リンク・画面全数検査と再検証 (SyncETA)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-cms",
+          "productName": "SyncCMS",
+          "actionTitle": "原稿検収および検索・アクセシビリティ事前点検",
+          "actionDetail": "複数サイトのコンテンツを一元管理し、公開前の検索最適化・アクセシビリティ診断と多言語翻訳を確認します。",
+          "subdomain": "cms-admin.empasy.io",
+          "demoUrl": "https://cms-admin.empasy.io/cms/content",
+          "secondaryLink": {
+            "label": "公開サイトを見る ↗",
+            "url": "https://cms-app.empasy.io"
+          },
+          "menuPath": "コンテンツ管理 · 品質点検 · 多言語管理",
+          "tryPoint": "記事一覧、多言語翻訳管理、品質診断スコアを確認し、実際の公開Webサイト画面とも見比べてみてください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-eta",
+          "productName": "SyncETA",
+          "actionTitle": "リンク・文字重なり全数検査とバグカンバン再検証",
+          "actionDetail": "公開直後に下位リンク404や文字重なりを自動検出し、写真付きチケットから[今すぐ確認]で即時再検証します。",
+          "subdomain": "eta-admin.empasy.io",
+          "demoUrl": "https://eta-admin.empasy.io/eta/dashboard",
+          "secondaryLink": {
+            "label": "PCアプリ入手 ↗",
+            "url": "https://empasy.io/ja/download_eta.html"
+          },
+          "menuPath": "プロジェクトダッシュボード · 欠陥診断 · バグカンバン",
+          "tryPoint": "Webコンソールで診断レポートを確認し、PC上で直接シナリオを記録する場合はデスクトップアプリを入手してください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-data-ai-flow",
+      "categoryBadge": "データ · AI 3種完結",
+      "title": "外部データ収集から対話型分析・AI統制まで",
+      "painPoint": "外部Webデータの収集、社内データの照会、AIコスト・個人情報管理が別々に分断され、一貫した運用が難しくなります。",
+      "expectedOutcome": "SyncCrawlで収集したデータと社内DBをSyncVerse統合分析（SyncInsight）で照会し、SyncLLMでAIコストと個人情報保護を一元統制できます。",
+      "targetPersona": "データアナリスト · 企画担当 · AI運用担当",
+      "summary": "SyncCrawlで自動収集・整形された文書を確認し、SyncVerseに統合されたSyncInsightで自然言語データ照会を体験した後、SyncLLMで個人情報マスキング履歴を点検します。",
+      "estimatedMinutes": 6,
+      "workflowFlowLabel": "1. Webデータ収集・整形 (SyncCrawl) → 2. 対話型データ照会 (SyncInsight · SyncVerse統合) → 3. AIコスト・個人情報保護 (SyncLLM)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-crawl",
+          "productName": "SyncCrawl",
+          "actionTitle": "Webデータ自動収集と整形済み文書の確認",
+          "actionDetail": "収集許可基準と速度制限を守りながら公開Webデータを収集し、広告・ノイズを除いた構造化文書を確認します。",
+          "subdomain": "crawl-admin.empasy.io",
+          "demoUrl": "https://crawl-admin.empasy.io/crawl/document",
+          "menuPath": "収集結果 > 収集文書 · 安全収集ポリシー",
+          "tryPoint": "正規化・非識別化された収集文書と、対象サイトごとのスケジュール・安全ルール設定をご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-insight",
+          "productName": "SyncInsight",
+          "integrationBadge": "SyncVerse 統合",
+          "actionTitle": "自然言語によるデータ照会と接続DBの確認",
+          "actionDetail": "SyncVerse管理コンソール内の[データ分析]メニューから日常の言葉で質問し、表・グラフや照会条件、接続済み社内DBを確認します。",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/analytics/nl2sql",
+          "secondaryLink": {
+            "label": "ワークスペースで照会 ↗",
+            "url": "https://verse-app.empasy.io/knowledge/nl2sql"
+          },
+          "menuPath": "SyncVerseコンソール > データ分析 > データ質問 · DB接続",
+          "tryPoint": "おすすめ質問で表とグラフが生成される流れを確認し、DB接続メニューの社内業務DB一覧もご覧ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-llm",
+          "productName": "SyncLLM",
+          "actionTitle": "AI利用量・類似質問再利用と個人情報マスキング確認",
+          "actionDetail": "モデル別の呼び出し状況、類似質問の再利用によるコスト削減実績、送信前の自動マスキング履歴を確認します。",
+          "subdomain": "llm-admin.empasy.io",
+          "demoUrl": "https://llm-admin.empasy.io/llm/request-logs",
+          "menuPath": "ダッシュボード · 利用履歴 · AIサービス接続",
+          "tryPoint": "送信前に個人情報や機密情報がどのように自動非識別化されるか、利用履歴とフェイルオーバー設定をご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-security-flow",
+      "categoryBadge": "セキュリティ管理 2種完結",
+      "title": "最新脆弱性対応と外部連携APIセキュリティ",
+      "painPoint": "日々公開される脆弱性情報と、仕様書から漏れた未管理の外部連携経路を別々に追うと対応が遅れがちです。",
+      "expectedOutcome": "SyncWatchが新規脆弱性を点検・防御ルールへ整理し、SyncAPIMで管理漏れAPIの把握と脅威検知履歴を即座に確認できます。",
+      "targetPersona": "セキュリティ担当 · インフラ運用担当 · API設計者",
+      "summary": "SyncWatchで最新の脆弱性情報と点検ルールを確認した後、SyncAPIMで管理漏れの連携経路と脅威検知履歴を続けて点検します。",
+      "estimatedMinutes": 4,
+      "workflowFlowLabel": "1. 脆弱性収集・点検ルール化 (SyncWatch) → 2. 管理漏れAPI把握・脅威検知 (SyncAPIM)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-watch",
+          "productName": "SyncWatch",
+          "actionTitle": "国内外セキュリティ警報の収集と点検ルール確認",
+          "actionDetail": "国内外の公式セキュリティ警報から新規脆弱性を自動収集し、事前点検ルールと外部連携防御ルールを管理します。",
+          "subdomain": "watch-admin.empasy.io",
+          "demoUrl": "https://watch-admin.empasy.io/watch/advisories",
+          "menuPath": "セキュリティ課題一覧 · 点検ルール管理 · 反映履歴",
+          "tryPoint": "収集された脆弱性台帳の危険度分類と、事前検証済みルールの反映・措置履歴をご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-apim",
+          "productName": "SyncAPIM",
+          "actionTitle": "管理漏れ連携経路の把握と脅威検知履歴の確認",
+          "actionDetail": "実際の通信から仕様書漏れAPIを自動リスト化し、仕様不一致・機密情報露出や異常な攻撃試行の検知履歴を詳細に確認します。",
+          "subdomain": "apim-admin.empasy.io",
+          "demoUrl": "https://apim-admin.empasy.io/apim/endpoints",
+          "menuPath": "連携一覧 · 仕様点検 · 脅威検知履歴",
+          "tryPoint": "実通信から検出された連携一覧と脅威検知イベントの詳細をご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-commerce-flow",
+      "categoryBadge": "業務 · EC運営",
+      "title": "利益基準を守るEC運営とストア自動点検",
+      "painPoint": "セール時の割引設定ミスによる原価割れリスクや、キャンペーン開始直後のストア画面崩れを見落としやすくなります。",
+      "expectedOutcome": "最低利益基準で安全に価格・セールを運営し、購入者ストアでの反映確認からSyncETAの自動点検まで一貫検証できます。",
+      "targetPersona": "EC運用担当 · 商品MD · 品質管理担当",
+      "summary": "SyncShop管理コンソールで商品・価格・タイムセールを確認し、購入者向けECストアを直接操作した後、SyncETAでキャンペーン画面の自動点検フローを体験します。",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 商品・利益基準・セール管理 (SyncShop) → 2. 購入者ストア反映確認 (SyncShopストア) → 3. ストア画面自動点検 (SyncETA)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-shop",
+          "productName": "SyncShop",
+          "actionTitle": "最低利益基準の確認と商品・プロモーション管理",
+          "actionDetail": "商品別の最低利益基準を確認しながら販売価格と在庫を管理し、タイムセール・クーポン施策や注文出荷を一元運営します。",
+          "subdomain": "shop-admin.empasy.io",
+          "demoUrl": "https://shop-admin.empasy.io/pms/product",
+          "menuPath": "商品 > 商品一覧 · プロモーション > タイムセール・クーポン",
+          "tryPoint": "商品別の価格・在庫一覧とタイムセール・注文処理画面をご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-shop",
+          "productName": "SyncShop",
+          "actionTitle": "購入者向けECストア画面とカート導線の確認",
+          "actionDetail": "管理コンソールで設定した商品やプロモーションが、実際の購入者ストア画面やカート・注文導線へ反映される様子を体験します。",
+          "subdomain": "shop-app.empasy.io",
+          "demoUrl": "https://shop-app.empasy.io",
+          "menuPath": "購入者ストアトップ · 商品詳細 · カート",
+          "tryPoint": "商品閲覧やカート追加を操作し、同じ共通デモアカウントでログインして注文フローもご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通デモアカウント",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-eta",
+          "productName": "SyncETA",
+          "actionTitle": "プロモーション・決済画面の自動点検と欠陥追跡",
+          "actionDetail": "セール公開前後に商品・決済ページのリンク切れや文字重なりを自動検査し、検出された不具合をバグカンバンから即時再検証します。",
+          "subdomain": "eta-admin.empasy.io",
+          "demoUrl": "https://eta-admin.empasy.io/eta/dashboard",
+          "secondaryLink": {
+            "label": "PCアプリ入手 ↗",
+            "url": "https://empasy.io/ja/download_eta.html"
+          },
+          "menuPath": "プロジェクトダッシュボード · 欠陥診断 · バグカンバン",
+          "tryPoint": "定期診断レポートと自動起票された不具合チケットの[今すぐ確認]再検証フローをご覧ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-si-ops-flow",
+      "categoryBadge": "業務 · SI事業経営",
+      "title": "SI案件の損益・要員管理と経営データ照会",
+      "painPoint": "案件別の投入工数・実原価や保証保険の満期日が複数のExcelに散在し、赤字リスクや法定期限の把握が遅れがちです。",
+      "expectedOutcome": "SyncBootの権限基盤上で案件損益・保証期限・要員ガントを一元管理し、SyncVerse統合分析（SyncInsight）で経営レポートを即確認できます。",
+      "targetPersona": "経営層 · PMO · プロジェクトマネージャー · 経理担当",
+      "summary": "SyncBootで役職別の権限基盤を確認した後、SyncOpsで案件損益・保証期限・要員ガントを点検し、SyncVerse統合のSyncInsightで経営分析レポートを続けて確認します。",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 役職別権限基盤の確認 (SyncBoot) → 2. 損益・保証期限・要員ガント (SyncOps) → 3. 経営分析レポート (SyncInsight · SyncVerse統合)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-boot",
+          "productName": "SyncBoot",
+          "actionTitle": "役職・部署別のアクセス権限と監査履歴の確認",
+          "actionDetail": "経営層・PM・経理担当者ごとに閲覧範囲を制御する標準の組織図連動権限構造と操作監査履歴を確認します。",
+          "subdomain": "boot-admin.empasy.io",
+          "demoUrl": "https://boot-admin.empasy.io/system/user",
+          "menuPath": "システム管理 > ユーザー・権限 · 操作履歴",
+          "tryPoint": "組織図連動のユーザー一覧と、役割別のメニュー・ボタン権限制御をご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-ops",
+          "productName": "SyncOps",
+          "actionTitle": "契約対実投入損益および保証・要員ガント点検",
+          "actionDetail": "案件別損益マトリクス、4大保証保険・下請法期限アラート、スキル等級ベースの要員配置ガントを一画面で点検します。",
+          "subdomain": "ops-admin.empasy.io",
+          "demoUrl": "https://ops-admin.empasy.io/executive/profit-matrix",
+          "menuPath": "案件損益表 · 保証・法定期限 · 要員配置スケジュール",
+          "tryPoint": "工数超過リスク案件の信号機表示、満期直前の保証保険アラート、月別要員ガントをご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-insight",
+          "productName": "SyncInsight",
+          "integrationBadge": "SyncVerse 統合",
+          "actionTitle": "連携済み事業DBに基づく経営サマリーレポート確認",
+          "actionDetail": "SyncVerse管理コンソール[データ分析]に読み取り専用接続されたSyncOps DBを基に、指標変動の要因レポートと出典を確認します。",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/analytics/research",
+          "menuPath": "SyncVerseコンソール > データ分析 > 分析レポート · データフロー",
+          "tryPoint": "サマリーレポートとデータ出典マップを開き、各指標がどの業務データから算出されているかご確認ください。",
+          "recommendedAccount": {
+            "roleLabel": "共通管理者",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    }
+  ],
+  "topologyNodes": [
+    {
+      "id": "node-sync-verse",
+      "productId": "sync-verse",
+      "label": "SyncVerse",
+      "tierLevel": 1,
+      "roleSummary": "協業・承認管理",
+      "shortTag": "連携ハブ",
+      "architectureZone": "flagship",
+      "isHub": true,
+      "subdomain": "verse.empasy.io",
+      "connectedTo": ["sync-eta", "sync-boot", "sync-cms", "sync-insight", "sync-llm", "sync-crawl", "sync-apim", "sync-watch", "sync-shop", "sync-ops"],
+      "protocolLabel": "REST · MCP ハブ"
+    },
+    {
+      "id": "node-sync-eta",
+      "productId": "sync-eta",
+      "label": "SyncETA",
+      "tierLevel": 1,
+      "roleSummary": "Web画面自動点検",
+      "shortTag": "画面テスト",
+      "architectureZone": "flagship",
+      "subdomain": "eta.empasy.io",
+      "connectedTo": ["sync-verse", "sync-cms", "sync-shop"],
+      "protocolLabel": "REST · PCアプリ"
+    },
+    {
+      "id": "node-sync-boot",
+      "productId": "sync-boot",
+      "label": "SyncBoot",
+      "tierLevel": 1,
+      "roleSummary": "社内管理基盤",
+      "shortTag": "共通基盤",
+      "architectureZone": "flagship",
+      "isFoundation": true,
+      "subdomain": "boot.empasy.io",
+      "connectedTo": ["sync-verse", "sync-ops", "sync-cms", "sync-shop", "sync-apim"],
+      "protocolLabel": "共通権限 · REST"
+    },
+    {
+      "id": "node-sync-cms",
+      "productId": "sync-cms",
+      "label": "SyncCMS",
+      "tierLevel": 1,
+      "roleSummary": "Web・多言語管理",
+      "shortTag": "CMS",
+      "architectureZone": "flagship",
+      "subdomain": "cms.empasy.io",
+      "connectedTo": ["sync-verse", "sync-eta", "sync-boot", "sync-llm"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-insight",
+      "productId": "sync-insight",
+      "label": "SyncInsight",
+      "tierLevel": 2,
+      "roleSummary": "対話データ照会",
+      "shortTag": "データ質問",
+      "architectureZone": "data-ai",
+      "subdomain": "insight.empasy.io",
+      "connectedTo": ["sync-verse", "sync-crawl", "sync-llm", "sync-ops"],
+      "protocolLabel": "SyncVerse統合"
+    },
+    {
+      "id": "node-sync-llm",
+      "productId": "sync-llm",
+      "label": "SyncLLM",
+      "tierLevel": 2,
+      "roleSummary": "AI費用・情報保護",
+      "shortTag": "AI管理",
+      "architectureZone": "data-ai",
+      "subdomain": "llm.empasy.io",
+      "connectedTo": ["sync-verse", "sync-insight", "sync-crawl", "sync-cms"],
+      "protocolLabel": "AI中継 · MCP"
+    },
+    {
+      "id": "node-sync-crawl",
+      "productId": "sync-crawl",
+      "label": "SyncCrawl",
+      "tierLevel": 2,
+      "roleSummary": "公開Webデータ収集",
+      "shortTag": "Web収集",
+      "architectureZone": "data-ai",
+      "subdomain": "crawl.empasy.io",
+      "connectedTo": ["sync-verse", "sync-insight", "sync-llm"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-apim",
+      "productId": "sync-apim",
+      "label": "SyncAPIM",
+      "tierLevel": 2,
+      "roleSummary": "外部連携点検・防御",
+      "shortTag": "API保護",
+      "architectureZone": "security",
+      "subdomain": "apim.empasy.io",
+      "connectedTo": ["sync-verse", "sync-watch", "sync-boot"],
+      "protocolLabel": "REST · セキュリティ"
+    },
+    {
+      "id": "node-sync-watch",
+      "productId": "sync-watch",
+      "label": "SyncWatch",
+      "tierLevel": 2,
+      "roleSummary": "脆弱性情報・ルール",
+      "shortTag": "脆弱性管理",
+      "architectureZone": "security",
+      "subdomain": "watch.empasy.io",
+      "connectedTo": ["sync-verse", "sync-apim"],
+      "protocolLabel": "脆弱性収集 · MCP"
+    },
+    {
+      "id": "node-sync-shop",
+      "productId": "sync-shop",
+      "label": "SyncShop",
+      "tierLevel": 3,
+      "roleSummary": "EC運営・価格管理",
+      "shortTag": "EC運営",
+      "architectureZone": "operations",
+      "subdomain": "shop.empasy.io",
+      "connectedTo": ["sync-verse", "sync-eta", "sync-boot"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-ops",
+      "productId": "sync-ops",
+      "label": "SyncOps",
+      "tierLevel": 3,
+      "roleSummary": "案件損益・要員計画",
+      "shortTag": "案件損益",
+      "architectureZone": "operations",
+      "subdomain": "ops.empasy.io",
+      "connectedTo": ["sync-verse", "sync-boot", "sync-insight"],
+      "protocolLabel": "REST · MCP"
+    }
+  ],
+  "products": [
+    {
+      "id": "sync-verse",
+      "name": "SyncVerse",
+      "subtitle": "企画から開発・レビュー・承認までを一つの画面で統合管理",
+      "englishRoleBadge": "SyncSeries 主力ソリューション · 協業・承認統合管理",
+      "category": "flagship",
+      "tierBadge": "主力ソリューション",
+      "subdomain": "verse.empasy.io",
+      "repoPath": "sync-verse",
+      "canonicalApiPrefix": "/api/v1/verse",
+      "docUrl": "https://doc.empasy.com/ja/syncverse/",
+      "proposalPdfUrl": "/downloads/proposals/SyncVerse_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-verse",
+      "faIconClass": "fas fa-network-wired",
+      "techTags": [],
+      "summary": "チャットや文書、個別の反映ツールに散在していた作業履歴をSyncVerse一か所で管理し、重要な変更は担当者確認を経て安全に反映します。",
+      "coreCapabilities": [
+        "全社タスク状況の統合ダッシュボード",
+        "段階別の担当者承認と履歴管理",
+        "企画・品質点検のシームレスな連携"
+      ],
+      "vsLegacyTitle": "従来の業務方式",
+      "vsLegacyPoints": [
+        "要件書、システム変更、テスト結果、承認記録が複数のツールに分断され、全体の進捗を把握しにくくなります。",
+        "変更反映後に問題が起きた際、誰が何を変更したのかを追跡し元に戻すまでに多くの時間がかかります。",
+        "運用画面、Webサイト、テストツールごとに個別ログインして管理する必要があります。"
+      ],
+      "vsAgentTitle": "SyncVerse 導入後",
+      "vsAgentPoints": [
+        "要件整理から作業実行、品質点検、承認履歴までを一画面で順を追って確認できます。",
+        "重要な変更は担当者が変更前後の内容を直接比較して承認でき、必要に応じて以前の状態へ復元できます。",
+        "必要なEmpasy業務モジュールを連携し、部門間の業務フローを一つの管理画面へ集約できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "全社タスク状況の統合ダッシュボード",
+          "description": "進行中のタスク、承認待ち案件、連携モジュールの稼働状況を一画面で確認し、ボトルネックを素早く把握します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "段階別の担当者承認と履歴管理",
+          "description": "企画・開発・セキュリティ・運用の各担当者が役割に応じて変更前後の差分を確認し、承認または差し戻しを行えます。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "企画・品質点検のシームレスな連携",
+          "description": "要件定義とテスト結果、Webサイト品質診断結果をまとめて確認し、リリース前の見落としを防ぎます。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "業務依頼の整理",
+          "description": "企画担当や運用担当が必要な変更内容を入力すると、タスク一覧とレビュー用ドラフトが整理されます。"
+        },
+        {
+          "stepNo": 2,
+          "title": "自動点検と変更差分の比較",
+          "description": "反映前に品質・セキュリティ点検結果と変更前後の比較内容を担当者へ提示します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "担当者承認後の反映と記録",
+          "description": "権限を持つ担当者が承認すると変更が反映され、すべての過程が承認・変更履歴として保存されます。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "他のEmpasy製品なしでSyncVerseだけを先に導入できますか？",
+          "answer": "はい、可能です。SyncVerse単独で業務依頼管理と段階別承認体制を導入し、必要になった段階でSyncETAやSyncBootなどを連携拡張できます。"
+        },
+        {
+          "question": "重要なシステム変更が人の確認なしに自動反映されることはありますか？",
+          "answer": "いいえ。本番環境への反映や重要なデータ構造の変更は、権限を持つ担当者の確認・承認を必須とする運用が可能で、異常時には即座に中断できます。"
+        },
+        {
+          "question": "社内セキュリティ規定により外部インターネットが遮断された環境でも利用できますか？",
+          "answer": "はい。クラウド形式に加えて、社内サーバーへ直接構築するオンプレミス導入に対応しています。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "統括管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "全ダッシュボード閲覧、最終承認、すべての管理メニューを体験できます。"
+        },
+        {
+          "roleTitle": "サービス企画担当",
+          "accountId": "sync_planner",
+          "demoAccessCode": "123456",
+          "scopeSummary": "要件登録および企画段階のレビュー・承認フローを確認できます。"
+        },
+        {
+          "roleTitle": "開発リード",
+          "accountId": "sync_techlead",
+          "demoAccessCode": "123456",
+          "scopeSummary": "変更前後の差分レビューおよび技術段階の承認権限でログインできます。"
+        },
+        {
+          "roleTitle": "品質管理担当",
+          "accountId": "sync_qa",
+          "demoAccessCode": "123456",
+          "scopeSummary": "テスト結果の確認および品質レビュー承認ステップを体験できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "verse-app",
+          "label": "統合ワークスペース",
+          "description": "企画・開発・品質・運用担当者が対話で要件を整理し、変更レビューや承認まで行うメイン作業空間です。",
+          "badgeText": "verse-app.empasy.io",
+          "cloudUrl": "https://verse-app.empasy.io",
+          "buttonLabel": "ワークスペースを開く",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "verse-studio",
+          "label": "コードスタジオ",
+          "description": "ワークスペースの対話から生成された作業ブランチのコードを修正・検証し、PRを作成する専用環境です。",
+          "badgeText": "verse-studio.empasy.io",
+          "cloudUrl": "https://verse-studio.empasy.io",
+          "buttonLabel": "スタジオを開く",
+          "isPrimary": false,
+          "isDownload": false
+        },
+        {
+          "id": "verse-admin",
+          "label": "システム管理コンソール",
+          "description": "エージェント状態の監視、承認履歴の確認、権限やシステムポリシーを管理する管理者コンソールです。",
+          "badgeText": "verse-admin.empasy.io",
+          "cloudUrl": "https://verse-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-eta",
+      "name": "SyncETA",
+      "subtitle": "Web画面テスト自動化 · サイト欠陥検出・履歴管理プラットフォーム",
+      "englishRoleBadge": "SyncSeries 主力ソリューション · Web画面テスト自動化・サイト欠陥管理",
+      "category": "flagship",
+      "tierBadge": "主力ソリューション",
+      "subdomain": "eta.empasy.io",
+      "repoPath": "sync-eta",
+      "canonicalApiPrefix": "/api/v1/eta",
+      "docUrl": "https://doc.empasy.com/ja/synceta/",
+      "proposalPdfUrl": "/downloads/proposals/SyncETA_Proposal.pdf",
+      "demoMode": "hybrid",
+      "downloadAssets": [
+        {
+          "id": "sync-eta-official-download",
+          "label": "SyncETA デスクトップアプリ ダウンロード（Empasy公式）",
+          "versionBadge": "Windows · macOS",
+          "platformBadge": "empasy.io 公式ページ",
+          "description": "ブラウザ操作録画、Excel試験表変換、リンク・デザイン欠陥全数検査、バグカンバン再検証をPC上ですぐ試せる公式アプリをダウンロードできます。",
+          "downloadUrl": "https://empasy.io/ja/download_eta.html",
+          "buttonLabel": "SyncETA ダウンロード",
+          "isDirectDownload": false,
+          "isPrimary": true
+        }
+      ],
+      "iconBoxClass": "agent-icon-eta",
+      "faIconClass": "fas fa-vial",
+      "techTags": [],
+      "summary": "国別・商品別に数百ページあるサイトでも代表URLと標本URLだけで幅広く点検し、確認できた項目のみを正常記録、判断が曖昧な画面は写真付きで[確認必要]として誠実に分類します。",
+      "coreCapabilities": [
+        "ブラウザ操作レコーダー（仮想キーパッド・Cookie同意自動通過）",
+        "Excel・一行文テスト変換 ＆ マルチアカウント同時テスト",
+        "リンク・文字重なり全数検査 ＆ バグカンバン ワンクリック再検証"
+      ],
+      "vsLegacyTitle": "従来の手作業QA方式",
+      "vsLegacyPoints": [
+        "数百の国別・商品ページのうち代表1〜2件しか手動確認できず、画面が少し変わるだけで既存スクリプトが停止します。",
+        "仮想セキュリティキーパッドやCookie同意ポップアップで自動化が止まり、文字重なりや404リンクを目視確認する必要があります。",
+        "見落としが正常扱いになる恐れがあり、不具合のたびにExcelへキャプチャ整理して修正後は最初から押し直す手間がかかります。"
+      ],
+      "vsAgentTitle": "SyncETA 導入後",
+      "vsAgentPoints": [
+        "代表・標本URLだけで複数国・商品ページを幅広く点検し、録画・Excel・一行文変換と画面変更時のボタン自動探索に対応します。",
+        "仮想キーパッドとCookieバナーを自動通過し、シナリオ未作成でも下位リンク404や文字重なり・画面崩れを全数検査します。",
+        "確認済みのみ正常集計して曖昧な画面を[確認必要]に分類し、写真付きバグカンバンから[今すぐ確認]ボタン一つで再検証できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "ブラウザ操作レコーダー",
+          "description": "クリック・入力・スクロールをリアルタイム録画して再利用ブロック化し、仮想セキュリティキーパッド入力・Cookie同意バナー自動処理・個人情報マスキングに対応します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "Excel・一行文テスト変換",
+          "description": "既存のExcel・CSV試験表のアップロードや一行の指示文から検証手順を生成し、代表・標本URLへの共通適用と事前試行で誤検知を防ぎます。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "マルチアカウント同時テスト",
+          "description": "顧客画面と管理者画面のように異なる2アカウントを独立セッションで同時起動し、リアルタイム連携フローと役割別エラーログを一括検証します。"
+        },
+        {
+          "badgeNo": "04",
+          "title": "リンク全数検査・画面デザイン診断",
+          "description": "シナリオなしでもサイト知識グラフで下位リンクの404・遷移先不一致・文字重なり・空白領域・動画再生異常を検出し、画面変更時も代替要素を自動探索します。"
+        },
+        {
+          "badgeNo": "05",
+          "title": "バグカンバン・[今すぐ確認]再検証",
+          "description": "問題写真付きチケットを自動起票してステータス管理し、重複起票ブロック・[バグではありません]判定の永続記憶・ワンクリック再検証を提供します。"
+        },
+        {
+          "badgeNo": "06",
+          "title": "誠実な[確認必要]分類・定期スケジューラ",
+          "description": "確認済みの項目のみを正常集計して曖昧な画面を写真付きで分離し、夜間・リリース直後の定期自動実行やJira・Jenkins・GitHub Actions・Slack連携に対応します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "第1段階 · 点検シナリオ準備",
+          "description": "ブラウザ操作録画や既存Excel試験表・一行文から点検手順を作成し、標本URLでの事前実行により誤動作を防ぎます。"
+        },
+        {
+          "stepNo": 2,
+          "title": "第2段階 · 自動実行・画面判定",
+          "description": "実ブラウザで下位リンクと文字重なり・画面崩れを全数検査し、画面変更時もボタン位置を自動探索して正常・欠陥・[確認必要]に分類します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "第3段階 · 欠陥チケット・ワンクリック再検証",
+          "description": "失敗瞬間の録画動画・日本語/分かりやすい原因要約・写真付きバグカンバンで管理し、修正後は[今すぐ確認]ボタン一つで即時再検証します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "エンジニアではないQA担当やサービス運用担当でも使えますか？",
+          "answer": "はい。ブラウザ上のクリック操作録画、既存Excel/CSV試験表のアップロード、一行の指示文だけでコーディング不要の自動点検を開始できます。"
+        },
+        {
+          "question": "仮想セキュリティキーパッドや海外サイトのCookie同意ポップアップにも対応しますか？",
+          "answer": "はい。金融向け仮想キーパッドの自動認識入力、グローバルCookie同意バナーの自動閉鎖、個人情報の自動マスキングを標準搭載しています。"
+        },
+        {
+          "question": "導入効果はどのように確認できますか？",
+          "answer": "代表・標本URLによる多ページ点検、シナリオ不要のリンク・重なり検出、キーパッド・Cookie通過、写真付きチケット起票、[今すぐ確認]再検証は導入直後から確実にご利用いただけます。削減時間や事前検出件数は運用サイト1件での2〜4週間試行で実測します。"
+        },
+        {
+          "question": "すでに運用中のサイトや社内閉域網システムにも適用できますか？",
+          "answer": "はい。既存サイトを改修せずURL登録だけで点検でき、デスクトップアプリのローカル実行や社内オンプレミス導入によりVPN・閉域網システムも安全に検証できます。"
+        },
+        {
+          "question": "すでに利用中のJira、Jenkins、GitHub Actions、Slackと連携できますか？",
+          "answer": "はい。内蔵バグカンバンに加え、Jira課題連携、Jenkins・GitHub Actionsのリリース連携、Slack・メール通知に対応しています。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Webコンソール管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "テストダッシュボード、変更要素の補正履歴、画面診断レポートをすべて確認できます。"
+        },
+        {
+          "roleTitle": "品質点検担当",
+          "accountId": "qalead",
+          "demoAccessCode": "123456",
+          "scopeSummary": "シナリオ実行履歴と不具合確認・再検証フローを中心に体験できます。"
+        },
+        {
+          "roleTitle": "デスクトップアプリ連携アカウント",
+          "accountId": "admin@empasy.com",
+          "demoAccessCode": "123456",
+          "scopeSummary": "SyncETA PCアプリをインストール後、ログインしてシナリオやレポートを同期する際に使用します。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "eta-download",
+          "label": "SyncETA デスクトップアプリ ダウンロード",
+          "badgeText": "empasy.io/ja/download_eta.html",
+          "cloudUrl": "https://empasy.io/ja/download_eta.html",
+          "buttonLabel": "ダウンロードページを開く",
+          "isPrimary": true,
+          "isDownload": true
+        },
+        {
+          "id": "eta-proposal",
+          "label": "SyncETA 製品紹介書 PDF (15p)",
+          "badgeText": "SyncETA_Proposal.pdf",
+          "cloudUrl": "/downloads/proposals/SyncETA_Proposal.pdf",
+          "buttonLabel": "紹介書PDFを開く",
+          "isPrimary": false,
+          "isDownload": true
+        },
+        {
+          "id": "eta-admin",
+          "label": "統合Web管理コンソール（ライブデモ）",
+          "badgeText": "eta-admin.empasy.io",
+          "cloudUrl": "https://eta-admin.empasy.io",
+          "buttonLabel": "Webコンソール体験",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-boot",
+      "name": "SyncBoot",
+      "subtitle": "ログイン・権限・電子決裁まで揃う、社内管理システムの標準基盤",
+      "englishRoleBadge": "SyncSeries 主力ソリューション · 企業業務システム基盤",
+      "category": "flagship",
+      "tierBadge": "主力ソリューション",
+      "subdomain": "boot.empasy.io",
+      "repoPath": "sync-boot",
+      "canonicalApiPrefix": "/api/v1/boot",
+      "docUrl": "https://doc.empasy.com/ja/syncboot/",
+      "proposalPdfUrl": "/downloads/proposals/SyncBoot_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-boot",
+      "faIconClass": "fas fa-server",
+      "techTags": [],
+      "summary": "Empasyの各業務モジュールが共通して利用する社内管理システムの基盤です。共通機能の開発工数を抑え、本来の業務機能開発に集中できます。",
+      "coreCapabilities": [
+        "組織図連動のメニュー・ボタン権限管理",
+        "実務対応の電子決裁およびレポート",
+        "管理者操作履歴の監査ログ追跡"
+      ],
+      "vsLegacyTitle": "従来の社内システム構築",
+      "vsLegacyPoints": [
+        "プロジェクトを始めるたびにログイン、部署ツリー、役割別メニュー権限、監査ログをゼロから開発しています。",
+        "メニュー追加や権限変更のたびにコード修正と再デプロイが必要になります。",
+        "部門ごとに画面構成や操作感が異なり、運用教育と保守コストが増大します。"
+      ],
+      "vsAgentTitle": "SyncBoot 導入後",
+      "vsAgentPoints": [
+        "組織図、役割別メニュー・ボタン権限、多段階電子決裁、操作履歴が標準構造として最初から備わっています。",
+        "管理画面からメニューや権限を直接設定し、即座に反映できます。",
+        "統一された画面設計と運用ルールにより、社内の複数業務システムを一貫して拡張・保守できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "組織図連動のメニュー・ボタン権限管理",
+          "description": "部署と役割に応じて閲覧可能な画面はもちろん、参照・編集・承認といったボタン単位の権限まで管理画面で制御します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "実務対応の電子決裁およびレポート",
+          "description": "起案作成、多段階承認ルート指定、承認・差し戻し履歴管理、Excel出力、サマリーレポートを標準提供します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "管理者操作履歴の監査ログ追跡",
+          "description": "誰がいつどの画面でデータを参照・変更したかを記録し、内部監査やセキュリティ点検に活用できます。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "組織・役割構造の登録",
+          "description": "会社の部署構成と職務別の役割を登録し、基本メニュー体系を設定します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "業務画面と決裁フローの連携",
+          "description": "必要な社内業務画面や電子決裁フォームを標準レイアウトへ組み込みます。"
+        },
+        {
+          "stepNo": 3,
+          "title": "権限運用と履歴点検",
+          "description": "人事異動や組織改編時も管理画面から権限を即時調整し、変更履歴を一貫管理します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "すでに利用中の社内アカウントや人事システムと連携できますか？",
+          "answer": "はい。既存のグループウェア、社内認証基盤、人事組織データと連携し、アカウントの重複管理なしに運用できるよう構築を支援します。"
+        },
+        {
+          "question": "SyncBootを導入すると、後から他のEmpasyモジュールを追加しやすくなりますか？",
+          "answer": "はい。他のEmpasy業務モジュールも同一の基盤と権限構造を共有しているため、別ログインや操作感の違和感なく拡張できます。"
+        },
+        {
+          "question": "自社固有の特殊な業務画面も追加開発できますか？",
+          "answer": "もちろんです。SyncBootは固定パッケージではなく標準業務システム基盤のため、自社独自の業務画面を自由に拡張できます。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "統括管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "ユーザー・部署・権限設定、電子決裁、レポート、操作履歴まで全機能を体験できます。"
+        },
+        {
+          "roleTitle": "運用マネージャー",
+          "accountId": "emp_manager",
+          "demoAccessCode": "123456",
+          "scopeSummary": "一般運用部門の管理者権限として制限されたメニュー構成を確認できます。"
+        },
+        {
+          "roleTitle": "セキュリティ監査担当",
+          "accountId": "emp_auditor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "操作履歴およびセキュリティ監査照会画面を中心に体験できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "boot-admin",
+          "label": "社内管理システムコンソール",
+          "badgeText": "boot-admin.empasy.io",
+          "cloudUrl": "https://boot-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-cms",
+      "name": "SyncCMS",
+      "subtitle": "記事作成から検収・多言語公開まで一元管理するWebサイトCMS",
+      "englishRoleBadge": "SyncSeries 主力ソリューション · Webサイト・多言語コンテンツ管理",
+      "category": "flagship",
+      "tierBadge": "主力ソリューション",
+      "subdomain": "cms.empasy.io",
+      "repoPath": "sync-cms",
+      "canonicalApiPrefix": "/api/v1/cms",
+      "docUrl": "https://doc.empasy.com/ja/synccms/",
+      "proposalPdfUrl": "/downloads/proposals/SyncCMS_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-cms",
+      "faIconClass": "fas fa-layer-group",
+      "techTags": [],
+      "summary": "お知らせ、プレスリリース、ブランド紹介ページが増えるほど煩雑になる修正・承認・翻訳業務を、整然とした公開ワークフローで管理します。",
+      "coreCapabilities": [
+        "マルチサイト統合コンテンツ管理",
+        "作成・検収・公開の承認ワークフロー",
+        "検索品質点検と多言語ドラフト支援"
+      ],
+      "vsLegacyTitle": "従来のWebサイト運用",
+      "vsLegacyPoints": [
+        "ブランド別・国別サイトが個別に構築されており、文言1か所の修正でも複数箇所を手作業更新する必要があります。",
+        "原稿レビューや公開承認がメール・チャットで行われ、最終版の把握が曖昧になりがちです。",
+        "検索設定や画像の代替テキスト漏れを公開前に体系的に確認するのが困難です。"
+      ],
+      "vsAgentTitle": "SyncCMS 導入後",
+      "vsAgentPoints": [
+        "複数ブランドや多言語サイトのページと原稿を一つの管理画面で統合運用できます。",
+        "ドラフト作成 → 検収 → 承認 → 予約公開、さらには旧バージョン復元まで一貫記録されます。",
+        "公開前に検索最適化項目、アクセシビリティ基本要素、機密情報混入の有無を一括点検できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "マルチサイト統合コンテンツ管理",
+          "description": "企業サイト、製品別サイト、海外拠点ページを一つの管理画面内でサイトごとに整理して運用できます。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "作成・検収・公開の承認ワークフロー",
+          "description": "作成者・検収者・公開管理者の役割を分け、誤字や未承認文言がそのまま公開されるミスを防ぎます。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "検索品質点検と多言語ドラフト支援",
+          "description": "SEO基本項目とアクセシビリティを確認し、社内用語集に沿って英語・日本語・中国語の翻訳下書きを作成します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "原稿作成とメタ情報の整備",
+          "description": "エディタでお知らせ・ブログ・紹介ページを作成し、画像や検索サマリー情報を設定します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "品質点検と多言語ローカライズ",
+          "description": "公開前のSEO・アクセシビリティ点検とブランド用語集ベースの多言語ドラフトを確認します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "担当者承認後の公開と版管理",
+          "description": "承認完了後、即時または予約日時に公開され、必要に応じて以前のバージョンへ復元できます。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "複数のブランドサイトや海外法人サイトをまとめて管理できますか？",
+          "answer": "はい。一つの管理コンソール内でサイトごとのメニュー・権限・多言語バージョンを分離して運用できます。"
+        },
+        {
+          "question": "自動翻訳された文面を人が確認・修正してから公開できますか？",
+          "answer": "はい。AI翻訳ドラフトを確認した上で担当者が表現を調整し承認した場合のみ実サイトへ公開する運用が可能です。"
+        },
+        {
+          "question": "既存のサイトデザインを維持したままコンテンツ管理だけ導入できますか？",
+          "answer": "はい。既存のWebデザインを維持しつつ、記事登録・承認公開・多言語管理機能のみを連携する構成も可能です。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "コンテンツ統括管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "サイト管理、公開承認、品質点検、多言語設定のすべての権限を体験できます。"
+        },
+        {
+          "roleTitle": "編集・公開担当",
+          "accountId": "editor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "原稿レビューと最終公開承認フローを確認できます。"
+        },
+        {
+          "roleTitle": "コンテンツ作成者",
+          "accountId": "writer",
+          "demoAccessCode": "123456",
+          "scopeSummary": "ドラフト作成から検収依頼までの作成者画面を体験できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "cms-admin",
+          "label": "コンテンツ管理コンソール",
+          "badgeText": "cms-admin.empasy.io",
+          "cloudUrl": "https://cms-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "cms-app",
+          "label": "公開Webサイト確認",
+          "badgeText": "cms-app.empasy.io",
+          "cloudUrl": "https://cms-app.empasy.io",
+          "buttonLabel": "Webサイトを開く",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-insight",
+      "name": "SyncInsight",
+      "subtitle": "専門的な検索式なしで、言葉で聞くだけで表とグラフを返すデータ照会",
+      "englishRoleBadge": "SyncSeries データ・AIモジュール · SyncVerse 統合データ分析",
+      "category": "data-ai",
+      "tierBadge": "拡張モジュール",
+      "integrationBadge": "SyncVerse 統合",
+      "subdomain": "insight.empasy.io",
+      "repoPath": "sync-insight",
+      "canonicalApiPrefix": "/api/v1/insight",
+      "docUrl": "https://doc.empasy.com/ja/syncinsight/",
+      "proposalPdfUrl": "/downloads/proposals/SyncInsight_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-insight",
+      "faIconClass": "fas fa-chart-line",
+      "techTags": [],
+      "summary": "簡単な集計のために毎回開発部門へデータ抽出を依頼していた手間を減らし、業務担当者が自ら安全にデータを探索できるよう支援します。",
+      "coreCapabilities": [
+        "自然言語によるデータ照会とグラフ化",
+        "変動要因を整理するサマリーレポート支援",
+        "複数業務データの連携と出典追跡"
+      ],
+      "vsLegacyTitle": "従来のデータ確認方式",
+      "vsLegacyPoints": [
+        "固定ダッシュボードにない条件を見るには開発・データ部門へ抽出を依頼し数日待つ必要があります。",
+        "専門的な検索式が扱えず、実務担当者がExcelで手作業の統合作業を繰り返しがちです。",
+        "指標がどの業務データからどのように算出された数値なのか根拠を追いにくい課題があります。"
+      ],
+      "vsAgentTitle": "SyncInsight 導入後",
+      "vsAgentPoints": [
+        "「前四半期のカテゴリ別売上推移を見せて」のように日常の言葉で聞くだけで結果とグラフを即確認できます。",
+        "読み取り専用照会のみを許可するため、誤操作で本番データを更新・削除するリスクを防ぎます。",
+        "自動生成された照会条件とデータ出典マップを併せて提示するため、担当者が根拠を直接検証できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "自然言語によるデータ照会とグラフ化",
+          "description": "質問を入力すると照会条件を自動生成して表とグラフで可視化し、実行された条件も透明に確認できます。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "変動要因を整理するサマリーレポート支援",
+          "description": "単純な集計にとどまらず、期間別の変動要因や関連情報をまとめて報告資料のドラフト作成を支援します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "複数業務データの連携と出典追跡",
+          "description": "複数の社内業務データを一か所に接続し、各指標がどの元データから算出されたかを流れ図で確認できます。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "読み取り専用データの接続",
+          "description": "運用データの複製や分析用データベースを読み取り専用権限で安全に接続します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "日常の言葉で質問を入力",
+          "description": "知りたい売上・注文・運用指標を自然言語で入力するか、おすすめ質問を選択します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "グラフ・根拠の確認と共有",
+          "description": "自動生成された表とグラフ、照会根拠を確認し、レポートや会議資料としてそのまま活用します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "誤った質問によって社内の本番データが書き換えられたり消えたりしませんか？",
+          "answer": "読み取り専用の照会のみ実行されるよう制限されており、データを変更・削除する命令は実行段階で遮断されます。"
+        },
+        {
+          "question": "AIが算出した数値が正しいかどうかはどう確認できますか？",
+          "answer": "グラフとともに実際に社内データへ実行された照会条件の原文と結果テーブルをそのまま表示するため、担当者が直接検証できます。"
+        },
+        {
+          "question": "社内データを外部のAIサービスへ送信せずに運用できますか？",
+          "answer": "はい。社内オンプレミス構築やSyncLLMの機密情報マスキング機能と組み合わせ、外部流出を防ぎながら運用できます。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "統括管理者（共通）",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "SyncVerse内のデータ質問、分析レポート、データフロー、接続DB設定の全メニューを体験できます。"
+        },
+        {
+          "roleTitle": "データ分析・企画担当",
+          "accountId": "sync_planner",
+          "demoAccessCode": "123456",
+          "scopeSummary": "接続DB設定を除く対話型データ照会、要約レポート、データ出典マップを体験できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "insight-workbench",
+          "label": "SyncVerse 統合分析コンソール",
+          "description": "SyncVerse管理コンソール内の[データ分析]メニューから自然言語データ質問、分析レポート、データフロー、DB接続を統合体験します。",
+          "badgeText": "verse-admin.empasy.io/analytics/nl2sql",
+          "cloudUrl": "https://verse-admin.empasy.io/analytics/nl2sql",
+          "buttonLabel": "分析画面を開く",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "insight-workspace-nl2sql",
+          "label": "SyncVerse 統合ワークスペース データ質問",
+          "description": "SyncVerse統合ワークスペース画面からも同じ対話型データ照会をそのまま実行できます。",
+          "badgeText": "verse-app.empasy.io/knowledge/nl2sql",
+          "cloudUrl": "https://verse-app.empasy.io/knowledge/nl2sql",
+          "buttonLabel": "ワークスペースで照会",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-llm",
+      "name": "SyncLLM",
+      "subtitle": "複数AIモデルを一か所に接続し、コストと個人情報をまとめて管理",
+      "englishRoleBadge": "SyncSeries データ・AIモジュール · 社内AIコスト・セキュリティ管理",
+      "category": "data-ai",
+      "tierBadge": "拡張モジュール",
+      "subdomain": "llm.empasy.io",
+      "repoPath": "sync-llm",
+      "canonicalApiPrefix": "/api/v1/llm",
+      "docUrl": "https://doc.empasy.com/ja/syncllm/",
+      "proposalPdfUrl": "/downloads/proposals/SyncLLM_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-llm",
+      "faIconClass": "fas fa-microchip",
+      "techTags": [],
+      "summary": "企業の生成AI導入で課題となるコスト増加、特定モデルの障害、個人情報漏えいリスクを社内AI統合管理レイヤーで着実に統制します。",
+      "coreCapabilities": [
+        "類似質問の再利用とモデル振り分け",
+        "個人情報自動マスキングと監査ログ",
+        "障害時の予備モデル自動切り替え"
+      ],
+      "vsLegacyTitle": "従来の個別AI連携",
+      "vsLegacyPoints": [
+        "部門やサービスごとにAIアカウントを個別発行しており、全体の利用コストを把握しにくくなります。",
+        "社員が質問文に顧客の連絡先や識別番号などの機密情報を入力してもそのまま外部送信されるリスクがあります。",
+        "特定のAIサービスで障害が発生すると、連携している社内業務まで停止してしまいます。"
+      ],
+      "vsAgentTitle": "SyncLLM 導入後",
+      "vsAgentPoints": [
+        "商用AIと社内専用サーバーAIを単一窓口で統合し、部門・サービス別の利用量と予算をひと目で管理できます。",
+        "繰り返される類似質問は過去の応答を再利用し、個人情報パターンは外部送信前に自動マスキングします。",
+        "モデルの遅延やエラー発生時は事前設定した予備モデルへ自動切り替えし、業務中断を防ぎます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "類似質問の再利用とモデル振り分け",
+          "description": "簡単な要約は軽量モデルへ、高度な業務は高性能モデルへ振り分け、類似質問は再利用して不要なコストを削減します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "個人情報自動マスキングと利用履歴管理",
+          "description": "電話番号、口座番号、個人識別情報など事前定義した機密パターンを送信前に自動マスキングし監査履歴を残します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "障害時の予備モデル自動切り替え",
+          "description": "商用AIと社内専用AIの応答状態を監視し、問題発生時には予備モデルへスムーズに自動迂回します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "利用中のAIサービスを接続",
+          "description": "商用AIアカウントまたは社内専用サーバーAIを管理コンソールに登録します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "予算上限と個人情報ルールを設定",
+          "description": "部門別の月間上限、予備モデルの優先順位、マスキング対象とする機密情報項目を指定します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "利用量・削減効果のモニタリング",
+          "description": "ダッシュボードでモデル別利用推移、類似質問再利用実績、マスキング処理履歴を随時確認します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "すでに運用中の社内サービスへSyncLLMを導入する場合、大規模な改修が必要ですか？",
+          "answer": "標準のAI接続形式に対応しているため、既存サービスの接続先URLと認証設定を切り替えるだけで大きな改修なしに連携できます。詳細な連携仕様は技術文書（doc.empasy.com/ja/syncllm/）をご覧ください。"
+        },
+        {
+          "question": "外部クラウドAIを使わず、社内設置の独自モデルだけを接続できますか？",
+          "answer": "はい。社内専用サーバーAIのみを接続し、外部インターネットから遮断された環境でも安全に運用できます。"
+        },
+        {
+          "question": "部門別の予算上限を超過するとどう動作しますか？",
+          "answer": "設定したしきい値（例：80%、100%）到達時に担当者へアラート通知するか、追加利用を制限するかをポリシーで選択できます。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "AI統合管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "コストダッシュボード、AIサービス接続、予算上限、マスキング履歴の全機能を確認できます。"
+        },
+        {
+          "roleTitle": "AI運用マネージャー",
+          "accountId": "emp_manager",
+          "demoAccessCode": "123456",
+          "scopeSummary": "日常の利用量推移とリクエスト履歴の閲覧を中心に体験できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "llm-admin",
+          "label": "社内AI統合管理コンソール",
+          "badgeText": "llm-admin.empasy.io",
+          "cloudUrl": "https://llm-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-crawl",
+      "name": "SyncCrawl",
+      "subtitle": "Webサイト構造が変わっても安定してデータを集める自動収集ツール",
+      "englishRoleBadge": "SyncSeries データ・AIモジュール · Webデータ自動収集",
+      "category": "data-ai",
+      "tierBadge": "拡張モジュール",
+      "subdomain": "crawl.empasy.io",
+      "repoPath": "sync-crawl",
+      "canonicalApiPrefix": "/api/v1/crawl",
+      "docUrl": "https://doc.empasy.com/ja/synccrawl/",
+      "proposalPdfUrl": "/downloads/proposals/SyncCrawl_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-crawl",
+      "faIconClass": "fas fa-spider",
+      "techTags": [],
+      "summary": "サイトのリニューアルのたびに止まっていた従来型収集ツールの保守負担を軽減し、収集スケジュールと安全ルールを一画面で管理します。",
+      "coreCapabilities": [
+        "収集対象とスケジュールの統合管理",
+        "ノイズ除去および個人情報の自動整理",
+        "安全な収集ポリシーとアクセス速度制御"
+      ],
+      "vsLegacyTitle": "従来のWebデータ収集",
+      "vsLegacyPoints": [
+        "対象サイトのレイアウトやメニュー構造が少し変わるだけで収集が止まり、設定を都度作り直す必要があります。",
+        "取得した原文に広告・ナビゲーション・重複内容が混在し、分析前のクレンジングに時間がかかります。",
+        "収集周期、アクセス間隔制限、許可ルールを案件ごとに個別管理するため運用ミスが起きやすくなります。"
+      ],
+      "vsAgentTitle": "SyncCrawl 導入後",
+      "vsAgentPoints": [
+        "ページの文脈を踏まえて必要項目を抽出するよう設計されており、サイト改修時の修正負担を抑えます。",
+        "不要な広告やメニューを取り除き、構造化データと整理された本文ドキュメントとして保存します。",
+        "収集対象、実行間隔、サイト側の許可基準遵守およびアクセス速度制限を管理コンソールで一括制御します。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "収集対象とスケジュールの統合管理",
+          "description": "対象URL、抽出項目、実行スケジュールを管理画面で設定し、成功・失敗状況をリアルタイム監視します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "ノイズ除去および個人情報の自動整理",
+          "description": "広告やナビゲーションなど不要要素を取り除き、機密性の高い個人情報をマスキングして整ったデータとして保管します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "安全な収集ポリシーとアクセス速度制御",
+          "description": "対象サイトへ過度な負荷をかけないようリクエスト間隔制限と許可基準の遵守状態をポリシー管理します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "収集サイトと抽出項目の登録",
+          "description": "データを集める公開サイトのURLと必要項目（タイトル、価格、告知日など）、収集周期を入力します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "自動収集とコンテンツクレンジング",
+          "description": "設定スケジュールに従いデータを取得し、広告除去・重複整理・形式統一を自動実行します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "整理済みデータの検索・活用",
+          "description": "保存結果を画面から検索・出力したり、社内検索・分析基盤へ連携して活用します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "対象サイトの収集許可基準を守りながら運用できますか？",
+          "answer": "はい。Webサイトの許可基準遵守と秒間リクエスト速度制限を基本安全ポリシーとして設定・運用できます。"
+        },
+        {
+          "question": "収集したデータはどのような形式で活用できますか？",
+          "answer": "Excel・表形式ファイルおよび整った本文ドキュメントとして保存され、社内データ基盤やSyncInsightへスムーズに連携できます。"
+        },
+        {
+          "question": "画面が動的に書き換わる最新のWebサイトも収集できますか？",
+          "answer": "はい。実ブラウザでの画面描画に対応しているため、静的ページだけでなく動的にコンテンツを読み込む公開ページも収集可能です。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "データ収集管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "収集状況確認、対象サイト設定、結果ドキュメント照会の全機能を体験できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "crawl-admin",
+          "label": "データ収集管理コンソール",
+          "badgeText": "crawl-admin.empasy.io",
+          "cloudUrl": "https://crawl-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-apim",
+      "name": "SyncAPIM",
+      "subtitle": "管理漏れの連携経路まで検出し、異常アクセスを一画面で点検",
+      "englishRoleBadge": "SyncSeries セキュリティモジュール · 外部連携把握・セキュリティ管理",
+      "category": "security",
+      "tierBadge": "拡張モジュール",
+      "subdomain": "apim.empasy.io",
+      "repoPath": "sync-apim",
+      "canonicalApiPrefix": "/api/v1/apim",
+      "docUrl": "https://doc.empasy.com/ja/syncapim/",
+      "proposalPdfUrl": "/downloads/proposals/SyncAPIM_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-apim",
+      "faIconClass": "fas fa-shield-alt",
+      "techTags": [],
+      "summary": "サービス増加に伴って把握しづらくなった外部連携一覧を自動整理し、仕様不一致やセキュリティ脅威への迅速な対応を支援します。",
+      "coreCapabilities": [
+        "管理漏れ連携経路の自動カタログ化",
+        "仕様不一致および機密情報露出の点検",
+        "異常アクセス詳細確認と遮断ポリシー"
+      ],
+      "vsLegacyTitle": "従来の外部連携管理",
+      "vsLegacyPoints": [
+        "開発時に一時公開した経路や文書化が漏れた連携が放置され、セキュリティの死角が生まれます。",
+        "仕様書に記載のない顧客情報項目がレスポンスに含まれて外部へ出ていても気づきにくくなります。",
+        "攻撃試行が発生した際、どのようなリクエストが来たかをログから追うのに膨大な時間がかかります。"
+      ],
+      "vsAgentTitle": "SyncAPIM 導入後",
+      "vsAgentPoints": [
+        "実際の通信トラフィックを解析し、未登録のシャドー連携を自動検出して一覧化します。",
+        "標準仕様書と本番レスポンスを突き合わせ、未定義の機密項目露出を即座に通知します。",
+        "異常な攻撃試行の詳細内容を一画面で確認し、遮断・マスキングルールを迅速に適用できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "管理漏れ連携経路の自動カタログ化",
+          "description": "実通信記録から連携経路とデータ項目を抽出し、ドキュメントから漏れた未管理連携を漏れなく把握します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "仕様不一致および機密情報露出の点検",
+          "description": "登録済み標準仕様と実レスポンスを照合し、想定外の個人情報や口座番号などが含まれていないか確認します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "異常アクセス詳細確認と遮断ポリシー",
+          "description": "異常な大量呼び出しや攻撃試行の詳細を調査し、状況に応じた遮断・マスキングルールを適用します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "外部連携トラフィックの接続",
+          "description": "稼働中サービスの前段または運用負荷のないミラー点検構成を接続し、実連携状況を収集します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "未管理連携・機密露出の診断",
+          "description": "仕様未登録の連携経路や機密データを含むレスポンスを分類し、優先度付きで可視化します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "遮断・マスキング適用と履歴追跡",
+          "description": "確認済みの脅威パターンへ遮断・マスキングポリシーを適用し、対応履歴を記録します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "運用中サービスの前段に置くと応答速度が低下しませんか？",
+          "answer": "運用負荷のないミラー点検方式でまず現状を把握し、必要な重要経路のみ遮断モードへ段階移行する構成が可能です。"
+        },
+        {
+          "question": "従来のWebファイアウォール製品と何が違いますか？",
+          "answer": "従来機器が既知攻撃の遮断を中心とするのに対し、SyncAPIMは全連携の自動カタログ化、仕様乖離点検、レスポンス内の機密情報露出検出まで外部連携セキュリティに特化しています。技術仕様は doc.empasy.com/ja/syncapim/ をご覧ください。"
+        },
+        {
+          "question": "SyncWatchと併用するメリットは何ですか？",
+          "answer": "SyncWatchが新規脆弱性を整理すると、SyncAPIM側で対応する点検・遮断ルールをより迅速に反映できるようになります。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "連携セキュリティ管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "全連携一覧、仕様点検、検知イベント、遮断ポリシーの全機能を体験できます。"
+        },
+        {
+          "roleTitle": "セキュリティ監視担当",
+          "accountId": "secops",
+          "demoAccessCode": "123456",
+          "scopeSummary": "リアルタイム脅威検知イベントの照会と対応画面を中心に体験できます。"
+        },
+        {
+          "roleTitle": "連携設計担当",
+          "accountId": "apidev",
+          "demoAccessCode": "123456",
+          "scopeSummary": "全連携一覧と仕様不一致の点検画面を中心に確認できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "apim-admin",
+          "label": "外部連携セキュリティコンソール",
+          "badgeText": "apim-admin.empasy.io",
+          "cloudUrl": "https://apim-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-watch",
+      "name": "SyncWatch",
+      "subtitle": "新たに公開されるセキュリティ脆弱性情報を収集し点検ルールへ整理",
+      "englishRoleBadge": "SyncSeries セキュリティモジュール · 脆弱性収集・点検ルール管理",
+      "category": "security",
+      "tierBadge": "拡張モジュール",
+      "subdomain": "watch.empasy.io",
+      "repoPath": "sync-watch",
+      "canonicalApiPrefix": "/api/v1/watch",
+      "docUrl": "https://doc.empasy.com/ja/syncwatch/",
+      "proposalPdfUrl": "/downloads/proposals/SyncWatch_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-watch",
+      "faIconClass": "fas fa-shield-virus",
+      "techTags": [],
+      "summary": "複数サイトに日々公開されるセキュリティ勧告を担当者が手作業で収集・整理していた手間を減らし、点検・反映の監査履歴を体系的に残します。",
+      "coreCapabilities": [
+        "国内外公式セキュリティ警報の統合収集",
+        "事前点検およびリアルタイム防御ルール管理",
+        "事前検証後の反映と対応履歴追跡"
+      ],
+      "vsLegacyTitle": "従来の脆弱性対応",
+      "vsLegacyPoints": [
+        "セキュリティ担当者が複数の公式警報サイトを毎日巡回し、自社への該当有無を手作業で分類しています。",
+        "脆弱性告知を確認してから事前点検ルールやリアルタイム遮断ルールへ落とし込むまでに時間がかかります。",
+        "どの脆弱性にいつどのような措置を取ったのか、監査証跡の整理に手間がかかります。"
+      ],
+      "vsAgentTitle": "SyncWatch 導入後",
+      "vsAgentPoints": [
+        "主要な国内外公式セキュリティ警報を一画面に集約し、重要度と影響範囲をわかりやすく提示します。",
+        "確認済みの脆弱性は事前点検ルールと外部連携防御ルールに分けて安全に管理・適用できます。",
+        "収集からルール確認、反映、措置完了まで全過程を履歴化しセキュリティ監査に活用できます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "国内外公式セキュリティ警報の統合収集",
+          "description": "公式セキュリティ警報チャネルから脆弱性情報を定期収集し、重複を整理して危険度別に分類します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "事前点検およびリアルタイム防御ルール管理",
+          "description": "収集した脆弱性をもとに、開発段階の事前点検ルールと運用段階の外部連携防御ルールを分けて管理します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "事前検証後の反映と対応履歴追跡",
+          "description": "誤検知の有無を事前確認した上で連携システムへ反映し、対応結果を監査証跡として保管します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "最新脆弱性情報の自動収集",
+          "description": "接続された国内外の公式セキュリティ警報チャネルから新規脆弱性や勧告文を定期取得します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "影響度分類と点検ルールの整備",
+          "description": "自社サービスに関係する項目を抽出し、事前点検ルールと外部連携防御ルールのドラフトを準備します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "事前確認後の反映と履歴保存",
+          "description": "テスト検証と担当者承認を経てルールを反映し、すべての対応記録を履歴として保存します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "作成されたルールが正常なサービス通信を誤遮断する心配はありませんか？",
+          "answer": "新規ルールはそのまま本番適用せず、正常リクエストと攻撃例を対照する事前検証および担当者確認を経て反映する運用を徹底しています。"
+        },
+        {
+          "question": "自社で受診したセキュリティ診断レポートも併せて登録できますか？",
+          "answer": "はい。公開脆弱性告知だけでなく社内のセキュリティ診断文書も登録し、同じフローで対応履歴を管理できます。"
+        },
+        {
+          "question": "SyncWatch単独で脆弱性モニタリング用途として使えますか？",
+          "answer": "はい。単独で脆弱性収集・分類・監査履歴管理に活用でき、必要に応じてSyncAPIMやSyncVerseと連携拡張できます。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "セキュリティ統括管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "脆弱性収集チャネル、ルール確認、反映履歴の全メニューを体験できます。"
+        },
+        {
+          "roleTitle": "セキュリティ分析担当",
+          "accountId": "secops",
+          "demoAccessCode": "123456",
+          "scopeSummary": "脆弱性台帳の分析と点検ルール確認を中心に体験できます。"
+        },
+        {
+          "roleTitle": "セキュリティ監査員",
+          "accountId": "auditor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "措置・反映履歴の照会画面を中心に確認できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "watch-admin",
+          "label": "セキュリティ脅威管理コンソール",
+          "badgeText": "watch-admin.empasy.io",
+          "cloudUrl": "https://watch-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-shop",
+      "name": "SyncShop",
+      "subtitle": "最低利益基準を守りながら商品・価格・注文を管理するECソリューション",
+      "englishRoleBadge": "SyncSeries 業務モジュール · EC運営・価格管理",
+      "category": "operations",
+      "tierBadge": "拡張モジュール",
+      "subdomain": "shop.empasy.io",
+      "repoPath": "sync-shop",
+      "canonicalApiPrefix": "/api/v1/shop",
+      "docUrl": "https://doc.empasy.com/ja/syncshop/",
+      "proposalPdfUrl": "/downloads/proposals/SyncShop_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-shop",
+      "faIconClass": "fas fa-shopping-bag",
+      "techTags": [],
+      "summary": "商品登録、注文・配送・返品対応、タイムセール・クーポン運用、購入者向けストア画面まで、EC運営に必要な中核機能を端正に構成しました。",
+      "coreCapabilities": [
+        "最低利益基準のチェックと一括価格管理",
+        "変更前価格の保存とワンクリック復元",
+        "注文・配送・プロモーション統合管理"
+      ],
+      "vsLegacyTitle": "従来のECサイト運営",
+      "vsLegacyPoints": [
+        "セールごとにMDがExcelで割引率を手計算・入力するため、原価割れ販売ミスが発生しやすくなります。",
+        "割引誤設定やセール終了後、数百商品の通常価格へ戻す作業に大きな手間がかかります。",
+        "キャンペーン期間中に検索と注文が集中すると、サイト全体の応答速度が低下しやすくなります。"
+      ],
+      "vsAgentTitle": "SyncShop 導入後",
+      "vsAgentPoints": [
+        "商品ごとの原価と最低利益基準を事前チェックし、基準を下回る価格変更を未然に防ぎます。",
+        "価格変更のたびに直前の価格状態を記録し、必要時に元の価格へまとめて復元できます。",
+        "商品・検索・注文・管理機能を分離構成で運用し、キャンペーン時のアクセス集中にも安定対応します。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "最低利益基準のチェックと一括価格管理",
+          "description": "カテゴリ別や企画セールで販売価格を調整する際、商品別の原価と最低利益基準を事前に自動点検します。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "変更前価格の保存とワンクリック復元",
+          "description": "一括価格変更前の状態をスナップショット保存し、セール終了や修正時に素早く通常価格へ戻せます。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "注文・配送・プロモーション統合管理",
+          "description": "商品管理から出荷指示、キャンセル・返品処理、タイムセール・クーポン施策まで管理画面とストアを一体提供します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "対象商品と利益基準の確認",
+          "description": "価格調整を行う商品群、現在庫、設定済みの最低利益基準を事前に確認します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "直前価格の保存とセール反映",
+          "description": "変更前の価格記録を保存した上で、基準を満たした商品へ新しい販売価格や施策を適用します。"
+        },
+        {
+          "stepNo": 3,
+          "title": "ストア確認および終了後の価格復元",
+          "description": "購入者ストア画面で反映結果を確認し、セール終了後は保存記録から元の価格へ復元します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "一括価格変更の際に原価を下回るミスをどう防ぎますか？",
+          "answer": "商品ごとの最低利益基準を事前設定しておくことで、基準を下回る価格変更リクエストを事前検知し管理者確認を促します。"
+        },
+        {
+          "question": "購入者が閲覧するECストア画面も提供されますか？",
+          "answer": "はい。管理コンソールとあわせてPC・モバイル対応の購入者向けストア画面が用意されており、すぐにお試しいただけます。"
+        },
+        {
+          "question": "他のEmpasy製品なしでSyncShopだけを単独導入できますか？",
+          "answer": "はい。SyncShop単独で構築・運用でき、必要に応じてSyncCMSやSyncInsightを後から連携できます。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "EC統括管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "管理コンソールで商品、在庫、注文、クーポン、価格管理の全機能を体験できます。"
+        },
+        {
+          "roleTitle": "商品担当MD",
+          "accountId": "productAdmin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "商品登録、ブランド、価格・在庫管理メニューを中心に体験できます。"
+        },
+        {
+          "roleTitle": "注文・配送担当",
+          "accountId": "orderAdmin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "注文照会、出荷処理、返品・返金審査メニューを中心に体験できます。"
+        },
+        {
+          "roleTitle": "一般購入者（ストア用）",
+          "accountId": "member",
+          "demoAccessCode": "123456",
+          "scopeSummary": "購入者ストア画面でカートおよび注文フローを体験する際に使用します。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "shop-admin",
+          "label": "EC管理コンソール",
+          "badgeText": "shop-admin.empasy.io",
+          "cloudUrl": "https://shop-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "shop-app",
+          "label": "購入者ストア画面",
+          "badgeText": "shop-app.empasy.io",
+          "cloudUrl": "https://shop-app.empasy.io",
+          "buttonLabel": "ストアを開く",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-ops",
+      "name": "SyncOps",
+      "subtitle": "プロジェクト別の稼働人員と実損益をExcelなしでリアルタイム把握",
+      "englishRoleBadge": "SyncSeries 業務モジュール · SIプロジェクト・損益管理",
+      "category": "operations",
+      "tierBadge": "拡張モジュール",
+      "subdomain": "ops.empasy.io",
+      "repoPath": "sync-ops",
+      "canonicalApiPrefix": "/api/v1/ops",
+      "docUrl": "https://doc.empasy.com/ja/syncops/",
+      "proposalPdfUrl": "/downloads/proposals/SyncOps_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-ops",
+      "faIconClass": "fas fa-briefcase",
+      "techTags": [],
+      "summary": "受託型IT・SI企業や研究開発組織が複数のExcelファイルで管理していたプロジェクト採算性、要員稼働率、法定期限管理を一画面に集約しました。",
+      "coreCapabilities": [
+        "契約単価 vs 実投入原価の損益比較",
+        "保証保険・外注支払期限のアラート通知",
+        "要員アサインガントと電子研究ノート"
+      ],
+      "vsLegacyTitle": "従来のSI事業管理",
+      "vsLegacyPoints": [
+        "案件ごとの稼働人員と実原価が複数のExcelに分散しており、赤字兆候の把握が遅れがちです。",
+        "入札・契約・前払・瑕疵保証の満期日や下請支払期限を手作業で管理すると見落としリスクが高まります。",
+        "アサイン予定・終了予定の要員状況を俯瞰しづらく、人員配置の意思決定が遅れます。"
+      ],
+      "vsAgentTitle": "SyncOps 導入後",
+      "vsAgentPoints": [
+        "契約単価と実投入人件費を自動照合し、プロジェクトごとの収益状況を随時確認できます。",
+        "4大保証保険の満期や法定の外注支払期限が近づくとダッシュボードと通知で事前にお知らせします。",
+        "技術等級別の要員配置と月次稼働予定をガントチャートでひと目で把握し計画を立てられます。"
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "契約単価 vs 実投入原価の損益比較",
+          "description": "計画工数・契約単価と実際の投入原価を案件ごとに比較し、利益圧迫の兆候を早期に捉えます。"
+        },
+        {
+          "badgeNo": "02",
+          "title": "保証保険・外注支払期限のアラート通知",
+          "description": "入札・契約・前払・瑕疵保証証券の満期日や外注支払スケジュールを見落とさないよう一画面で追跡します。"
+        },
+        {
+          "badgeNo": "03",
+          "title": "要員アサインガントと電子研究ノート",
+          "description": "エンジニア別の参画・終了日程と月次稼働率を視覚的に管理し、R&D案件の研究ノート履歴も併せて保管します。"
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "契約情報と要員計画の登録",
+          "description": "受注金額、契約期間、アサイン予定要員および保証保険スケジュールを登録します。"
+        },
+        {
+          "stepNo": 2,
+          "title": "実稼働と期限の自動集計",
+          "description": "月次の投入実績が蓄積されると、案件別損益、稼働率、迫る法定期限が自動整理されます。"
+        },
+        {
+          "stepNo": 3,
+          "title": "経営状況の把握と先手対応",
+          "description": "工数超過リスクのある案件や満期が近い保証証券を早期に把握し、日程・リソースを調整します。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "中堅・中小のITサービス企業や研究開発法人に適していますか？",
+          "answer": "はい。受託契約ベースのSI・SMプロジェクトや公的R&D課題を並行推進する企業の実務フローに合わせて設計されています。"
+        },
+        {
+          "question": "経営層・PM・財務担当ごとに閲覧できる画面を分けられますか？",
+          "answer": "はい。SyncBootの権限基盤により、役職や担当プロジェクトごとに損益・人件費の閲覧範囲を細かく制限できます。"
+        },
+        {
+          "question": "これまで使っていたExcelデータを移行できますか？",
+          "answer": "はい。プロジェクト一覧、要員情報、契約明細などの既存Excelをテンプレートに沿って一括登録し継続管理できます。"
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "統括管理者",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "全社損益、契約・保証管理、要員配置、研究ノートまで全機能を確認できます。"
+        },
+        {
+          "roleTitle": "事業統括マネージャー (PMO)",
+          "accountId": "choiyj",
+          "demoAccessCode": "123456",
+          "scopeSummary": "複数案件の損益比較と要員稼働率管理を中心に体験できます。"
+        },
+        {
+          "roleTitle": "プロジェクトマネージャー (PM)",
+          "accountId": "hongkd",
+          "demoAccessCode": "123456",
+          "scopeSummary": "担当プロジェクトの投入工数と日程管理画面を確認できます。"
+        },
+        {
+          "roleTitle": "財務・精算担当",
+          "accountId": "jungde",
+          "demoAccessCode": "123456",
+          "scopeSummary": "売上・仕入精算および保証保険・外注期限管理画面を確認できます。"
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "ops-admin",
+          "label": "SI事業運営管理コンソール",
+          "badgeText": "ops-admin.empasy.io",
+          "cloudUrl": "https://ops-admin.empasy.io",
+          "buttonLabel": "管理コンソールを開く",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    }
+  ],
+  "infraServices": []
+}

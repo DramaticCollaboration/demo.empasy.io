@@ -1,0 +1,79 @@
+# Empasy SyncSeries Unified Live Demo & Solution Portal (demo.empasy.io)
+
+> `https://demo.empasy.io` (also accessible via `https://sync.empasy.io`) is the official unified live demonstration portal for **Empasy SyncSeries** — modular enterprise software built on a shared standard foundation (`SyncBoot`, Java 25, Spring Boot 4.0, PostgreSQL 18.6) developed by **Empasy IT Corp. (주식회사 엠파시)**.
+
+## 1. Ecosystem Overview & Key Links
+- **Live Demo Portal**: https://demo.empasy.io/ (legacy alias `https://sync.empasy.io/` redirects permanently preserving path & query)
+- **Demo Usage & Reset Policy Guide**: https://demo.empasy.io/guide
+- **Corporate & Official Solution Website**: https://empasy.io/
+- **Technical Documentation Hub**: https://doc.empasy.com/
+- **Master Proposal PDF**: https://demo.empasy.io/downloads/proposals/SyncSeries_Master_Proposal.pdf
+- **Executive Brochure PDF**: https://demo.empasy.io/downloads/proposals/SyncSeries_Brochure_v1.0.pdf
+
+## 2. Daily Full Data Reset Policy (04:00 KST)
+- **All live demo services on `*.empasy.io`** (including `verse-app.empasy.io`, `verse-studio.empasy.io`, `verse-admin.empasy.io`, `cms-app.empasy.io`, `cms-admin.empasy.io`, `shop-app.empasy.io`, `shop-admin.empasy.io`, `ops-admin.empasy.io`, `boot-admin.empasy.io`, `llm-admin.empasy.io`, `apim-admin.empasy.io`, `watch-admin.empasy.io`, `crawl-admin.empasy.io`, `eta-admin.empasy.io`, and the demo desktop backend `eta-api.empasy.io`) **reset demo databases, caches, and temporary uploads every day at 04:00 AM KST (UTC+9)**, restoring clean initial sample data.
+- **SyncETA Desktop Download**:
+  - **Official Release (`SyncETA-Setup` for Windows / macOS)**: Downloaded from `https://empasy.io/ko/download_eta.html` (EN: `https://empasy.io/en/download_eta.html`, JA: `https://empasy.io/ja/download_eta.html`).
+
+## 3. Product Lineup (4 Flagship Solutions + 7 Modular Extensions)
+
+### Flagship Solutions (4)
+1. **SyncVerse (`https://empasy.io/ko/solutions/sync-verse.html`)**
+   - Live Consoles: `https://verse-app.empasy.io` (Unified Workspace), `https://verse-studio.empasy.io` (Code Studio), `https://verse-admin.empasy.io` (System Admin Console)
+   - Docs: `https://doc.empasy.com/syncverse/`
+   - Role: Central multi-agent collaboration, approval workflow (HITL), and operational oversight console.
+2. **SyncETA (`https://empasy.io/ko/solutions/sync-eta.html`)**
+   - Live Console: `https://eta-admin.empasy.io` (Web QA Console)
+   - Official Installer Download: `https://empasy.io/ko/download_eta.html`
+   - Brochure PDF (15p): `https://demo.empasy.io/downloads/proposals/SyncETA_Proposal.pdf`
+   - Docs: `https://doc.empasy.com/synceta/`
+   - Role: Web test automation, site audit, and defect tracking platform featuring browser action recording (security keypad & cookie banner bypass), Excel/one-line prompt conversion with representative/sample URLs, multi-account testing, scenario-free link & text-overlap audits with honest `[Needs Review]` triage, and Bug Kanban one-click `[Check Now]` re-verification.
+3. **SyncBoot (`https://empasy.io/ko/solutions/sync-boot.html`)**
+   - Live Console: `https://boot-admin.empasy.io`
+   - Docs: `https://doc.empasy.com/syncboot/`
+   - Role: Enterprise back-office core foundation (SSO authentication, RBAC permissions, electronic approval, audit logs, and standard CRUD screens) based on Spring Boot 4.0 & Java 25.
+4. **SyncCMS (`https://empasy.io/ko/solutions/sync-cms.html`)**
+   - Live Consoles: `https://cms-app.empasy.io` (Public SSR Web), `https://cms-admin.empasy.io` (Admin Studio)
+   - Docs: `https://doc.empasy.com/synccms/`
+   - Role: Nuxt 3 SSR hybrid CMS supporting draft review workflows and multilingual (KO/EN/JA) site publishing.
+
+### Modular Extensions — Data & AI (3)
+5. **SyncInsight (`https://empasy.io/ko/solutions/sync-insight.html`)** — *Integrated inside SyncVerse*
+   - Live Consoles: `https://verse-admin.empasy.io/analytics/nl2sql` (SyncVerse Integrated Analytics Console), `https://verse-app.empasy.io/knowledge/nl2sql` (SyncVerse Unified Workspace Data Q&A)
+   - Docs: `https://doc.empasy.com/syncinsight/`
+   - Role: Conversational natural-language data query, deep research reports, and data lineage integrated directly inside SyncVerse.
+6. **SyncLLM (`https://empasy.io/ko/solutions/sync-llm.html`)**
+   - Live Console: `https://llm-admin.empasy.io`
+   - Docs: `https://doc.empasy.com/syncllm/`
+   - Role: Multi-LLM gateway providing departmental token budget management, semantic caching (`pgvector`), and PII masking.
+7. **SyncCrawl (`https://empasy.io/ko/solutions/sync-crawl.html`)**
+   - Live Console: `https://crawl-admin.empasy.io`
+   - Docs: `https://doc.empasy.com/synccrawl/`
+   - Role: Scheduled web data collection and structured extraction for search and internal knowledge bases.
+
+### Modular Extensions — Security & Governance (2)
+8. **SyncAPIM (`https://empasy.io/ko/solutions/sync-apim.html`)**
+   - Live Console: `https://apim-admin.empasy.io`
+   - Docs: `https://doc.empasy.com/syncapim/`
+   - Role: API inventory visibility, contract drift inspection, security monitoring, and response PII protection.
+9. **SyncWatch (`https://empasy.io/ko/solutions/sync-watch.html`)**
+   - Live Console: `https://watch-admin.empasy.io`
+   - Docs: `https://doc.empasy.com/syncwatch/`
+   - Role: Vulnerability feed tracking (NVD CVE, CISA KEV, OSV, KISA) and security rule distribution for SyncVerse and SyncAPIM.
+
+### Modular Extensions — Operations & Commerce (2)
+10. **SyncShop (`https://empasy.io/ko/solutions/sync-shop.html`)**
+    - Live Consoles: `https://shop-app.empasy.io` (Storefront), `https://shop-admin.empasy.io` (Merchant Admin)
+    - Docs: `https://doc.empasy.com/syncshop/`
+    - Role: 8-service distributed microservices e-commerce platform with margin-aware pricing controls, order operations, and search.
+11. **SyncOps (`https://empasy.io/ko/solutions/sync-ops.html`)**
+    - Live Console: `https://ops-admin.empasy.io`
+    - Docs: `https://doc.empasy.com/syncops/`
+    - Role: Enterprise SI project, staffing, contract vs. actual cost P&L management, and compliance documentation platform.
+
+## 4. Company Information
+- **Company**: Empasy IT Corp. (주식회사 엠파시)
+- **CEO**: Byungmoon Oh (오병문)
+- **Address**: #208, 2F, 205-27 Gasan digital 1-ro (459-7 Gasan-dong), Geumcheon-gu, Seoul, 08503, Republic of Korea
+- **Venture Enterprise Certification**: Certified Venture Enterprise - Innovative Growth Type (혁신성장유형 벤처기업 확인, Cert. No. 20261111030084, Valid 2026-11-11 ~ 2029-11-10, Business Reg. 547-81-03408)
+- **Contact**: poh@empasy.com | +82-507-1360-8169
