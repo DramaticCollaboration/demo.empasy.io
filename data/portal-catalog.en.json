@@ -1,0 +1,1997 @@
+{
+  "portalMeta": {
+    "title": "Empasy SyncSeries Unified Demo Portal",
+    "portalSubdomain": "demo.empasy.io",
+    "corporateSiteUrl": "https://empasy.io",
+    "techDocsUrl": "https://doc.empasy.com/en/",
+    "resetScheduleNotice": "All data entered or modified in the live demo resets daily at 04:00 AM KST.",
+    "defaultMasterId": "admin",
+    "defaultMasterCode": "123456"
+  },
+  "productGroups": [
+    {
+      "key": "flagship",
+      "navLabel": "Flagship Solutions",
+      "title": "4 Flagship Solutions",
+      "description": "Our most widely adopted core products across enterprise deployments. Try live screens directly without installation."
+    },
+    {
+      "key": "data-ai",
+      "navLabel": "Data & AI Modules",
+      "title": "Data & AI Extension Modules",
+      "description": "Conversational data querying, enterprise AI cost and privacy governance, and automated public web data collection."
+    },
+    {
+      "key": "security",
+      "navLabel": "Security Modules",
+      "title": "Security Management Extension Modules",
+      "description": "Shadow integration discovery and blocking, plus automated security advisory collection and inspection rule governance."
+    },
+    {
+      "key": "operations",
+      "navLabel": "Business & Ops Modules",
+      "title": "Business & Service Operations Modules",
+      "description": "Margin-protected online store operations and SI project P&L, staffing, and surety bond deadline management."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scenario-backoffice-flow",
+      "categoryBadge": "Flagship Suite · Enterprise Back Office",
+      "title": "Internal Admin Setup, Collaboration & Staged Approval",
+      "painPoint": "Rebuilding sign-in, permissions, and approval workflows for every new internal admin tool makes change tracking slow and inconsistent.",
+      "expectedOutcome": "Start quickly on standardized permissions and e-approvals, then coordinate requests in SyncVerse Workspace and approve diffs safely.",
+      "targetPersona": "IT Planners · Engineering Leads · System Admins",
+      "summary": "Explore SyncBoot's standardized organization, permission, and e-approval screens, then continue through SyncVerse Unified Workspace and Approval Center for diff review and staged sign-off.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. Org, Permissions & E-Approval (SyncBoot) → 2. Workspace Collaboration (SyncVerse) → 3. Diff Review & Staged Approval (SyncVerse)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-boot",
+          "productName": "SyncBoot",
+          "actionTitle": "Review Org-Linked Menu Permissions & E-Approval",
+          "actionDetail": "Inspect department and role-based menu permissions, enterprise e-approval routing, and operational reports directly.",
+          "subdomain": "boot-admin.empasy.io",
+          "demoUrl": "https://boot-admin.empasy.io/showcase/approval-wizard",
+          "menuPath": "Samples > E-Approval · System > Users & Roles",
+          "tryPoint": "Explore the multi-step approval draft wizard and role-based menu permission controls.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-verse",
+          "productName": "SyncVerse",
+          "actionTitle": "Coordinate Requirements & Tasks in Unified Workspace",
+          "actionDetail": "Experience the primary workspace where planners, engineers, and QA refine requirements conversationally and track issues and releases.",
+          "subdomain": "verse-app.empasy.io",
+          "demoUrl": "https://verse-app.empasy.io",
+          "secondaryLink": {
+            "label": "Code Studio ↗",
+            "url": "https://verse-studio.empasy.io"
+          },
+          "menuPath": "Workspace · Issue Board · Approvals",
+          "tryPoint": "Browse the conversational workspace and issue/release boards, or open Code Studio alongside it.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-verse",
+          "productName": "SyncVerse",
+          "actionTitle": "Compare Before/After Changes & Approve",
+          "actionDetail": "Review change request diffs side by side and complete role-based human approval with full audit logging in the admin console.",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/governance/hitl-approval",
+          "menuPath": "System Admin Console > Approval Center",
+          "tryPoint": "Open a pending approval item to inspect before/after diffs and try the Approve or Reject controls.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-web-qa-flow",
+      "categoryBadge": "Flagship Suite · Websites · Quality Assurance",
+      "title": "Website Publishing, Visual QA & Instant Recheck",
+      "painPoint": "Every website or multilingual update forces teams to manually check search metadata and layout regressions page by page.",
+      "expectedOutcome": "Verify search and accessibility readiness before publishing, then audit links and layout overlaps post-release with one-click Kanban re-verification.",
+      "targetPersona": "Web Operators · Marketing Teams · QA Leads",
+      "summary": "Review multilingual content checks and pre-publish audits in SyncCMS, then follow full link/overlap audits and one-click Bug Kanban re-verification in SyncETA.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. Content, Multilingual & Pre-Publish Audit (SyncCMS) → 2. Full Link/Layout Audit & Kanban Recheck (SyncETA)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-cms",
+          "productName": "SyncCMS",
+          "actionTitle": "Editorial Review & Pre-Publish Quality Audit",
+          "actionDetail": "Manage multi-site content in one workspace and review pre-publish SEO, accessibility, and multilingual localization results.",
+          "subdomain": "cms-admin.empasy.io",
+          "demoUrl": "https://cms-admin.empasy.io/cms/content",
+          "secondaryLink": {
+            "label": "View Published Site ↗",
+            "url": "https://cms-app.empasy.io"
+          },
+          "menuPath": "Content Management · Quality Audit · Localization",
+          "tryPoint": "Check the article list, localization workbench, and quality scores, then compare with the live published website.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-eta",
+          "productName": "SyncETA",
+          "actionTitle": "Full Link & Overlap Audit with Bug Kanban Recheck",
+          "actionDetail": "Automatically catch broken 404 links and text overlaps after publishing, then re-verify photo-attached tickets in one click.",
+          "subdomain": "eta-admin.empasy.io",
+          "demoUrl": "https://eta-admin.empasy.io/eta/dashboard",
+          "secondaryLink": {
+            "label": "Download PC App ↗",
+            "url": "https://empasy.io/en/download_eta.html"
+          },
+          "menuPath": "Project Dashboard · Defect Diagnostics · Bug Kanban",
+          "tryPoint": "Inspect live diagnostic reports in the web console, or download the desktop app to record scenarios directly on your PC.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-data-ai-flow",
+      "categoryBadge": "Data & AI Suite · All 3 Modules",
+      "title": "External Web Collection to Conversational BI & AI Governance",
+      "painPoint": "Web data collection, internal business analytics, and AI cost/privacy governance are often siloed across disconnected tools.",
+      "expectedOutcome": "Collect clean public web data with SyncCrawl, query enterprise DBs via SyncInsight inside SyncVerse, and govern AI cost and PII masking in SyncLLM.",
+      "targetPersona": "Data Analysts · Business Planners · AI Operators",
+      "summary": "Inspect normalized web documents in SyncCrawl, ask natural-language questions via SyncInsight integrated inside SyncVerse, and review PII masking trails in SyncLLM.",
+      "estimatedMinutes": 6,
+      "workflowFlowLabel": "1. Web Data Collection (SyncCrawl) → 2. Conversational BI (SyncInsight · In SyncVerse) → 3. AI Cost & Privacy Masking (SyncLLM)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-crawl",
+          "productName": "SyncCrawl",
+          "actionTitle": "Automated Web Collection & Clean Document Review",
+          "actionDetail": "Collect public web data under safe crawl policies and rate limits, then inspect ad-free, normalized structured documents.",
+          "subdomain": "crawl-admin.empasy.io",
+          "demoUrl": "https://crawl-admin.empasy.io/crawl/document",
+          "menuPath": "Results > Collected Documents · Safe Crawl Policy",
+          "tryPoint": "Explore normalized, masked documents alongside per-site schedules and compliance rules.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-insight",
+          "productName": "SyncInsight",
+          "integrationBadge": "In SyncVerse",
+          "actionTitle": "Natural-Language Data Querying & Connected DBs",
+          "actionDetail": "Inside the SyncVerse Admin Console's [Data Analytics] menu, ask everyday business questions to generate tables, charts, query criteria, and inspect connected DBs.",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/analytics/nl2sql",
+          "secondaryLink": {
+            "label": "Query in Workspace ↗",
+            "url": "https://verse-app.empasy.io/knowledge/nl2sql"
+          },
+          "menuPath": "SyncVerse Console > Data Analytics > Data Q&A · DB Connections",
+          "tryPoint": "Click a sample question to see tables and charts generated in real time, then check connected enterprise DBs.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-llm",
+          "productName": "SyncLLM",
+          "actionTitle": "Review AI Usage, Caching & Sensitive Data Masking",
+          "actionDetail": "Inspect per-model usage, similar-query reuse savings, failover routing, and automatic PII masking audit logs.",
+          "subdomain": "llm-admin.empasy.io",
+          "demoUrl": "https://llm-admin.empasy.io/llm/request-logs",
+          "menuPath": "Dashboard · Request Logs · AI Providers",
+          "tryPoint": "Review request logs to see how personal details are automatically masked before reaching external models.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-security-flow",
+      "categoryBadge": "Security Suite · Both Modules",
+      "title": "Vulnerability Advisory Response & API Security Audit",
+      "painPoint": "Managing newly disclosed security advisories separately from undocumented shadow APIs slows down incident response.",
+      "expectedOutcome": "SyncWatch turns incoming vulnerability feeds into verified inspection rules while SyncAPIM uncovers shadow endpoints and anomalous traffic.",
+      "targetPersona": "Security Officers · Infrastructure Operators · API Architects",
+      "summary": "Review collected vulnerability advisories and inspection rules in SyncWatch, then inspect undocumented endpoints and threat detection events in SyncAPIM.",
+      "estimatedMinutes": 4,
+      "workflowFlowLabel": "1. Vulnerability Advisories & Rules (SyncWatch) → 2. Shadow API Discovery & Threat Audit (SyncAPIM)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-watch",
+          "productName": "SyncWatch",
+          "actionTitle": "Collect Security Advisories & Review Detection Rules",
+          "actionDetail": "Automatically aggregate global and domestic vulnerability feeds (CVE, KEV, KISA) and govern pre-check and runtime defense rules.",
+          "subdomain": "watch-admin.empasy.io",
+          "demoUrl": "https://watch-admin.empasy.io/watch/advisories",
+          "menuPath": "Security Advisories · Rule Governance · Dispatch History",
+          "tryPoint": "Inspect severity triage in the advisory ledger and review verified rule dispatch logs.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-apim",
+          "productName": "SyncAPIM",
+          "actionTitle": "Discover Undocumented Endpoints & Threat Logs",
+          "actionDetail": "Inventory shadow endpoints from live traffic, detect schema drift and sensitive-data leaks, and review anomalous attack attempts.",
+          "subdomain": "apim-admin.empasy.io",
+          "demoUrl": "https://apim-admin.empasy.io/apim/endpoints",
+          "menuPath": "Endpoint Inventory · Spec Drift · Threat Detection Logs",
+          "tryPoint": "Explore endpoints discovered from live traffic and inspect detailed threat detection events.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-commerce-flow",
+      "categoryBadge": "Business Ops · E-Commerce",
+      "title": "Margin-Protected Commerce Ops & Storefront Verification",
+      "painPoint": "Bulk campaign discounts risk below-cost pricing errors, and storefront layout bugs often go unnoticed right after promotions launch.",
+      "expectedOutcome": "Safely adjust prices with margin guardrails, verify changes live on the buyer storefront, and run automated UI checks with SyncETA.",
+      "targetPersona": "Commerce Operators · Merchandisers (MD) · QA Teams",
+      "summary": "Review margin-protected catalog and promotion controls in SyncShop Admin, inspect the live buyer storefront, and verify campaign pages automatically with SyncETA.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. Catalog, Margin & Promotions (SyncShop) → 2. Live Storefront Check (SyncShop Store) → 3. Automated Storefront QA (SyncETA)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-shop",
+          "productName": "SyncShop",
+          "actionTitle": "Margin Guardrails, Pricing & Campaign Management",
+          "actionDetail": "Manage product pricing and inventory with minimum-margin checks, snapshot rollback, flash deals, coupons, and order fulfillment.",
+          "subdomain": "shop-admin.empasy.io",
+          "demoUrl": "https://shop-admin.empasy.io/pms/product",
+          "menuPath": "Products > Catalog · Promotions > Flash Sales & Coupons",
+          "tryPoint": "Review product pricing and inventory tables alongside flash sale and order fulfillment views.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-shop",
+          "productName": "SyncShop",
+          "actionTitle": "Verify Live Buyer Storefront & Cart Flow",
+          "actionDetail": "Experience how products, pricing, and active campaigns configured in the admin console render on the customer-facing storefront.",
+          "subdomain": "shop-app.empasy.io",
+          "demoUrl": "https://shop-app.empasy.io",
+          "menuPath": "Storefront Home · Product Detail · Shopping Cart",
+          "tryPoint": "Browse products, add items to the cart, and sign in with the same unified demo account to test checkout.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Demo Account",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-eta",
+          "productName": "SyncETA",
+          "actionTitle": "Automated Promotion & Checkout Page Diagnostics",
+          "actionDetail": "Scan product and checkout pages before and after campaign launches for broken links or text overlaps and re-verify tickets in one click.",
+          "subdomain": "eta-admin.empasy.io",
+          "demoUrl": "https://eta-admin.empasy.io/eta/dashboard",
+          "secondaryLink": {
+            "label": "Download PC App ↗",
+            "url": "https://empasy.io/en/download_eta.html"
+          },
+          "menuPath": "Project Dashboard · Defect Diagnostics · Bug Kanban",
+          "tryPoint": "Review scheduled check reports and one-click [Check Now] defect re-verification tickets.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-si-ops-flow",
+      "categoryBadge": "Business Ops · SI Project Management",
+      "title": "SI Project P&L, Staffing & Executive Analytics",
+      "painPoint": "Tracking project effort, actual labor cost, and statutory bond deadlines across spreadsheets delays margin risk detection.",
+      "expectedOutcome": "Manage project P&L, surety deadlines, and staffing Gantt charts on SyncBoot permissions, then inspect executive variance reports via SyncInsight inside SyncVerse.",
+      "targetPersona": "Executives · PMO · Project Managers · Finance Teams",
+      "summary": "Inspect role-based access in SyncBoot, review project P&L, surety alerts, and staffing schedules in SyncOps, and explore executive reports in SyncVerse's integrated SyncInsight.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. Role-Based Access Base (SyncBoot) → 2. Project P&L, Bonds & Staffing (SyncOps) → 3. Executive Reports (SyncInsight · In SyncVerse)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-boot",
+          "productName": "SyncBoot",
+          "actionTitle": "Role-Based Access Scope & Audit Trail Foundation",
+          "actionDetail": "Inspect the standardized org-chart permission model and audit logs that govern what executives, PMs, and finance staff can view.",
+          "subdomain": "boot-admin.empasy.io",
+          "demoUrl": "https://boot-admin.empasy.io/system/user",
+          "menuPath": "System > Users & Roles · Audit Logs",
+          "tryPoint": "Check org-linked user accounts and fine-grained menu and action permission controls.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-ops",
+          "productName": "SyncOps",
+          "actionTitle": "Contract vs. Actual P&L, Bonds & Staffing Gantt",
+          "actionDetail": "Monitor project profitability matrices, 4-type surety bond and subcontracting deadline alerts, and skill-grade staffing Gantt charts.",
+          "subdomain": "ops-admin.empasy.io",
+          "demoUrl": "https://ops-admin.empasy.io/executive/profit-matrix",
+          "menuPath": "Profitability Matrix · Compliance Alerts · Staffing Gantt",
+          "tryPoint": "Spot cost-overrun risk indicators, upcoming surety bond expirations, and monthly staffing allocations.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-insight",
+          "productName": "SyncInsight",
+          "integrationBadge": "In SyncVerse",
+          "actionTitle": "Executive Summary Reports on Connected Project Data",
+          "actionDetail": "Inspect variance summary reports and data lineage directly inside SyncVerse [Data Analytics], connected read-only to the SyncOps database.",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/analytics/research",
+          "menuPath": "SyncVerse Console > Data Analytics > Reports · Data Flow",
+          "tryPoint": "Open a summary report and data lineage map to trace how executive metrics tie back to source tables.",
+          "recommendedAccount": {
+            "roleLabel": "Unified Admin",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    }
+  ],
+  "topologyNodes": [
+    {
+      "id": "node-sync-verse",
+      "productId": "sync-verse",
+      "label": "SyncVerse",
+      "tierLevel": 1,
+      "roleSummary": "Collaboration & Approvals",
+      "shortTag": "Central Hub",
+      "architectureZone": "flagship",
+      "isHub": true,
+      "subdomain": "verse.empasy.io",
+      "connectedTo": ["sync-eta", "sync-boot", "sync-cms", "sync-insight", "sync-llm", "sync-crawl", "sync-apim", "sync-watch", "sync-shop", "sync-ops"],
+      "protocolLabel": "REST · MCP Hub"
+    },
+    {
+      "id": "node-sync-eta",
+      "productId": "sync-eta",
+      "label": "SyncETA",
+      "tierLevel": 1,
+      "roleSummary": "Web UI Checking",
+      "shortTag": "UI Testing",
+      "architectureZone": "flagship",
+      "subdomain": "eta.empasy.io",
+      "connectedTo": ["sync-verse", "sync-cms", "sync-shop"],
+      "protocolLabel": "REST · Desktop App"
+    },
+    {
+      "id": "node-sync-boot",
+      "productId": "sync-boot",
+      "label": "SyncBoot",
+      "tierLevel": 1,
+      "roleSummary": "Internal Admin Base",
+      "shortTag": "Shared Core",
+      "architectureZone": "flagship",
+      "isFoundation": true,
+      "subdomain": "boot.empasy.io",
+      "connectedTo": ["sync-verse", "sync-ops", "sync-cms", "sync-shop", "sync-apim"],
+      "protocolLabel": "Shared Roles · REST"
+    },
+    {
+      "id": "node-sync-cms",
+      "productId": "sync-cms",
+      "label": "SyncCMS",
+      "tierLevel": 1,
+      "roleSummary": "Websites & Languages",
+      "shortTag": "Content CMS",
+      "architectureZone": "flagship",
+      "subdomain": "cms.empasy.io",
+      "connectedTo": ["sync-verse", "sync-eta", "sync-boot", "sync-llm"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-insight",
+      "productId": "sync-insight",
+      "label": "SyncInsight",
+      "tierLevel": 2,
+      "roleSummary": "Ask Data in Plain Text",
+      "shortTag": "Data Query",
+      "architectureZone": "data-ai",
+      "subdomain": "insight.empasy.io",
+      "connectedTo": ["sync-verse", "sync-crawl", "sync-llm", "sync-ops"],
+      "protocolLabel": "Built into SyncVerse"
+    },
+    {
+      "id": "node-sync-llm",
+      "productId": "sync-llm",
+      "label": "SyncLLM",
+      "tierLevel": 2,
+      "roleSummary": "AI Budget & Privacy",
+      "shortTag": "AI Gateway",
+      "architectureZone": "data-ai",
+      "subdomain": "llm.empasy.io",
+      "connectedTo": ["sync-verse", "sync-insight", "sync-crawl", "sync-cms"],
+      "protocolLabel": "AI Proxy · MCP"
+    },
+    {
+      "id": "node-sync-crawl",
+      "productId": "sync-crawl",
+      "label": "SyncCrawl",
+      "tierLevel": 2,
+      "roleSummary": "Public Web Collection",
+      "shortTag": "Web Crawl",
+      "architectureZone": "data-ai",
+      "subdomain": "crawl.empasy.io",
+      "connectedTo": ["sync-verse", "sync-insight", "sync-llm"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-apim",
+      "productId": "sync-apim",
+      "label": "SyncAPIM",
+      "tierLevel": 2,
+      "roleSummary": "External API Visibility",
+      "shortTag": "API Security",
+      "architectureZone": "security",
+      "subdomain": "apim.empasy.io",
+      "connectedTo": ["sync-verse", "sync-watch", "sync-boot"],
+      "protocolLabel": "REST · Security"
+    },
+    {
+      "id": "node-sync-watch",
+      "productId": "sync-watch",
+      "label": "SyncWatch",
+      "tierLevel": 2,
+      "roleSummary": "Security Advisories",
+      "shortTag": "Vuln Alerts",
+      "architectureZone": "security",
+      "subdomain": "watch.empasy.io",
+      "connectedTo": ["sync-verse", "sync-apim"],
+      "protocolLabel": "Advisory Feed · MCP"
+    },
+    {
+      "id": "node-sync-shop",
+      "productId": "sync-shop",
+      "label": "SyncShop",
+      "tierLevel": 3,
+      "roleSummary": "Online Store & Pricing",
+      "shortTag": "Store Ops",
+      "architectureZone": "operations",
+      "subdomain": "shop.empasy.io",
+      "connectedTo": ["sync-verse", "sync-eta", "sync-boot"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-ops",
+      "productId": "sync-ops",
+      "label": "SyncOps",
+      "tierLevel": 3,
+      "roleSummary": "Project Cost & Staffing",
+      "shortTag": "Project P&L",
+      "architectureZone": "operations",
+      "subdomain": "ops.empasy.io",
+      "connectedTo": ["sync-verse", "sync-boot", "sync-insight"],
+      "protocolLabel": "REST · MCP"
+    }
+  ],
+  "products": [
+    {
+      "id": "sync-verse",
+      "name": "SyncVerse",
+      "subtitle": "Manage planning, development, review, and approval in one workspace",
+      "englishRoleBadge": "SyncSeries Flagship · Unified Collaboration & Approval",
+      "category": "flagship",
+      "tierBadge": "Flagship Solution",
+      "subdomain": "verse.empasy.io",
+      "repoPath": "sync-verse",
+      "canonicalApiPrefix": "/api/v1/verse",
+      "docUrl": "https://doc.empasy.com/en/syncverse/",
+      "proposalPdfUrl": "/downloads/proposals/SyncVerse_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-verse",
+      "faIconClass": "fas fa-network-wired",
+      "techTags": [],
+      "summary": "Consolidate tasks scattered across messengers, documents, and separate deployment tools in SyncVerse, ensuring critical changes go live only after accountable human review.",
+      "coreCapabilities": [
+        "Unified Enterprise Operations Dashboard",
+        "Staged Role-Based Approval & Audit Trail",
+        "Integrated Planning & Quality Checks"
+      ],
+      "vsLegacyTitle": "Traditional Workflow",
+      "vsLegacyPoints": [
+        "Requirements, system changes, test results, and approval records are scattered across separate tools, obscuring overall progress.",
+        "When an issue occurs after a change goes live, tracing who changed what and rolling back takes significant time.",
+        "Teams must sign in separately to admin consoles, websites, and testing tools to coordinate releases."
+      ],
+      "vsAgentTitle": "With SyncVerse",
+      "vsAgentPoints": [
+        "Track requirements, task execution, quality verification, and approval history sequentially in one workspace.",
+        "Reviewers compare before/after diffs before approving critical changes and can restore previous versions whenever needed.",
+        "Connect other Empasy modules as needed to unify cross-department workflows in a single console."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Unified Enterprise Operations Dashboard",
+          "description": "Monitor active tasks, pending approvals, and connected module health on one screen to identify bottlenecks quickly."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Staged Role-Based Approval & Audit Trail",
+          "description": "Planners, engineers, security leads, and operators inspect before/after diffs by role to approve or reject changes with full traceability."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Integrated Planning & Quality Checks",
+          "description": "Review requirement specs alongside test results and site quality diagnostics together to eliminate pre-release omissions."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Structure Work Requests",
+          "description": "Planners or operators enter requested changes, and SyncVerse organizes actionable task lists and review drafts."
+        },
+        {
+          "stepNo": 2,
+          "title": "Automated Checks & Diff Comparison",
+          "description": "Before deployment, reviewers inspect quality and security check results alongside clear before/after change diffs."
+        },
+        {
+          "stepNo": 3,
+          "title": "Approved Release & Full Audit Log",
+          "description": "Once authorized reviewers approve, changes are applied and recorded permanently in the approval and change ledger."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we adopt SyncVerse standalone without other Empasy products?",
+          "answer": "Yes. You can adopt SyncVerse alone for work intake and staged approval governance, then connect modules like SyncETA or SyncBoot whenever needed."
+        },
+        {
+          "question": "Are critical system changes applied automatically without human review?",
+          "answer": "No. Production releases and sensitive structural changes require explicit review and approval from authorized reviewers, and can be halted immediately if any anomaly is found."
+        },
+        {
+          "question": "Can SyncVerse run in air-gapped or private enterprise networks?",
+          "answer": "Yes. Alongside cloud deployment, SyncVerse supports on-premises installation directly on your internal servers."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Super Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to dashboards, final approvals, and all administrative menus."
+        },
+        {
+          "roleTitle": "Service Planner",
+          "accountId": "sync_planner",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Experience requirement intake and planning-stage review and approval workflows."
+        },
+        {
+          "roleTitle": "Tech Lead",
+          "accountId": "sync_techlead",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Sign in with technical review and before/after diff approval permissions."
+        },
+        {
+          "roleTitle": "QA Specialist",
+          "accountId": "sync_qa",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Explore test result verification and quality review approval stages."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "verse-app",
+          "label": "Unified Workspace",
+          "description": "Primary workspace where planners, developers, QA, and operators collaborate on requirements, reviews, and approvals.",
+          "badgeText": "verse-app.empasy.io",
+          "cloudUrl": "https://verse-app.empasy.io",
+          "buttonLabel": "Open Workspace",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "verse-studio",
+          "label": "Code Studio",
+          "description": "Dedicated code workspace for editing, verifying, and opening PRs on branches created from workspace conversations.",
+          "badgeText": "verse-studio.empasy.io",
+          "cloudUrl": "https://verse-studio.empasy.io",
+          "buttonLabel": "Open Studio",
+          "isPrimary": false,
+          "isDownload": false
+        },
+        {
+          "id": "verse-admin",
+          "label": "System Admin Console",
+          "description": "Administrative console for monitoring agents, reviewing approval histories, and managing permissions and policies.",
+          "badgeText": "verse-admin.empasy.io",
+          "cloudUrl": "https://verse-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-eta",
+      "name": "SyncETA",
+      "subtitle": "Web Test Automation · Site Audit & Defect Tracking Platform",
+      "englishRoleBadge": "SyncSeries Flagship · Web Test Automation & Site Audit",
+      "category": "flagship",
+      "tierBadge": "Flagship Solution",
+      "subdomain": "eta.empasy.io",
+      "repoPath": "sync-eta",
+      "canonicalApiPrefix": "/api/v1/eta",
+      "docUrl": "https://doc.empasy.com/en/synceta/",
+      "proposalPdfUrl": "/downloads/proposals/SyncETA_Proposal.pdf",
+      "demoMode": "hybrid",
+      "downloadAssets": [
+        {
+          "id": "sync-eta-official-download",
+          "label": "SyncETA Desktop App Download (Official Empasy)",
+          "versionBadge": "Windows · macOS",
+          "platformBadge": "Official empasy.io Page",
+          "description": "Download the SyncETA desktop app to record browser actions, convert Excel test sheets, run full link and design audits, and re-verify bugs in one click.",
+          "downloadUrl": "https://empasy.io/en/download_eta.html",
+          "buttonLabel": "Download SyncETA",
+          "isDirectDownload": false,
+          "isPrimary": true
+        }
+      ],
+      "iconBoxClass": "agent-icon-eta",
+      "faIconClass": "fas fa-vial",
+      "techTags": [],
+      "summary": "Verify hundreds of regional and product pages using representative and sample URLs, record only verified items as passed, and honestly flag uncertain screens as [Needs Review] with screenshots.",
+      "coreCapabilities": [
+        "Browser Action Recorder (Security Keypad & Cookie Banner Bypass)",
+        "Excel / One-Line Prompt Conversion & Multi-Account Testing",
+        "Full Link & Layout Overlap Audit + Bug Kanban One-Click Recheck"
+      ],
+      "vsLegacyTitle": "Manual QA Today",
+      "vsLegacyPoints": [
+        "Time limits force teams to manually check only one or two of hundreds of regional/product pages, while minor layout changes break scripts.",
+        "Virtual security keypads and global cookie popups halt automation, leaving subtle text overlaps and broken 404 links to manual eye checks.",
+        "Unchecked areas risk slipping through as passed, and every bug requires manual spreadsheet screenshots and full re-clicks after fixes."
+      ],
+      "vsAgentTitle": "With SyncETA",
+      "vsAgentPoints": [
+        "Cover multi-region/product pages via representative & sample URLs using recording, Excel, or one-line prompts with automatic UI relocation.",
+        "Bypass virtual keypads and cookie banners automatically, and audit every sub-link (404) and layout overlap without pre-written scripts.",
+        "Count only verified checks as passed, flag uncertain screens as [Needs Review], and re-verify photo Kanban tickets with one click on [Check Now]."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Browser Action Recorder",
+          "description": "Record clicks, inputs, and scrolls into reusable action blocks while automatically handling security virtual keypads, global cookie consent banners, and personal data masking."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Excel & One-Line Prompt Test Conversion",
+          "description": "Upload existing Excel/CSV test sheets or type a single sentence to generate checks, backed by representative/sample URL targeting and pre-run validation."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Multi-Account Simultaneous Testing",
+          "description": "Open two isolated browser sessions side by side (such as customer and admin) to verify real-time cross-role workflows and separate per-role logs."
+        },
+        {
+          "badgeNo": "04",
+          "title": "Full Link & Visual Defect Audit",
+          "description": "Without pre-built scenarios, crawl sub-links via a site knowledge graph to catch 404 errors, destination mismatches, text overlaps, empty regions, and broken media playback."
+        },
+        {
+          "badgeNo": "05",
+          "title": "Bug Kanban Board & [Check Now] Recheck",
+          "description": "Auto-create tickets with defect captures across Backlog, Open, Resolved, and Closed stages, block duplicate tickets, remember [Not a Bug] decisions, and re-verify in one click."
+        },
+        {
+          "badgeNo": "06",
+          "title": "Honest [Needs Review] Triage & Scheduled Audits",
+          "description": "Count only verified checks as passed, separate uncertain screens with screenshots, and connect scheduled runs with Jira, Jenkins, GitHub Actions, and Slack."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Phase 1 · Prepare Check Scenarios",
+          "description": "Record browser actions or convert existing Excel sheets and one-line prompts, then pre-validate against sample URLs to prevent brittle tests."
+        },
+        {
+          "stepNo": 2,
+          "title": "Phase 2 · Auto-Execute & Classify Screens",
+          "description": "Launch real browsers to audit sub-links and layout overlaps, relocate shifted buttons automatically, and classify results into Pass, Defect, or [Needs Review]."
+        },
+        {
+          "stepNo": 3,
+          "title": "Phase 3 · Track Defects & One-Click Recheck",
+          "description": "Review failure videos, plain-language causes, and photo-attached Kanban tickets, then verify fixes immediately with the [Check Now] button."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can non-developer QA staff or service operators use SyncETA immediately?",
+          "answer": "Yes. Anyone can record everyday browser clicks, upload existing Excel/CSV test sheets, or run one-line prompts like checking sub-links and layout overlaps without writing test code."
+        },
+        {
+          "question": "Does it keep working when virtual security keypads or global cookie banners appear?",
+          "answer": "Yes. SyncETA recognizes financial virtual security keypads, automatically closes global cookie consent popups, and masks sensitive personal information in recordings and captures."
+        },
+        {
+          "question": "How can we verify actual ROI without relying on exaggerated claims?",
+          "answer": "Multi-page sampling, scenario-free link and overlap audits, keypad/cookie handling, photo-attached Kanban tickets, and one-click [Check Now] re-verification are guaranteed from day one. Time savings and pre-release defect counts are measured directly during a 2–4 week pilot on one live site."
+        },
+        {
+          "question": "Can we apply SyncETA to live websites and closed intranet systems?",
+          "answer": "Yes. You can test existing websites without modifying application code, and run locally via the desktop app or on-premise server for VPN and air-gapped intranet systems."
+        },
+        {
+          "question": "Does SyncETA integrate with Jira, Jenkins, GitHub Actions, and Slack?",
+          "answer": "Yes. Alongside its built-in Bug Kanban board, SyncETA connects with Jira issue tracking, Jenkins and GitHub Actions deployment pipelines, and Slack or email alerts."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Web Console Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to test dashboards, recovery logs, and visual audit reports."
+        },
+        {
+          "roleTitle": "QA Lead Reviewer",
+          "accountId": "qalead",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focused on execution history review, defect triage, and re-verification workflows."
+        },
+        {
+          "roleTitle": "Desktop App Sync Account",
+          "accountId": "admin@empasy.com",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Sign in from the SyncETA desktop app to synchronize recorded scenarios and reports."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "eta-download",
+          "label": "SyncETA Desktop App Download",
+          "badgeText": "empasy.io/en/download_eta.html",
+          "cloudUrl": "https://empasy.io/en/download_eta.html",
+          "buttonLabel": "Open Download Page",
+          "isPrimary": true,
+          "isDownload": true
+        },
+        {
+          "id": "eta-proposal",
+          "label": "SyncETA Product Brochure PDF (15p)",
+          "badgeText": "SyncETA_Proposal.pdf",
+          "cloudUrl": "/downloads/proposals/SyncETA_Proposal.pdf",
+          "buttonLabel": "Open Brochure PDF",
+          "isPrimary": false,
+          "isDownload": true
+        },
+        {
+          "id": "eta-admin",
+          "label": "Shared Web Management Console (Live Demo)",
+          "badgeText": "eta-admin.empasy.io",
+          "cloudUrl": "https://eta-admin.empasy.io",
+          "buttonLabel": "Try Web Console",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-boot",
+      "name": "SyncBoot",
+      "subtitle": "Standardized core for internal admin systems: sign-in, permissions, and e-approvals",
+      "englishRoleBadge": "SyncSeries Flagship · Enterprise Business System Core",
+      "category": "flagship",
+      "tierBadge": "Flagship Solution",
+      "subdomain": "boot.empasy.io",
+      "repoPath": "sync-boot",
+      "canonicalApiPrefix": "/api/v1/boot",
+      "docUrl": "https://doc.empasy.com/en/syncboot/",
+      "proposalPdfUrl": "/downloads/proposals/SyncBoot_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-boot",
+      "faIconClass": "fas fa-server",
+      "techTags": [],
+      "summary": "The proven shared foundation powering Empasy's business modules, freeing teams from repetitive boilerplate so they can focus on core business features.",
+      "coreCapabilities": [
+        "Org-Linked Menu & Button Permissions",
+        "Enterprise E-Approval & Operational Reports",
+        "Admin Activity Audit Logging"
+      ],
+      "vsLegacyTitle": "Traditional Back-Office Builds",
+      "vsLegacyPoints": [
+        "Every new internal project re-implements sign-in, org trees, role-based menu permissions, and audit logs from scratch.",
+        "Adding a menu item or adjusting access permissions requires code changes and redeployment.",
+        "Inconsistent layouts across departmental systems increase onboarding friction and maintenance costs."
+      ],
+      "vsAgentTitle": "With SyncBoot",
+      "vsAgentPoints": [
+        "Org hierarchy, menu and button-level access control, multi-step e-approvals, and audit trails come ready out of the box.",
+        "Configure menus and permissions directly from the admin console with immediate effect.",
+        "Expand and maintain multiple enterprise systems on a unified interface and governance standard."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Org-Linked Menu & Button Permissions",
+          "description": "Control not only accessible screens by department and role, but also granular button actions such as view, edit, and approve."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Enterprise E-Approval & Operational Reports",
+          "description": "Standardized drafting, multi-step approval lines, approval history tracking, Excel export, and executive summary reports."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Admin Activity Audit Logging",
+          "description": "Record who accessed or modified data and when across screens to support internal compliance and security audits."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Register Org & Role Structure",
+          "description": "Import departments and job roles and configure the baseline menu hierarchy."
+        },
+        {
+          "stepNo": 2,
+          "title": "Attach Business Screens & Approval Flows",
+          "description": "Place custom business screens and electronic approval forms into the standardized workspace layout."
+        },
+        {
+          "stepNo": 3,
+          "title": "Operate Permissions & Review Audits",
+          "description": "Adjust access immediately during reorganizations or staff transfers while tracking complete change logs."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can SyncBoot integrate with our existing corporate accounts or HR directory?",
+          "answer": "Yes. It supports integration with existing groupware, enterprise authentication systems, and HR organization trees without duplicate account upkeep."
+        },
+        {
+          "question": "Does adopting SyncBoot make it easy to add other Empasy modules later?",
+          "answer": "Yes. Empasy modules share the same core foundation and permission structure, allowing seamless expansion without separate sign-ins or inconsistent UI."
+        },
+        {
+          "question": "Can we build custom business screens unique to our organization?",
+          "answer": "Absolutely. SyncBoot is an extensible enterprise foundation rather than a closed package, making it straightforward to add bespoke workflows."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Super Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to user/department permissions, e-approvals, reports, and activity audit logs."
+        },
+        {
+          "roleTitle": "Operations Manager",
+          "accountId": "emp_manager",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Sign in as a department manager to verify role-scoped menu visibility."
+        },
+        {
+          "roleTitle": "Security Auditor",
+          "accountId": "emp_auditor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Inspect activity audit logs and security review menus."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "boot-admin",
+          "label": "Internal Admin System Console",
+          "badgeText": "boot-admin.empasy.io",
+          "cloudUrl": "https://boot-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-cms",
+      "name": "SyncCMS",
+      "subtitle": "Manage websites from drafting to review and multilingual publishing in one place",
+      "englishRoleBadge": "SyncSeries Flagship · Website & Multilingual CMS",
+      "category": "flagship",
+      "tierBadge": "Flagship Solution",
+      "subdomain": "cms.empasy.io",
+      "repoPath": "sync-cms",
+      "canonicalApiPrefix": "/api/v1/cms",
+      "docUrl": "https://doc.empasy.com/en/synccms/",
+      "proposalPdfUrl": "/downloads/proposals/SyncCMS_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-cms",
+      "faIconClass": "fas fa-layer-group",
+      "techTags": [],
+      "summary": "Bring structured review, approval, and translation governance to announcements, press releases, and brand pages as your digital footprint grows.",
+      "coreCapabilities": [
+        "Multi-Site Unified Content Management",
+        "Draft, Review & Publish Approval Flow",
+        "SEO Audit & Multilingual Draft Support"
+      ],
+      "vsLegacyTitle": "Traditional Website Operations",
+      "vsLegacyPoints": [
+        "Separate websites per brand or region force teams to apply identical copy updates manually across multiple portals.",
+        "Review and sign-off via email or chat make it easy to lose track of final approved drafts.",
+        "Missing search metadata or image alt text frequently slip past manual pre-publish checks."
+      ],
+      "vsAgentTitle": "With SyncCMS",
+      "vsAgentPoints": [
+        "Operate multiple brand and regional multilingual sites from one unified management console.",
+        "Track every step from drafting, review, approval, and scheduled publishing to instant version rollback.",
+        "Check SEO essentials, web accessibility basics, and accidental sensitive data exposure before going live."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Multi-Site Unified Content Management",
+          "description": "Organize corporate sites, product microsites, and regional portals cleanly within a single admin workspace."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Draft, Review & Publish Approval Flow",
+          "description": "Separate author, reviewer, and publisher roles to prevent typos or unapproved copy from going live accidentally."
+        },
+        {
+          "badgeNo": "03",
+          "title": "SEO Audit & Multilingual Draft Support",
+          "description": "Audit search and accessibility fundamentals and draft English, Japanese, and Chinese localizations aligned to your glossary."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Author & Prepare Drafts",
+          "description": "Write announcements, blogs, and landing pages in the editor with images and search summaries."
+        },
+        {
+          "stepNo": 2,
+          "title": "Quality Check & Localization",
+          "description": "Review pre-publish SEO and accessibility checks alongside glossary-guided multilingual drafts."
+        },
+        {
+          "stepNo": 3,
+          "title": "Approve & Publish Safely",
+          "description": "Publish immediately or on schedule after owner approval, with previous versions archived for quick rollback."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we manage multiple brand sites and overseas regional websites together?",
+          "answer": "Yes. One management console separates menus, access permissions, and localized versions per site cleanly."
+        },
+        {
+          "question": "Can our team edit and review translated copy before it goes live?",
+          "answer": "Yes. AI translation drafts are always reviewed, edited, and approved by designated editors before publishing."
+        },
+        {
+          "question": "Can we keep our existing website design and adopt only content management?",
+          "answer": "Yes. SyncCMS can power authoring, publishing, and localization behind your existing website design."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Content Super Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full permissions for site administration, publishing approval, quality audits, and localization."
+        },
+        {
+          "roleTitle": "Editor & Publisher",
+          "accountId": "editor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Review drafts and complete final publishing approval workflows."
+        },
+        {
+          "roleTitle": "Content Author",
+          "accountId": "writer",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Experience drafting articles and submitting them for editorial review."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "cms-admin",
+          "label": "Content Management Console",
+          "badgeText": "cms-admin.empasy.io",
+          "cloudUrl": "https://cms-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "cms-app",
+          "label": "Published Website Preview",
+          "badgeText": "cms-app.empasy.io",
+          "cloudUrl": "https://cms-app.empasy.io",
+          "buttonLabel": "Open Website",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-insight",
+      "name": "SyncInsight",
+      "subtitle": "Ask in plain language and get tables and charts without query syntax",
+      "englishRoleBadge": "SyncSeries Data & AI Module · Integrated in SyncVerse",
+      "category": "data-ai",
+      "tierBadge": "Extension Module",
+      "integrationBadge": "In SyncVerse",
+      "subdomain": "insight.empasy.io",
+      "repoPath": "sync-insight",
+      "canonicalApiPrefix": "/api/v1/insight",
+      "docUrl": "https://doc.empasy.com/en/syncinsight/",
+      "proposalPdfUrl": "/downloads/proposals/SyncInsight_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-insight",
+      "faIconClass": "fas fa-chart-line",
+      "techTags": [],
+      "summary": "Eliminate back-and-forth engineering requests for routine aggregations and empower business users to explore operational data safely on their own.",
+      "coreCapabilities": [
+        "Natural-Language Data Querying & Charts",
+        "Automated Variance Summary Reports",
+        "Multi-Source Connection & Data Lineage"
+      ],
+      "vsLegacyTitle": "Traditional Data Lookup",
+      "vsLegacyPoints": [
+        "Checking any filter missing from fixed dashboards requires waiting days for engineering or data teams to pull extracts.",
+        "Non-technical staff struggle with query syntax and end up merging spreadsheet exports manually.",
+        "It is hard to verify which source tables and calculations produced a reported KPI number."
+      ],
+      "vsAgentTitle": "With SyncInsight",
+      "vsAgentPoints": [
+        "Ask everyday questions like \"Show last quarter's sales trend by category\" and view live tables and charts immediately.",
+        "Read-only execution guarantees production operational data can never be accidentally modified or deleted.",
+        "Transparently displays both generated query criteria and data lineage graphs so analysts can verify every figure."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Natural-Language Data Querying & Charts",
+          "description": "Automatically builds query conditions from plain-language questions, visualizes tables and charts, and exposes the underlying criteria clearly."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Automated Variance Summary Reports",
+          "description": "Goes beyond raw totals to organize key change drivers and supporting references into ready-to-review report drafts."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Multi-Source Connection & Data Lineage",
+          "description": "Connect multiple internal operational databases in one place and trace how each metric flows from original source records."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Connect Read-Only Data Sources",
+          "description": "Safely link operational replicas or analytics databases with strict read-only permissions."
+        },
+        {
+          "stepNo": 2,
+          "title": "Ask Questions in Plain Language",
+          "description": "Type sales, order, or operations questions directly or start from curated recommended prompts."
+        },
+        {
+          "stepNo": 3,
+          "title": "Verify Charts, Evidence & Share",
+          "description": "Inspect generated tables, charts, and query logic, then share findings directly into reports or meetings."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Could a mistaken prompt alter or delete our production data?",
+          "answer": "No. SyncInsight enforces strict read-only querying and blocks any data-modifying or destructive commands at execution time."
+        },
+        {
+          "question": "How can we verify that AI-generated figures are accurate?",
+          "answer": "Alongside every chart, SyncInsight displays the exact underlying query conditions and raw result rows so owners can verify results directly."
+        },
+        {
+          "question": "Can we keep internal business data from leaving our network to external AI services?",
+          "answer": "Yes. You can deploy on-premises or combine SyncInsight with SyncLLM sensitive-data masking to prevent external data exposure."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Super Admin (Unified)",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Access all SyncInsight menus inside SyncVerse, including Data Q&A, Reports, Data Flow, and Connected DBs."
+        },
+        {
+          "roleTitle": "Analytics & Planning Specialist",
+          "accountId": "sync_planner",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Explore conversational querying, summary research reports, and data lineage maps (excluding DB settings)."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "insight-workbench",
+          "label": "SyncVerse Integrated Analytics Console",
+          "description": "Access Data Q&A, summary reports, data lineage, and connected DBs directly from the [Data Analytics] menu inside SyncVerse Admin Console.",
+          "badgeText": "verse-admin.empasy.io/analytics/nl2sql",
+          "cloudUrl": "https://verse-admin.empasy.io/analytics/nl2sql",
+          "buttonLabel": "Open Analytics",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "insight-workspace-nl2sql",
+          "label": "SyncVerse Unified Workspace Data Q&A",
+          "description": "Run the same conversational data queries directly inside the SyncVerse Unified Workspace.",
+          "badgeText": "verse-app.empasy.io/knowledge/nl2sql",
+          "cloudUrl": "https://verse-app.empasy.io/knowledge/nl2sql",
+          "buttonLabel": "Query in Workspace",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-llm",
+      "name": "SyncLLM",
+      "subtitle": "Connect multiple AI models in one gateway to govern cost and privacy together",
+      "englishRoleBadge": "SyncSeries Data & AI Module · Enterprise AI Cost & Privacy",
+      "category": "data-ai",
+      "tierBadge": "Extension Module",
+      "subdomain": "llm.empasy.io",
+      "repoPath": "sync-llm",
+      "canonicalApiPrefix": "/api/v1/llm",
+      "docUrl": "https://doc.empasy.com/en/syncllm/",
+      "proposalPdfUrl": "/downloads/proposals/SyncLLM_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-llm",
+      "faIconClass": "fas fa-microchip",
+      "techTags": [],
+      "summary": "Calmly control the biggest concerns in enterprise generative AI adoption—rising usage costs, single-provider outages, and sensitive data leaks—through a centralized governance layer.",
+      "coreCapabilities": [
+        "Similar-Query Reuse & Smart Model Routing",
+        "Auto Sensitive-Data Masking & Audit Logs",
+        "Automatic Failover to Backup Models"
+      ],
+      "vsLegacyTitle": "Fragmented AI Integration",
+      "vsLegacyPoints": [
+        "Departments issue separate AI service accounts, making total spending and departmental attribution opaque.",
+        "Customer phone numbers, IDs, or confidential details typed by staff risk being sent directly to external providers.",
+        "An outage or slowdown at one AI vendor immediately stalls connected internal workflows."
+      ],
+      "vsAgentTitle": "With SyncLLM",
+      "vsAgentPoints": [
+        "Connect commercial AI services and private internal server models through one entry point with clear departmental budgets.",
+        "Reuse verified responses for recurring similar prompts and mask personal-data patterns automatically before transmission.",
+        "Fail over automatically to preconfigured backup models whenever a primary provider slows down or errors out."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Similar-Query Reuse & Smart Model Routing",
+          "description": "Route simple summaries to lightweight models, complex reasoning to flagship models, and reuse repeat answers to cut redundant spend."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Auto Sensitive-Data Masking & Audit Logs",
+          "description": "Mask predefined personal identifiers, phone numbers, and account numbers prior to dispatch while logging every request cleanly."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Automatic Failover to Backup Models",
+          "description": "Monitor health across commercial and private models and route around outages smoothly using prioritized failover chains."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Connect Active AI Providers",
+          "description": "Register commercial AI accounts or private internal model servers in the management console."
+        },
+        {
+          "stepNo": 2,
+          "title": "Set Budget Caps & Privacy Rules",
+          "description": "Define monthly department quotas, backup model priorities, and sensitive patterns to mask automatically."
+        },
+        {
+          "stepNo": 3,
+          "title": "Monitor Usage, Savings & Masking",
+          "description": "Track per-model spend trends, similar-query savings, and masking audit trails continuously on the dashboard."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does connecting SyncLLM require heavy changes to our existing internal services?",
+          "answer": "No. SyncLLM supports standard AI connection endpoints, so most services integrate by updating only the connection URL and credentials. Technical details are available at doc.empasy.com/en/syncllm/."
+        },
+        {
+          "question": "Can we connect only our self-hosted internal models without external cloud AI?",
+          "answer": "Yes. You can connect private on-premises models exclusively and operate safely inside air-gapped networks."
+        },
+        {
+          "question": "What happens when a department reaches its budget limit?",
+          "answer": "Administrators can configure threshold alerts (such as 80% and 100%) or enforce soft/hard usage limits per policy."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "AI Gateway Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to cost dashboards, provider connections, budget caps, and privacy masking logs."
+        },
+        {
+          "roleTitle": "AI Operations Manager",
+          "accountId": "emp_manager",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on daily usage trends and request audit log inspection."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "llm-admin",
+          "label": "Enterprise AI Management Console",
+          "badgeText": "llm-admin.empasy.io",
+          "cloudUrl": "https://llm-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-crawl",
+      "name": "SyncCrawl",
+      "subtitle": "Automated web data collection that keeps running even when sites redesign",
+      "englishRoleBadge": "SyncSeries Data & AI Module · Automated Web Data Collection",
+      "category": "data-ai",
+      "tierBadge": "Extension Module",
+      "subdomain": "crawl.empasy.io",
+      "repoPath": "sync-crawl",
+      "canonicalApiPrefix": "/api/v1/crawl",
+      "docUrl": "https://doc.empasy.com/en/synccrawl/",
+      "proposalPdfUrl": "/downloads/proposals/SyncCrawl_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-crawl",
+      "faIconClass": "fas fa-spider",
+      "techTags": [],
+      "summary": "Reduce the constant maintenance burden of brittle scrapers whenever websites redesign, while governing schedules and polite compliance rules from one screen.",
+      "coreCapabilities": [
+        "Unified Target & Schedule Management",
+        "Noise Removal & Privacy Cleanup",
+        "Compliant Rate-Limit & Safety Policies"
+      ],
+      "vsLegacyTitle": "Traditional Web Scraping",
+      "vsLegacyPoints": [
+        "Minor HTML or menu changes on target websites break collection scripts, requiring repeated engineering fixes.",
+        "Raw collected pages mix ads, navigation boilerplate, and duplicates that take hours to clean before analysis.",
+        "Managing schedules, rate limits, and site access rules per job creates operational blind spots."
+      ],
+      "vsAgentTitle": "With SyncCrawl",
+      "vsAgentPoints": [
+        "Uses page context to locate target fields reliably, minimizing rework when source layouts change.",
+        "Strips ads and navigation clutter automatically, saving structured fields and clean body documents.",
+        "Controls target sites, schedules, crawl-permission compliance, and rate limits centrally from one console."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Unified Target & Schedule Management",
+          "description": "Configure source URLs, extraction fields, and collection intervals from the console while monitoring pass/fail status live."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Noise Removal & Privacy Cleanup",
+          "description": "Filter out advertisements and menus and mask sensitive personal details so datasets remain clean and compliant."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Compliant Rate-Limit & Safety Policies",
+          "description": "Enforce request rate caps and website collection allowance policies centrally to avoid burdening source hosts."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Register Target Sites & Fields",
+          "description": "Enter public target URLs, desired fields such as title, price, or notice date, and collection frequency."
+        },
+        {
+          "stepNo": 2,
+          "title": "Automated Collection & Cleansing",
+          "description": "Fetch updates on schedule while removing ads, deduplicating records, and normalizing formats automatically."
+        },
+        {
+          "stepNo": 3,
+          "title": "Search, Export & Analyze Data",
+          "description": "Browse or export clean results directly or feed them into internal search and analytics tools."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can SyncCrawl respect target websites' collection rules and rate limits?",
+          "answer": "Yes. Compliance with website allowance policies and per-second request throttling are built in as default safety controls."
+        },
+        {
+          "question": "What formats are supported for collected outputs?",
+          "answer": "Outputs are stored as structured spreadsheets/tables and clean text documents, and connect smoothly to SyncInsight or internal databases."
+        },
+        {
+          "question": "Can it collect modern dynamic pages that load content live?",
+          "answer": "Yes. Real browser rendering support enables reliable collection from both static pages and dynamically loaded public web pages."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Data Collection Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to collection dashboards, target site setup, and normalized document lookup."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "crawl-admin",
+          "label": "Data Collection Console",
+          "badgeText": "crawl-admin.empasy.io",
+          "cloudUrl": "https://crawl-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-apim",
+      "name": "SyncAPIM",
+      "subtitle": "Uncover undocumented integration endpoints and inspect anomalous access",
+      "englishRoleBadge": "SyncSeries Security Module · Integration Discovery & Security",
+      "category": "security",
+      "tierBadge": "Extension Module",
+      "subdomain": "apim.empasy.io",
+      "repoPath": "sync-apim",
+      "canonicalApiPrefix": "/api/v1/apim",
+      "docUrl": "https://doc.empasy.com/en/syncapim/",
+      "proposalPdfUrl": "/downloads/proposals/SyncAPIM_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-apim",
+      "faIconClass": "fas fa-shield-alt",
+      "techTags": [],
+      "summary": "Automatically inventory sprawling service integrations, detect specification drift, and respond rapidly to unauthorized access and data leaks.",
+      "coreCapabilities": [
+        "Automated Shadow Endpoint Discovery",
+        "Spec Drift & Sensitive-Data Audits",
+        "Threat Inspection & Blocking Policies"
+      ],
+      "vsLegacyTitle": "Traditional Integration Security",
+      "vsLegacyPoints": [
+        "Temporary or undocumented endpoints opened during development linger unnoticed, creating security blind spots.",
+        "Sensitive customer fields accidentally included in responses go undetected when specs fall out of date.",
+        "Investigating attack attempts requires sifting slowly through fragmented raw server logs."
+      ],
+      "vsAgentTitle": "With SyncAPIM",
+      "vsAgentPoints": [
+        "Analyzes live traffic automatically to discover and catalog undocumented shadow endpoints.",
+        "Compares official integration specifications against real responses to flag unexpected sensitive-field exposure.",
+        "Inspect detailed anomalous request payloads and apply blocking or masking policies immediately on one screen."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Automated Shadow Endpoint Discovery",
+          "description": "Extract active integration routes and data fields from real traffic to eliminate blind spots missing from specs."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Spec Drift & Sensitive-Data Audits",
+          "description": "Cross-check live responses against registered standard specifications to catch unexpected exposure of personal or account data."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Threat Inspection & Blocking Policies",
+          "description": "Inspect abnormal spikes and attack attempts in detail and apply targeted blocking or masking rules rapidly."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Attach Traffic Inspection",
+          "description": "Connect inline or via zero-impact mirrored inspection to start building an accurate live endpoint inventory."
+        },
+        {
+          "stepNo": 2,
+          "title": "Diagnose Shadow Routes & Exposure",
+          "description": "Prioritize undocumented endpoints and responses carrying unapproved sensitive fields automatically."
+        },
+        {
+          "stepNo": 3,
+          "title": "Enforce Blocking, Masking & Audits",
+          "description": "Apply blocking and field-masking policies to verified threat patterns while recording full governance trails."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Will placing SyncAPIM in front of live services slow down response times?",
+          "answer": "You can begin with zero-impact mirrored inspection to map risks safely, then switch only critical routes to active blocking mode."
+        },
+        {
+          "question": "How does SyncAPIM differ from conventional web firewalls?",
+          "answer": "While traditional firewalls focus on known signature blocking, SyncAPIM specializes in integration security—automatic endpoint inventory, spec drift auditing, and response-level sensitive-data detection. See doc.empasy.com/en/syncapim/ for technical specs."
+        },
+        {
+          "question": "What is the benefit of pairing SyncAPIM with SyncWatch?",
+          "answer": "When SyncWatch organizes newly disclosed vulnerabilities, SyncAPIM lets your team apply corresponding inspection and blocking rules much faster."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Integration Security Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to endpoint inventories, spec drift audits, threat events, and blocking policies."
+        },
+        {
+          "roleTitle": "SecOps Analyst",
+          "accountId": "secops",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on live threat detection events and incident response views."
+        },
+        {
+          "roleTitle": "Integration Architect",
+          "accountId": "apidev",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on endpoint catalogs and specification drift verification views."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "apim-admin",
+          "label": "Integration Security Console",
+          "badgeText": "apim-admin.empasy.io",
+          "cloudUrl": "https://apim-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-watch",
+      "name": "SyncWatch",
+      "subtitle": "Collect newly disclosed security vulnerabilities and turn them into verified rules",
+      "englishRoleBadge": "SyncSeries Security Module · Vulnerability & Rule Governance",
+      "category": "security",
+      "tierBadge": "Extension Module",
+      "subdomain": "watch.empasy.io",
+      "repoPath": "sync-watch",
+      "canonicalApiPrefix": "/api/v1/watch",
+      "docUrl": "https://doc.empasy.com/en/syncwatch/",
+      "proposalPdfUrl": "/downloads/proposals/SyncWatch_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-watch",
+      "faIconClass": "fas fa-shield-virus",
+      "techTags": [],
+      "summary": "Replace daily manual checks across scattered security bulletins with structured vulnerability tracking, rule verification, and audit-ready remediation records.",
+      "coreCapabilities": [
+        "Unified Security Advisory Aggregation",
+        "Pre-Release & Runtime Defense Rules",
+        "Verified Rollout & Remediation Trails"
+      ],
+      "vsLegacyTitle": "Traditional Vulnerability Response",
+      "vsLegacyPoints": [
+        "Security staff manually check multiple domestic and global advisory portals every day to triage relevance.",
+        "Translating raw advisories into actionable pre-release checks or runtime blocking rules takes too long.",
+        "Compiling audit evidence showing when and how each vulnerability was addressed is tedious and error-prone."
+      ],
+      "vsAgentTitle": "With SyncWatch",
+      "vsAgentPoints": [
+        "Aggregates major official advisories in one dashboard with clear severity and impact summaries.",
+        "Manages pre-release inspection rules and runtime integration defense rules separately after review.",
+        "Records the complete lifecycle from intake and verification to deployment for effortless audit compliance."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Unified Security Advisory Aggregation",
+          "description": "Collect vulnerability notices regularly from official channels, deduplicate entries, and classify severity automatically."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Pre-Release & Runtime Defense Rules",
+          "description": "Review and manage development-stage pre-check rules alongside runtime integration defense rules per advisory."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Verified Rollout & Remediation Trails",
+          "description": "Validate rules against false positives before deployment and retain complete remediation records for audits."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Aggregate Latest Advisories",
+          "description": "Automatically pull new vulnerabilities and security bulletins from connected official sources on schedule."
+        },
+        {
+          "stepNo": 2,
+          "title": "Assess Impact & Draft Rules",
+          "description": "Filter issues relevant to your stack and prepare draft inspection and runtime defense rules."
+        },
+        {
+          "stepNo": 3,
+          "title": "Verify, Deploy & Record Evidence",
+          "description": "Apply rules after pre-testing and owner sign-off while archiving every action in the audit ledger."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Could generated rules accidentally block legitimate production traffic?",
+          "answer": "No. New rules are never pushed blindly to production; they pass pre-validation against benign and attack samples plus explicit owner approval."
+        },
+        {
+          "question": "Can we also register internal security assessment reports we received?",
+          "answer": "Yes. Internal assessment findings can be registered alongside public advisories and tracked through the same remediation workflow."
+        },
+        {
+          "question": "Can SyncWatch run standalone strictly for vulnerability monitoring?",
+          "answer": "Yes. Use SyncWatch standalone for intake, triage, and audit tracking, and connect SyncAPIM or SyncVerse later if needed."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Security Super Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to advisory feeds, rule verification, and deployment history menus."
+        },
+        {
+          "roleTitle": "Security Analyst",
+          "accountId": "secops",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on vulnerability ledger triage and inspection rule verification."
+        },
+        {
+          "roleTitle": "Security Auditor",
+          "accountId": "auditor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on remediation and rule rollout audit history screens."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "watch-admin",
+          "label": "Security Threat Management Console",
+          "badgeText": "watch-admin.empasy.io",
+          "cloudUrl": "https://watch-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-shop",
+      "name": "SyncShop",
+      "subtitle": "Commerce operations protecting minimum margins across products, pricing, and orders",
+      "englishRoleBadge": "SyncSeries Business Module · E-Commerce & Pricing Control",
+      "category": "operations",
+      "tierBadge": "Extension Module",
+      "subdomain": "shop.empasy.io",
+      "repoPath": "sync-shop",
+      "canonicalApiPrefix": "/api/v1/shop",
+      "docUrl": "https://doc.empasy.com/en/syncshop/",
+      "proposalPdfUrl": "/downloads/proposals/SyncShop_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-shop",
+      "faIconClass": "fas fa-shopping-bag",
+      "techTags": [],
+      "summary": "A complete commerce stack covering catalog management, order fulfillment and claims, flash deals, coupons, and a responsive buyer storefront.",
+      "coreCapabilities": [
+        "Margin Guardrails & Bulk Pricing Control",
+        "Price Snapshot Saving & One-Click Restore",
+        "Unified Order, Fulfillment & Promotion Ops"
+      ],
+      "vsLegacyTitle": "Traditional Store Operations",
+      "vsLegacyPoints": [
+        "Calculating promotional discounts manually in spreadsheets often leads to accidental below-cost listings.",
+        "Reverting hundreds of SKUs back to regular prices after a campaign ends or a mistake occurs is tedious.",
+        "High promotional traffic slows down search, checkout, and admin operations simultaneously."
+      ],
+      "vsAgentTitle": "With SyncShop",
+      "vsAgentPoints": [
+        "Checks unit cost and minimum margin thresholds before applying price edits, catching below-margin mistakes upfront.",
+        "Records prior price states automatically on every bulk update so original prices can be restored cleanly at once.",
+        "Separates catalog, search, ordering, and admin services so peak campaign traffic stays smooth and responsive."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Margin Guardrails & Bulk Pricing Control",
+          "description": "Validate per-product unit cost and minimum margin thresholds before publishing category-wide or campaign price changes."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Price Snapshot Saving & One-Click Restore",
+          "description": "Automatically snapshot prior prices before bulk updates so post-campaign rollbacks and corrections take seconds."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Unified Order, Fulfillment & Promotion Ops",
+          "description": "Operate catalog, shipping, returns, flash deals, and coupon campaigns alongside a responsive customer storefront."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Check Target SKUs & Margin Rules",
+          "description": "Review target product groups, current inventory levels, and minimum margin thresholds before adjusting prices."
+        },
+        {
+          "stepNo": 2,
+          "title": "Snapshot Prices & Publish Campaign",
+          "description": "Save previous price records automatically and apply new pricing and promotions to approved items."
+        },
+        {
+          "stepNo": 3,
+          "title": "Verify Storefront & Restore Post-Sale",
+          "description": "Confirm live pricing on the buyer storefront and revert cleanly to saved prices once the campaign ends."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does SyncShop prevent accidental below-cost bulk price changes?",
+          "answer": "Minimum margin rules configured per SKU automatically catch price updates falling below thresholds and flag them for review before going live."
+        },
+        {
+          "question": "Does it include the customer-facing storefront as well as the admin console?",
+          "answer": "Yes. Both the operations admin console and a responsive desktop/mobile buyer storefront are included and ready to try."
+        },
+        {
+          "question": "Can we adopt SyncShop standalone without other Empasy modules?",
+          "answer": "Yes. SyncShop runs completely standalone and can later connect with SyncCMS or SyncInsight whenever needed."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Commerce Super Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to products, inventory, orders, coupons, and pricing governance in the admin console."
+        },
+        {
+          "roleTitle": "Merchandising Manager",
+          "accountId": "productAdmin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on product registration, brands, pricing, and stock management menus."
+        },
+        {
+          "roleTitle": "Order & Fulfillment Lead",
+          "accountId": "orderAdmin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on order lookup, shipment dispatch, and return/refund review screens."
+        },
+        {
+          "roleTitle": "Demo Shopper (Storefront)",
+          "accountId": "member",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Use on the customer storefront to test shopping cart and checkout flows."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "shop-admin",
+          "label": "E-Commerce Admin Console",
+          "badgeText": "shop-admin.empasy.io",
+          "cloudUrl": "https://shop-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "shop-app",
+          "label": "Customer Storefront",
+          "badgeText": "shop-app.empasy.io",
+          "cloudUrl": "https://shop-app.empasy.io",
+          "buttonLabel": "Open Storefront",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-ops",
+      "name": "SyncOps",
+      "subtitle": "Track project staffing and real profitability without scattered spreadsheets",
+      "englishRoleBadge": "SyncSeries Business Module · SI Project & P&L Operations",
+      "category": "operations",
+      "tierBadge": "Extension Module",
+      "subdomain": "ops.empasy.io",
+      "repoPath": "sync-ops",
+      "canonicalApiPrefix": "/api/v1/ops",
+      "docUrl": "https://doc.empasy.com/en/syncops/",
+      "proposalPdfUrl": "/downloads/proposals/SyncOps_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-ops",
+      "faIconClass": "fas fa-briefcase",
+      "techTags": [],
+      "summary": "Built for contract-based IT/SI and R&D organizations to replace fragmented spreadsheets with real-time project profitability, staffing utilization, and statutory deadline governance.",
+      "coreCapabilities": [
+        "Contract Rate vs. Actual Cost P&L Comparison",
+        "Surety Bond & Subcontract Deadline Alerts",
+        "Staffing Gantt & Electronic Research Notes"
+      ],
+      "vsLegacyTitle": "Traditional SI Operations",
+      "vsLegacyPoints": [
+        "Project staffing and actual costs live in disconnected spreadsheets, revealing margin erosion far too late.",
+        "Tracking bid, contract, advance-payment, and warranty bond expirations manually risks costly misses.",
+        "Lack of visibility into upcoming roll-offs delays resource allocation and bench planning decisions."
+      ],
+      "vsAgentTitle": "With SyncOps",
+      "vsAgentPoints": [
+        "Compares contracted billing rates against actual labor inputs automatically so project margins stay visible.",
+        "Surfaces upcoming surety bond expirations and statutory subcontract payment deadlines proactively via alerts.",
+        "Visualizes engineer grades, utilization, and monthly assignments on an interactive Gantt timeline."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "Contract Rate vs. Actual Cost P&L Comparison",
+          "description": "Compare planned effort and contracted rates against actual labor costs per project to spot overrun signals early."
+        },
+        {
+          "badgeNo": "02",
+          "title": "Surety Bond & Subcontract Deadline Alerts",
+          "description": "Track bid, contract, advance-payment, and defect-warranty bond maturities alongside subcontract payment schedules in one view."
+        },
+        {
+          "badgeNo": "03",
+          "title": "Staffing Gantt & Electronic Research Notes",
+          "description": "Manage engineer assignment timelines and monthly utilization visually while archiving R&D electronic research note logs."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "Register Project Contracts & Staffing Plans",
+          "description": "Enter contract amounts, durations, planned engineer assignments, and surety bond schedules."
+        },
+        {
+          "stepNo": 2,
+          "title": "Aggregate Actual Effort & Upcoming Deadlines",
+          "description": "As monthly inputs accumulate, SyncOps automatically computes project P&L, utilization rates, and deadline alerts."
+        },
+        {
+          "stepNo": 3,
+          "title": "Review Executive Status & Act Early",
+          "description": "Spot effort overruns or expiring bonds early to rebalance staffing and schedules proactively."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is SyncOps suited for mid-sized IT service firms and R&D organizations?",
+          "answer": "Yes. It is tailored specifically to contract-based SI/SM delivery teams and organizations running R&D grant projects."
+        },
+        {
+          "question": "Can we separate visible data for executives, project managers, and finance staff?",
+          "answer": "Yes. Built on SyncBoot's permission model, SyncOps finely scopes margin and labor-cost visibility by role and assigned projects."
+        },
+        {
+          "question": "Can we import data from our existing spreadsheets?",
+          "answer": "Yes. Bulk import templates allow you to bring in existing project lists, personnel records, and contracts seamlessly."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "Super Admin",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Full access to enterprise P&L, contract and bond tracking, staffing schedules, and research notes."
+        },
+        {
+          "roleTitle": "Program Manager (PMO)",
+          "accountId": "choiyj",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on cross-project profitability comparison and resource utilization management."
+        },
+        {
+          "roleTitle": "Project Manager (PM)",
+          "accountId": "hongkd",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Inspect actual effort tracking and assignment schedules for owned projects."
+        },
+        {
+          "roleTitle": "Finance & Settlement Lead",
+          "accountId": "jungde",
+          "demoAccessCode": "123456",
+          "scopeSummary": "Focus on billing settlements, surety bonds, and subcontract compliance alerts."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "ops-admin",
+          "label": "SI Operations Management Console",
+          "badgeText": "ops-admin.empasy.io",
+          "cloudUrl": "https://ops-admin.empasy.io",
+          "buttonLabel": "Open Admin Console",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    }
+  ],
+  "infraServices": []
+}

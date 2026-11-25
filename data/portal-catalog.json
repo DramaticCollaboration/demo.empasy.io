@@ -1,0 +1,1997 @@
+{
+  "portalMeta": {
+    "title": "엠파시 SyncSeries 통합 데모 포털",
+    "portalSubdomain": "demo.empasy.io",
+    "corporateSiteUrl": "https://empasy.io",
+    "techDocsUrl": "https://doc.empasy.com",
+    "resetScheduleNotice": "체험 환경에서 입력·수정한 데이터는 매일 오전 4시(한국 시간)에 초기 상태로 돌아갑니다.",
+    "defaultMasterId": "admin",
+    "defaultMasterCode": "123456"
+  },
+  "productGroups": [
+    {
+      "key": "flagship",
+      "navLabel": "주력 솔루션",
+      "title": "주력 솔루션 4종",
+      "description": "현장 프로젝트에서 가장 많이 도입되는 핵심 제품입니다. 설치 없이 바로 화면을 체험해 보세요."
+    },
+    {
+      "key": "data-ai",
+      "navLabel": "데이터 · AI 모듈",
+      "title": "데이터 · AI 확장 모듈",
+      "description": "말로 묻는 데이터 조회, 사내 AI 비용·개인정보 관리, 공개 웹 데이터 자동 수집을 지원합니다."
+    },
+    {
+      "key": "security",
+      "navLabel": "보안 관리 모듈",
+      "title": "보안 관리 확장 모듈",
+      "description": "관리 누락 연동 경로 파악·차단과 최신 보안 취약점 수집·점검 규칙 관리를 지원합니다."
+    },
+    {
+      "key": "operations",
+      "navLabel": "업무 · 서비스 모듈",
+      "title": "업무 · 서비스 확장 모듈",
+      "description": "마진 기준을 지키는 쇼핑몰 운영과 SI 프로젝트 손익·보증보험 관리를 지원합니다."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scenario-backoffice-flow",
+      "categoryBadge": "주력 조합 · 사내 업무 시스템",
+      "title": "사내 관리자 구축과 협업·변경 승인",
+      "painPoint": "사내 관리 화면을 새로 만들 때마다 로그인·권한·결재를 반복 개발하고 변경 이력을 추적하기 어렵습니다.",
+      "expectedOutcome": "표준 권한·전자결재 기반으로 빠르게 시작하고, 통합 워크스페이스에서 정리한 변경을 전후 비교 후 안전하게 승인합니다.",
+      "targetPersona": "IT 기획자 · 개발팀장 · 시스템 관리자",
+      "summary": "SyncBoot의 표준 조직·권한·전자결재 화면을 확인한 뒤, SyncVerse 통합 워크스페이스와 승인 센터에서 변경 전후 비교 및 단계별 승인 흐름을 이어서 체험합니다.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 조직·권한·전자결재 (SyncBoot) → 2. 요구사항·작업 협업 (SyncVerse) → 3. 변경 검토·단계별 승인 (SyncVerse)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-boot",
+          "productName": "SyncBoot",
+          "actionTitle": "조직도 연계 메뉴 권한 및 전자결재 확인",
+          "actionDetail": "부서·직무별 메뉴 권한 설정과 한국형 전자결재, 운영 리포트 화면을 직접 확인합니다.",
+          "subdomain": "boot-admin.empasy.io",
+          "demoUrl": "https://boot-admin.empasy.io/showcase/approval-wizard",
+          "menuPath": "샘플 > 전자결재 · 시스템 관리 > 사용자",
+          "tryPoint": "기안·다단계 결재선 지정 흐름과 부서·역할별 메뉴 권한 설정을 눌러 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-verse",
+          "productName": "SyncVerse",
+          "actionTitle": "통합 워크스페이스에서 요구사항·작업 협업 확인",
+          "actionDetail": "기획·개발·품질 담당자가 대화로 요구사항을 정리하고 이슈·배포 흐름을 추적하는 메인 작업 공간을 체험합니다.",
+          "subdomain": "verse-app.empasy.io",
+          "demoUrl": "https://verse-app.empasy.io",
+          "secondaryLink": {
+            "label": "코드 스튜디오 ↗",
+            "url": "https://verse-studio.empasy.io"
+          },
+          "menuPath": "워크스페이스 · 이슈 보드 · 승인",
+          "tryPoint": "대화형 워크스페이스와 이슈·배포 현황을 살펴보고, 필요하면 코드 스튜디오도 함께 열어 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-verse",
+          "productName": "SyncVerse",
+          "actionTitle": "변경 전후 비교 및 담당자 단계별 승인",
+          "actionDetail": "수정 요청의 변경 전후 차이를 비교하고 담당자 승인을 거쳐 반영·이력을 남기는 관리 콘솔 흐름을 체험합니다.",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/governance/hitl-approval",
+          "menuPath": "시스템 관리 콘솔 > 작업 승인",
+          "tryPoint": "승인 대기 목록을 열어 변경 전후 비교와 승인·반려 버튼을 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-web-qa-flow",
+      "categoryBadge": "주력 조합 · 웹사이트 · 품질 점검",
+      "title": "웹사이트 발행과 자동 품질·재검증",
+      "painPoint": "홈페이지나 다국어 페이지를 수정할 때마다 검색 노출 누락과 화면 깨짐을 사람이 일일이 확인해야 합니다.",
+      "expectedOutcome": "게시 전 검색·접근성 항목을 점검하고, SyncETA로 배포 직후 링크·글자 겹침을 전수 검사해 버그 칸반에서 즉시 재검증합니다.",
+      "targetPersona": "웹 운영자 · 홍보/마케팅 · 품질 점검 담당자",
+      "summary": "SyncCMS에서 원고 검수와 다국어 관리·품질 점검을 살펴본 뒤, SyncETA에서 링크·글자 겹침 전수 검사와 버그 칸반 재검증 흐름을 확인합니다.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 콘텐츠 검수·다국어·품질 점검 (SyncCMS) → 2. 링크·화면 전수 검사 및 버그 칸반 재검증 (SyncETA)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-cms",
+          "productName": "SyncCMS",
+          "actionTitle": "원고 검수 및 검색·접근성 사전 점검",
+          "actionDetail": "여러 사이트의 콘텐츠를 한곳에서 관리하고 게시 전 검색·접근성 점검 결과와 다국어 번역을 확인합니다.",
+          "subdomain": "cms-admin.empasy.io",
+          "demoUrl": "https://cms-admin.empasy.io/cms/content",
+          "secondaryLink": {
+            "label": "발행 웹사이트 보기 ↗",
+            "url": "https://cms-app.empasy.io"
+          },
+          "menuPath": "콘텐츠 관리 · 품질 점검 · 다국어 관리",
+          "tryPoint": "원고 목록과 다국어 관리, 품질 진단 점수를 확인한 뒤 발행 웹사이트 화면도 비교해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-eta",
+          "productName": "SyncETA",
+          "actionTitle": "링크·글자 겹침 전수 검사 및 버그 칸반 재검증",
+          "actionDetail": "배포 직후 하위 링크 404와 글자 겹침을 자동 검출하고, 사진 첨부 티켓에서 [지금 확인]으로 즉시 재검증합니다.",
+          "subdomain": "eta-admin.empasy.io",
+          "demoUrl": "https://eta-admin.empasy.io/eta/dashboard",
+          "secondaryLink": {
+            "label": "PC 앱 다운로드 ↗",
+            "url": "https://empasy.io/ko/download_eta.html"
+          },
+          "menuPath": "프로젝트 대시보드 · 결함 진단 · 버그 칸반",
+          "tryPoint": "웹 콘솔에서 진단 리포트를 확인하고, PC에서 직접 시나리오를 녹화하려면 데스크톱 앱을 내려받으세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-data-ai-flow",
+      "categoryBadge": "데이터 · AI 3종 완결",
+      "title": "외부 데이터 수집부터 대화형 분석·AI 통제",
+      "painPoint": "외부 웹 데이터 수집, 사내 데이터 조회, AI 비용·개인정보 통제가 제각각 흩어져 있어 분석부터 거버넌스까지 이어 보기 어렵습니다.",
+      "expectedOutcome": "SyncCrawl로 모은 공개 데이터와 사내 DB를 SyncVerse 통합 분석(SyncInsight)으로 조회하고, SyncLLM에서 AI 비용과 개인정보 가림을 한눈에 통제합니다.",
+      "targetPersona": "데이터 분석가 · 기획 담당자 · AI 운영자",
+      "summary": "SyncCrawl에서 자동 수집·정제된 문서를 확인하고, SyncVerse에 통합된 SyncInsight에서 한국어 데이터 조회를 체험한 뒤 SyncLLM에서 개인정보 가림 이력을 점검합니다.",
+      "estimatedMinutes": 6,
+      "workflowFlowLabel": "1. 웹 데이터 수집·정제 (SyncCrawl) → 2. 대화형 데이터 조회 (SyncInsight · SyncVerse 통합) → 3. AI 비용·개인정보 가림 (SyncLLM)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-crawl",
+          "productName": "SyncCrawl",
+          "actionTitle": "웹 데이터 자동 수집 및 정제 문서 확인",
+          "actionDetail": "수집 허용 기준과 속도 제한을 지키며 공개 웹 데이터를 모으고, 광고·노이즈를 제거한 정형 문서를 확인합니다.",
+          "subdomain": "crawl-admin.empasy.io",
+          "demoUrl": "https://crawl-admin.empasy.io/crawl/document",
+          "menuPath": "수집 결과 > 수집 문서 · 안전 수집 정책",
+          "tryPoint": "정규화·비식별화된 수집 문서와 수집 사이트별 주기·안전 정책 설정을 살펴보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-insight",
+          "productName": "SyncInsight",
+          "integrationBadge": "SyncVerse 통합",
+          "actionTitle": "한국어 질문으로 데이터 조회 및 연결 DB 확인",
+          "actionDetail": "SyncVerse 관리 콘솔 내 [데이터 분석] 메뉴에서 일상 언어로 질문해 표·차트와 조회 근거, 연결된 사내 DB 현황을 확인합니다.",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/analytics/nl2sql",
+          "secondaryLink": {
+            "label": "워크스페이스 조회 ↗",
+            "url": "https://verse-app.empasy.io/knowledge/nl2sql"
+          },
+          "menuPath": "SyncVerse 콘솔 > 데이터 분석 > 데이터 질문 · DB 연결",
+          "tryPoint": "추천 질문을 눌러 표·차트가 생성되는 과정과 DB 연결 메뉴의 전사 업무 DB 목록을 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-llm",
+          "productName": "SyncLLM",
+          "actionTitle": "AI 사용량·유사 질문 재활용 및 개인정보 가림 확인",
+          "actionDetail": "모델별 호출 현황, 유사 질문 재활용 절감 지표, 외부 전송 전 민감정보 자동 가림 이력을 확인합니다.",
+          "subdomain": "llm-admin.empasy.io",
+          "demoUrl": "https://llm-admin.empasy.io/llm/request-logs",
+          "menuPath": "대시보드 · 사용 이력 · AI 서비스 연결",
+          "tryPoint": "민감정보가 전송 전 어떻게 자동 비식별 처리되는지 사용 이력과 예비 모델 전환 설정을 살펴보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-security-flow",
+      "categoryBadge": "보안 관리 2종 완결",
+      "title": "최신 취약점 대응과 외부 연동 API 보안",
+      "painPoint": "매일 쏟아지는 국내외 보안 취약점 공지와 문서에서 빠진 숨은 외부 연동 경로를 따로 관리하다 대응이 늦어집니다.",
+      "expectedOutcome": "SyncWatch가 신규 취약점을 점검·차단 규칙으로 정리하고, SyncAPIM에서 관리 누락 연동 경로와 공격 탐지 이력을 즉시 점검합니다.",
+      "targetPersona": "보안 담당자 · 인프라 운영자 · API 설계자",
+      "summary": "SyncWatch에서 최신 보안 취약점 원장과 점검 규칙을 검토한 뒤, SyncAPIM에서 숨은 외부 연동 경로와 실시간 위협 탐지 이력을 이어서 확인합니다.",
+      "estimatedMinutes": 4,
+      "workflowFlowLabel": "1. 취약점 경보 수집·점검 규칙화 (SyncWatch) → 2. 숨은 연동 경로 탐색·위협 탐지 (SyncAPIM)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-watch",
+          "productName": "SyncWatch",
+          "actionTitle": "국내외 보안 경보 수집 및 점검 규칙 검토",
+          "actionDetail": "국내외 공식 보안 경보 채널에서 신규 취약점을 자동 수집하고, 사전 점검 규칙과 외부 연동 방어 규칙을 관리합니다.",
+          "subdomain": "watch-admin.empasy.io",
+          "demoUrl": "https://watch-admin.empasy.io/watch/advisories",
+          "menuPath": "보안 이슈 목록 · 점검 규칙 관리 · 배포 이력",
+          "tryPoint": "수집된 취약점 원장의 위험도 분류와 사전 검증을 거친 점검 규칙·배포 이력을 살펴보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-apim",
+          "productName": "SyncAPIM",
+          "actionTitle": "관리 누락 연동 경로 확인 및 위협 탐지 이력 조회",
+          "actionDetail": "실제 통신 기록에서 문서에 빠진 숨은 연동 목록을 자동 파악하고, 규격 불일치·민감정보 노출과 비정상 공격 탐지 내역을 확인합니다.",
+          "subdomain": "apim-admin.empasy.io",
+          "demoUrl": "https://apim-admin.empasy.io/apim/endpoints",
+          "menuPath": "연동 목록 · 연동 규격 점검 · 위협 탐지 이력",
+          "tryPoint": "통신 기록에서 발견된 숨은 연동 목록과 비정상 공격 시도 탐지 이벤트를 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-commerce-flow",
+      "categoryBadge": "업무 · 커머스 운영",
+      "title": "마진 보호 쇼핑몰 운영과 스토어 자동 점검",
+      "painPoint": "프로모션 때마다 할인율 실수로 원가 이하 판매 위험이 생기고, 행사 오픈 직후 스토어 화면 깨짐을 놓치기 쉽습니다.",
+      "expectedOutcome": "최소 마진 기준으로 안전하게 가격·행사를 운영하고, 구매자 스토어 반영 확인부터 SyncETA 자동 점검까지 한 흐름으로 검증합니다.",
+      "targetPersona": "이커머스 운영자 · 상품 MD · QA 담당자",
+      "summary": "SyncShop 관리 콘솔에서 상품·가격·타임딜을 살펴보고, 구매자 쇼핑몰 화면을 직접 확인한 뒤 SyncETA에서 행사 화면 자동 점검 흐름을 이어서 체험합니다.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 상품·마진·프로모션 관리 (SyncShop) → 2. 구매자 스토어 반영 확인 (SyncShop 스토어) → 3. 행사 화면 자동 점검 (SyncETA)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-shop",
+          "productName": "SyncShop",
+          "actionTitle": "최소 마진 기준 확인 및 상품·프로모션 관리",
+          "actionDetail": "상품별 최소 마진 기준을 확인하며 판매가와 재고를 관리하고, 타임딜·쿠폰 행사와 주문 출고를 한 화면에서 운영합니다.",
+          "subdomain": "shop-admin.empasy.io",
+          "demoUrl": "https://shop-admin.empasy.io/pms/product",
+          "menuPath": "상품 > 상품 목록 · 프로모션 > 타임딜·쿠폰",
+          "tryPoint": "상품별 판매가·재고 목록과 타임딜·주문 처리 메뉴를 눌러 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-shop",
+          "productName": "SyncShop",
+          "actionTitle": "구매자 쇼핑몰 화면 및 장바구니 흐름 확인",
+          "actionDetail": "관리 콘솔에서 설정한 상품과 프로모션이 실제 구매자 쇼핑몰 화면과 장바구니·주문 흐름에 반영된 모습을 체험합니다.",
+          "subdomain": "shop-app.empasy.io",
+          "demoUrl": "https://shop-app.empasy.io",
+          "menuPath": "구매자 쇼핑몰 메인 · 상품 상세 · 장바구니",
+          "tryPoint": "상품 탐색과 장바구니 담기를 눌러 보고, 동일한 체험 계정으로 로그인해 주문 흐름도 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 체험 계정",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-eta",
+          "productName": "SyncETA",
+          "actionTitle": "프로모션·결제 화면 자동 점검 및 결함 추적",
+          "actionDetail": "행사 오픈 전후로 상품·결제 페이지의 하위 링크 404와 글자 겹침을 자동 검사하고, 검출된 결함을 버그 칸반에서 즉시 재검증합니다.",
+          "subdomain": "eta-admin.empasy.io",
+          "demoUrl": "https://eta-admin.empasy.io/eta/dashboard",
+          "secondaryLink": {
+            "label": "PC 앱 다운로드 ↗",
+            "url": "https://empasy.io/ko/download_eta.html"
+          },
+          "menuPath": "프로젝트 대시보드 · 결함 진단 · 버그 칸반",
+          "tryPoint": "정기 점검 리포트와 자동 발권된 결함 티켓의 [지금 확인] 재검증 흐름을 살펴보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenario-si-ops-flow",
+      "categoryBadge": "업무 · SI 프로젝트 경영",
+      "title": "SI 프로젝트 손익·인력 관리와 경영 질의",
+      "painPoint": "프로젝트별 투입 공수·원가와 보증보험 만기일이 여러 엑셀 파일에 흩어져 있어 적자 위험과 법정 기한을 뒤늦게 파악하게 됩니다.",
+      "expectedOutcome": "SyncBoot 권한 구조 위에서 프로젝트 손익·보증 기한·인력 간트를 통합 관리하고, SyncVerse 통합 분석(SyncInsight)으로 경영 요약 리포트를 즉시 확인합니다.",
+      "targetPersona": "임원 · 사업 총괄(PMO) · 프로젝트 매니저 · 재무 담당자",
+      "summary": "SyncBoot에서 직책별 권한 기반을 확인한 뒤, SyncOps에서 프로젝트 손익·보증 기한·인력 간트를 점검하고 SyncVerse 통합 SyncInsight에서 경영 분석 리포트를 이어서 확인합니다.",
+      "estimatedMinutes": 5,
+      "workflowFlowLabel": "1. 직책별 권한 기반 확인 (SyncBoot) → 2. 손익·보증 기한·인력 간트 (SyncOps) → 3. 경영 분석 리포트 (SyncInsight · SyncVerse 통합)",
+      "roleSwitchTip": "",
+      "hasApprovalGuideLink": false,
+      "steps": [
+        {
+          "stepOrder": 1,
+          "productId": "sync-boot",
+          "productName": "SyncBoot",
+          "actionTitle": "직책·부서별 접근 권한과 감사 이력 확인",
+          "actionDetail": "임원·PM·재무 담당자별 조회 범위를 제어하는 표준 조직도·메뉴 권한 구조와 관리자 작업 이력을 확인합니다.",
+          "subdomain": "boot-admin.empasy.io",
+          "demoUrl": "https://boot-admin.empasy.io/system/user",
+          "menuPath": "시스템 관리 > 사용자·권한 · 작업 이력",
+          "tryPoint": "조직도 연계 사용자 목록과 역할별 메뉴·버튼 권한 제어 화면을 살펴보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 2,
+          "productId": "sync-ops",
+          "productName": "SyncOps",
+          "actionTitle": "계약 대비 실투입 손익 및 보증·인력 간트 점검",
+          "actionDetail": "프로젝트별 수익성 매트릭스, 4대 보증보험·하도급 기한 알림, 기술 등급 기반 인력 배정 간트를 한 화면에서 확인합니다.",
+          "subdomain": "ops-admin.empasy.io",
+          "demoUrl": "https://ops-admin.empasy.io/executive/profit-matrix",
+          "menuPath": "프로젝트 손익표 · 보증·하도급 기한 · 인력 배정 일정",
+          "tryPoint": "공수 초과 위험 프로젝트 신호등 표와 만기 임박 보증보험 알림, 월별 인력 간트를 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        },
+        {
+          "stepOrder": 3,
+          "productId": "sync-insight",
+          "productName": "SyncInsight",
+          "integrationBadge": "SyncVerse 통합",
+          "actionTitle": "연결된 사업 DB 기반 경영 요약 리포트 확인",
+          "actionDetail": "SyncVerse 관리 콘솔 [데이터 분석]에 읽기 전용으로 연결된 SyncOps DB 기준으로 지표 변동 원인 요약 리포트와 출처를 확인합니다.",
+          "subdomain": "verse-admin.empasy.io",
+          "demoUrl": "https://verse-admin.empasy.io/analytics/research",
+          "menuPath": "SyncVerse 콘솔 > 데이터 분석 > 분석 보고서 · 데이터 흐름",
+          "tryPoint": "요약 리포트와 데이터 출처 지도를 열어 지표가 어떤 업무 데이터에서 산출되었는지 확인해 보세요.",
+          "recommendedAccount": {
+            "roleLabel": "공통 관리자",
+            "accountId": "admin",
+            "accessCode": "123456"
+          }
+        }
+      ]
+    }
+  ],
+  "topologyNodes": [
+    {
+      "id": "node-sync-verse",
+      "productId": "sync-verse",
+      "label": "SyncVerse",
+      "tierLevel": 1,
+      "roleSummary": "협업 · 승인 관리",
+      "shortTag": "협업 허브",
+      "architectureZone": "flagship",
+      "isHub": true,
+      "subdomain": "verse.empasy.io",
+      "connectedTo": ["sync-eta", "sync-boot", "sync-cms", "sync-insight", "sync-llm", "sync-crawl", "sync-apim", "sync-watch", "sync-shop", "sync-ops"],
+      "protocolLabel": "REST · MCP 허브"
+    },
+    {
+      "id": "node-sync-eta",
+      "productId": "sync-eta",
+      "label": "SyncETA",
+      "tierLevel": 1,
+      "roleSummary": "웹 화면 자동 점검",
+      "shortTag": "화면 테스트",
+      "architectureZone": "flagship",
+      "subdomain": "eta.empasy.io",
+      "connectedTo": ["sync-verse", "sync-cms", "sync-shop"],
+      "protocolLabel": "REST · PC 앱"
+    },
+    {
+      "id": "node-sync-boot",
+      "productId": "sync-boot",
+      "label": "SyncBoot",
+      "tierLevel": 1,
+      "roleSummary": "사내 관리 시스템 기반",
+      "shortTag": "공통 기반",
+      "architectureZone": "flagship",
+      "isFoundation": true,
+      "subdomain": "boot.empasy.io",
+      "connectedTo": ["sync-verse", "sync-ops", "sync-cms", "sync-shop", "sync-apim"],
+      "protocolLabel": "공통 권한 · REST"
+    },
+    {
+      "id": "node-sync-cms",
+      "productId": "sync-cms",
+      "label": "SyncCMS",
+      "tierLevel": 1,
+      "roleSummary": "웹사이트 · 다국어",
+      "shortTag": "콘텐츠 관리",
+      "architectureZone": "flagship",
+      "subdomain": "cms.empasy.io",
+      "connectedTo": ["sync-verse", "sync-eta", "sync-boot", "sync-llm"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-insight",
+      "productId": "sync-insight",
+      "label": "SyncInsight",
+      "tierLevel": 2,
+      "roleSummary": "말로 묻는 데이터 조회",
+      "shortTag": "데이터 질문",
+      "architectureZone": "data-ai",
+      "subdomain": "insight.empasy.io",
+      "connectedTo": ["sync-verse", "sync-crawl", "sync-llm", "sync-ops"],
+      "protocolLabel": "SyncVerse 통합"
+    },
+    {
+      "id": "node-sync-llm",
+      "productId": "sync-llm",
+      "label": "SyncLLM",
+      "tierLevel": 2,
+      "roleSummary": "사내 AI 비용 · 정보 보호",
+      "shortTag": "AI 비용·보안",
+      "architectureZone": "data-ai",
+      "subdomain": "llm.empasy.io",
+      "connectedTo": ["sync-verse", "sync-insight", "sync-crawl", "sync-cms"],
+      "protocolLabel": "AI 중계 · MCP"
+    },
+    {
+      "id": "node-sync-crawl",
+      "productId": "sync-crawl",
+      "label": "SyncCrawl",
+      "tierLevel": 2,
+      "roleSummary": "공개 웹 자료 수집",
+      "shortTag": "웹 수집",
+      "architectureZone": "data-ai",
+      "subdomain": "crawl.empasy.io",
+      "connectedTo": ["sync-verse", "sync-insight", "sync-llm"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-apim",
+      "productId": "sync-apim",
+      "label": "SyncAPIM",
+      "tierLevel": 2,
+      "roleSummary": "외부 연동 점검 · 보안",
+      "shortTag": "연동 보안",
+      "architectureZone": "security",
+      "subdomain": "apim.empasy.io",
+      "connectedTo": ["sync-verse", "sync-watch", "sync-boot"],
+      "protocolLabel": "REST · 보안 연동"
+    },
+    {
+      "id": "node-sync-watch",
+      "productId": "sync-watch",
+      "label": "SyncWatch",
+      "tierLevel": 2,
+      "roleSummary": "보안 취약점 · 규칙 관리",
+      "shortTag": "취약점 관리",
+      "architectureZone": "security",
+      "subdomain": "watch.empasy.io",
+      "connectedTo": ["sync-verse", "sync-apim"],
+      "protocolLabel": "취약점 수집 · MCP"
+    },
+    {
+      "id": "node-sync-shop",
+      "productId": "sync-shop",
+      "label": "SyncShop",
+      "tierLevel": 3,
+      "roleSummary": "쇼핑몰 · 가격 관리",
+      "shortTag": "쇼핑몰 운영",
+      "architectureZone": "operations",
+      "subdomain": "shop.empasy.io",
+      "connectedTo": ["sync-verse", "sync-eta", "sync-boot"],
+      "protocolLabel": "REST · MCP"
+    },
+    {
+      "id": "node-sync-ops",
+      "productId": "sync-ops",
+      "label": "SyncOps",
+      "tierLevel": 3,
+      "roleSummary": "프로젝트 손익 · 인력",
+      "shortTag": "프로젝트 손익",
+      "architectureZone": "operations",
+      "subdomain": "ops.empasy.io",
+      "connectedTo": ["sync-verse", "sync-boot", "sync-insight"],
+      "protocolLabel": "REST · MCP"
+    }
+  ],
+  "products": [
+    {
+      "id": "sync-verse",
+      "name": "SyncVerse",
+      "subtitle": "기획부터 개발·검토·승인까지 한 화면에서 관리하세요",
+      "englishRoleBadge": "SyncSeries 주력 솔루션 · 협업 및 승인 통합 관리",
+      "category": "flagship",
+      "tierBadge": "주력 솔루션",
+      "subdomain": "verse.empasy.io",
+      "repoPath": "sync-verse",
+      "canonicalApiPrefix": "/api/v1/verse",
+      "docUrl": "https://doc.empasy.com/syncverse/",
+      "proposalPdfUrl": "/downloads/proposals/SyncVerse_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-verse",
+      "faIconClass": "fas fa-network-wired",
+      "techTags": [],
+      "summary": "메신저, 문서, 별도 반영 도구로 흩어져 있던 작업 내역을 SyncVerse 한 곳에서 관리하고, 중요한 변경은 담당자 검토를 거쳐 반영합니다.",
+      "coreCapabilities": [
+        "전사 작업 현황 통합 대시보드",
+        "단계별 담당자 승인 및 이력 관리",
+        "기획·품질 점검 연계"
+      ],
+      "vsLegacyTitle": "기존 업무 방식",
+      "vsLegacyPoints": [
+        "요구사항 문서, 시스템 변경, 테스트 결과, 승인 기록이 여러 도구에 흩어져 진행 현황을 파악하기 어렵습니다.",
+        "수정 사항이 반영된 뒤 문제가 생겼을 때 누가 무엇을 바꿨는지 추적하고 되돌리는 데 시간이 오래 걸립니다.",
+        "운영 화면, 웹사이트, 테스트 도구를 각각 따로 로그인해 관리해야 합니다."
+      ],
+      "vsAgentTitle": "SyncVerse 도입 후",
+      "vsAgentPoints": [
+        "요구사항 정리부터 작업 실행, 품질 점검, 승인 이력까지 한 화면에서 순서대로 확인합니다.",
+        "중요한 변경은 담당자가 변경 전후 내용을 직접 비교해 승인하고, 필요하면 이전 상태로 되돌릴 수 있습니다.",
+        "필요한 엠파시 업무 모듈을 연결해 부서 간 작업 흐름을 하나의 관리 화면으로 묶을 수 있습니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "전사 작업 현황 통합 대시보드",
+          "description": "진행 중인 업무, 승인 대기 건, 연동된 업무 모듈의 상태를 한 화면에서 확인하고 병목 구간을 빠르게 파악합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "단계별 담당자 승인 및 이력 관리",
+          "description": "기획·개발·보안·운영 담당자가 역할에 따라 변경 전후 내역을 직접 확인하고 승인하거나 반려할 수 있습니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "기획·품질 점검 연계",
+          "description": "요구사항 정리와 테스트 결과, 사이트 품질 점검 결과를 함께 조회해 배포 전 누락을 줄입니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "업무 요청 정리",
+          "description": "기획자나 운영자가 필요한 변경 사항을 입력하면 작업 목록과 검토용 초안이 정리됩니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "자동 점검 및 변경 내용 비교",
+          "description": "실제 반영 전 품질·보안 점검 결과와 변경 전후 비교 내역을 담당자에게 보여 줍니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "담당자 승인 후 반영",
+          "description": "권한이 있는 담당자가 승인하면 변경 사항이 반영되며, 모든 이력이 승인·변경 이력으로 남습니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "다른 엠파시 제품 없이 SyncVerse만 먼저 써볼 수 있나요?",
+          "answer": "네, 가능합니다. SyncVerse 단독으로 업무 요청 관리와 단계별 승인 체계를 먼저 도입한 뒤, 필요할 때 SyncETA나 SyncBoot 같은 모듈을 연결해 확장할 수 있습니다."
+        },
+        {
+          "question": "중요한 시스템 변경이 사람 확인 없이 자동으로 반영되나요?",
+          "answer": "아니요. 운영 환경 반영이나 중요한 데이터 구조 변경은 반드시 권한이 있는 담당자의 확인과 승인을 거치도록 설정할 수 있으며, 이상이 발견되면 즉시 중단할 수 있습니다."
+        },
+        {
+          "question": "사내 보안 정책 때문에 외부 인터넷이 차단된 환경에서도 쓸 수 있나요?",
+          "answer": "네. 클라우드 방식뿐 아니라 사내 서버 환경에 직접 설치하는 구축형 도입을 지원합니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "총괄 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "전체 대시보드 조회, 최종 승인 및 모든 관리 메뉴를 체험할 수 있습니다."
+        },
+        {
+          "roleTitle": "서비스 기획자",
+          "accountId": "sync_planner",
+          "demoAccessCode": "123456",
+          "scopeSummary": "요구사항 등록 및 기획 단계 검토·승인 흐름을 확인합니다."
+        },
+        {
+          "roleTitle": "개발 리드",
+          "accountId": "sync_techlead",
+          "demoAccessCode": "123456",
+          "scopeSummary": "변경 전후 내역 검토 및 기술 단계 승인 권한으로 로그인합니다."
+        },
+        {
+          "roleTitle": "품질 담당자",
+          "accountId": "sync_qa",
+          "demoAccessCode": "123456",
+          "scopeSummary": "테스트 결과 확인 및 품질 검토 단계를 체험합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "verse-app",
+          "label": "통합 워크스페이스",
+          "description": "기획·개발·품질·운영 담당자가 대화로 요구사항을 정리하고 변경 검토·승인까지 진행하는 메인 작업 공간입니다.",
+          "badgeText": "verse-app.empasy.io",
+          "cloudUrl": "https://verse-app.empasy.io",
+          "buttonLabel": "워크스페이스 열기",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "verse-studio",
+          "label": "코드 스튜디오",
+          "description": "워크스페이스 대화에서 생성된 작업 브랜치의 코드를 수정·검증하고 PR을 생성하는 전용 환경입니다.",
+          "badgeText": "verse-studio.empasy.io",
+          "cloudUrl": "https://verse-studio.empasy.io",
+          "buttonLabel": "스튜디오 열기",
+          "isPrimary": false,
+          "isDownload": false
+        },
+        {
+          "id": "verse-admin",
+          "label": "시스템 관리 콘솔",
+          "description": "에이전트 상태 모니터링, 승인 이력 조회, 권한 및 시스템 정책을 관리하는 관리자 콘솔입니다.",
+          "badgeText": "verse-admin.empasy.io",
+          "cloudUrl": "https://verse-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-eta",
+      "name": "SyncETA",
+      "subtitle": "웹 화면 테스트 자동화 · 사이트 결함 검출 및 이력 관리 플랫폼",
+      "englishRoleBadge": "SyncSeries 주력 솔루션 · 웹 화면 테스트 자동화 · 사이트 결함 관리",
+      "category": "flagship",
+      "tierBadge": "주력 솔루션",
+      "subdomain": "eta.empasy.io",
+      "repoPath": "sync-eta",
+      "canonicalApiPrefix": "/api/v1/eta",
+      "docUrl": "https://doc.empasy.com/synceta/",
+      "proposalPdfUrl": "/downloads/proposals/SyncETA_Proposal.pdf",
+      "demoMode": "hybrid",
+      "downloadAssets": [
+        {
+          "id": "sync-eta-official-download",
+          "label": "SyncETA 데스크톱 앱 다운로드 (엠파시 공식)",
+          "versionBadge": "Windows · macOS",
+          "platformBadge": "empasy.io 공식 페이지",
+          "description": "브라우저 동작 녹화, 엑셀·한 줄 문장 테스트 변환, 링크·화면 결함 전수 검사, 버그 칸반 원클릭 재검증을 바로 시작할 수 있는 공식 앱을 내려받습니다.",
+          "downloadUrl": "https://empasy.io/ko/download_eta.html",
+          "buttonLabel": "SyncETA 다운로드",
+          "isDirectDownload": false,
+          "isPrimary": true
+        }
+      ],
+      "iconBoxClass": "agent-icon-eta",
+      "faIconClass": "fas fa-vial",
+      "techTags": [],
+      "summary": "국가별·상품별 페이지가 수백 개인 운영 사이트에서도 대표·표본 주소만으로 폭넓게 점검하고, 확인된 것만 정상으로 기록하며 애매한 화면은 사진과 함께 [확인 필요]로 정직하게 분류합니다.",
+      "coreCapabilities": [
+        "브라우저 동작 레코더 (보안 키패드 · 쿠키 배너 자동 통과)",
+        "엑셀 · 한 줄 문장 테스트 변환 & 멀티 계정 동시 테스트",
+        "링크 · 글자 겹침 전수 검사 & 버그 칸반 [지금 확인] 재검증"
+      ],
+      "vsLegacyTitle": "지금 (수작업 QA 방식)",
+      "vsLegacyPoints": [
+        "수백 개 국가·상품 페이지 중 시간 부족으로 대표 페이지 한두 곳만 수동 확인하고, 화면이 조금만 바뀌면 기존 스크립트가 깨집니다.",
+        "금융 보안 가상 키보드나 글로벌 쿠키 동의 팝업 앞에서 점검이 멈추며, 글자 겹침과 404 하위 링크를 눈으로 하나씩 찾아야 합니다.",
+        "놓치고 못 본 요소가 정상으로 넘어갈 위험이 있고, 문제를 찾을 때마다 캡처해 엑셀에 정리한 뒤 수정 후 처음부터 다시 눌러야 합니다."
+      ],
+      "vsAgentTitle": "SyncETA 도입 후",
+      "vsAgentPoints": [
+        "대표·표본 주소만으로 여러 국가·상품 페이지를 폭넓게 점검하고, 동작 녹화·엑셀·한 줄 문장 변환과 변경 위치 자동 찾기를 지원합니다.",
+        "보안 가상 키패드·쿠키 배너를 자동 통과하고, 시나리오 없이도 하위 링크 404와 글자 겹침·화면 깨짐을 전수 검사합니다.",
+        "확인한 것만 정상 집계하며 애매한 화면은 [확인 필요]로 분리하고, 사진 첨부 버그 칸반 티켓에서 [지금 확인] 버튼 하나로 재검증합니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "브라우저 동작 레코더",
+          "description": "클릭·입력·스크롤을 실시간 기록해 재사용 블록으로 저장하며, 보안 가상 키패드 자동 인식, 글로벌 쿠키 배너 닫기, 민감 개인정보 마스킹을 지원합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "엑셀 및 한 줄 문장 테스트 변환",
+          "description": "기존 엑셀·CSV 시험표를 업로드하거나 한 줄 문장으로 즉시 점검을 구성하며, 대표·표본 주소 사전 실행과 대화형 실시간 방향 조정으로 오류를 방지합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "멀티 계정 동시 테스트",
+          "description": "고객 화면과 관리자 화면처럼 서로 다른 계정 2개를 독립 로그인 세션으로 동시에 띄워 실시간 상호작용과 역할별 오류 로그를 한 번에 검증합니다."
+        },
+        {
+          "badgeNo": "04",
+          "title": "링크 전수 검사 및 화면 디자인 진단",
+          "description": "시나리오 없이도 사이트 지식그래프로 하위 링크 404·의미 불일치·글자 겹침·빈 영역·미디어 재생 오류를 찾아내고, 화면 개편 시 변경된 버튼 위치도 자동으로 찾습니다."
+        },
+        {
+          "badgeNo": "05",
+          "title": "버그 칸반 보드 및 [지금 확인] 재검증",
+          "description": "문제 사진이 첨부된 티켓을 자동 생성해 대기→아직 있음→해결됨→종료 단계로 관리하며, 중복 발권 차단·[버그가 아닙니다] 영구 기억·원클릭 즉시 재검증을 제공합니다."
+        },
+        {
+          "badgeNo": "06",
+          "title": "정직한 [확인 필요] 분류 및 정기 스케줄러",
+          "description": "확실히 확인한 것만 정상으로 기록하고 애매한 화면은 사진과 함께 분리하며, 새벽·배포 직후 정기 자동 실행과 Jira·Jenkins·GitHub Actions·Slack 연동을 지원합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "1단계 · 점검 시나리오 준비",
+          "description": "브라우저 클릭 동작을 녹화하거나 기존 엑셀 시험표·한 줄 문장으로 점검을 구성하고, 표본 주소 사전 검증으로 오류를 미리 막습니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "2단계 · 자동 실행 및 화면 판정",
+          "description": "실제 브라우저로 하위 링크와 글자 겹침·화면 깨짐을 전수 검사하고, 화면이 바뀌어도 버튼을 스스로 찾아 정상·결함·[확인 필요]로 분류합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "3단계 · 결함 티켓 및 원클릭 재검증",
+          "description": "실패 순간의 녹화 영상·한글 원인 요약과 사진이 담긴 버그 칸반 티켓을 관리하고, 조치 완료 후 [지금 확인] 버튼 하나로 즉시 재검증합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "개발자가 아닌 QA 담당자나 서비스 운영자도 바로 쓸 수 있나요?",
+          "answer": "네. 브라우저에서 평소처럼 클릭한 동작을 그대로 녹화하거나, 기존 엑셀 시험표 업로드 및 '하위 링크 검사해줘', '화면 깨짐 봐줘' 같은 한 줄 문장만으로 자동 점검을 실행할 수 있습니다."
+        },
+        {
+          "question": "금융 보안 가상 키패드나 해외 사이트 쿠키 동의 팝업이 떠도 동작하나요?",
+          "answer": "네. 보안 가상 키패드 자동 인식 입력과 글로벌 쿠키 동의 배너 자동 닫기를 기본 지원하며, 주민번호·전화번호 같은 민감 개인정보는 자동으로 가림(마스킹) 처리합니다."
+        },
+        {
+          "question": "도입 효과는 과장 없이 어떻게 확인할 수 있나요?",
+          "answer": "대표·표본 URL 다중 점검, 시나리오 없는 링크·겹침 검출, 보안 키패드·쿠키 통과, 영상·사진 포함 티켓 발권, [지금 확인] 원클릭 재검증은 도입 즉시 확인 가능합니다. 시간 절감율과 사전 결함 검출 수는 운영 사이트 1곳에 2~4주 시범 적용해 실제 숫자로 함께 측정합니다."
+        },
+        {
+          "question": "이미 운영 중인 웹사이트나 사내 폐쇄망 시스템에도 적용되나요?",
+          "answer": "네. 기존 웹사이트 코드를 고칠 필요 없이 주소만 등록하면 바로 점검할 수 있으며, 데스크톱 앱 로컬 실행이나 사내 온프레미스 서버 설치로 외부 접속이 차단된 내부망·VPN 시스템도 안전하게 점검합니다."
+        },
+        {
+          "question": "이미 쓰고 있는 Jira, Jenkins, GitHub Actions, Slack과 연결되나요?",
+          "answer": "네. 자체 버그 칸반 보드 외에 Jira 이슈 연동, Jenkins·GitHub Actions 배포 파이프라인 연동, Slack·이메일 결과 통지를 모두 지원합니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "웹 관제 콘솔 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "통합 테스트 대시보드, 변경 요소 보정 이력, 화면 진단 리포트를 모두 확인할 수 있습니다."
+        },
+        {
+          "roleTitle": "품질 점검 담당자",
+          "accountId": "qalead",
+          "demoAccessCode": "123456",
+          "scopeSummary": "시나리오 실행 이력과 결함 확인 중심으로 체험할 수 있습니다."
+        },
+        {
+          "roleTitle": "데스크톱 앱 연동 계정",
+          "accountId": "admin@empasy.com",
+          "demoAccessCode": "123456",
+          "scopeSummary": "SyncETA PC 앱을 설치한 뒤 로그인해 시나리오와 리포트를 연동할 때 사용합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "eta-download",
+          "label": "SyncETA 데스크톱 앱 다운로드",
+          "badgeText": "empasy.io/ko/download_eta.html",
+          "cloudUrl": "https://empasy.io/ko/download_eta.html",
+          "buttonLabel": "다운로드 페이지 열기",
+          "isPrimary": true,
+          "isDownload": true
+        },
+        {
+          "id": "eta-proposal",
+          "label": "SyncETA 제품소개서 PDF (15p)",
+          "badgeText": "SyncETA_Proposal.pdf",
+          "cloudUrl": "/downloads/proposals/SyncETA_Proposal.pdf",
+          "buttonLabel": "소개서 PDF 열기",
+          "isPrimary": false,
+          "isDownload": true
+        },
+        {
+          "id": "eta-admin",
+          "label": "통합 웹 관제 콘솔 (라이브 데모)",
+          "badgeText": "eta-admin.empasy.io",
+          "cloudUrl": "https://eta-admin.empasy.io",
+          "buttonLabel": "웹 콘솔 체험",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-boot",
+      "name": "SyncBoot",
+      "subtitle": "로그인·권한·전자결재까지, 사내 관리 시스템의 표준 기반",
+      "englishRoleBadge": "SyncSeries 주력 솔루션 · 기업 업무 시스템 기반",
+      "category": "flagship",
+      "tierBadge": "주력 솔루션",
+      "subdomain": "boot.empasy.io",
+      "repoPath": "sync-boot",
+      "canonicalApiPrefix": "/api/v1/boot",
+      "docUrl": "https://doc.empasy.com/syncboot/",
+      "proposalPdfUrl": "/downloads/proposals/SyncBoot_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-boot",
+      "faIconClass": "fas fa-server",
+      "techTags": [],
+      "summary": "엠파시의 여러 업무 모듈이 공통으로 사용하는 사내 관리 시스템 기반입니다. 공통 기능 개발에 쓰던 시간을 줄이고 실제 업무 기능에 집중할 수 있습니다.",
+      "coreCapabilities": [
+        "조직도 연계 메뉴·버튼 권한 관리",
+        "한국 기업 실무형 전자결재 및 리포트",
+        "관리자 작업 이력 추적"
+      ],
+      "vsLegacyTitle": "기존 사내 시스템 구축 방식",
+      "vsLegacyPoints": [
+        "프로젝트를 시작할 때마다 로그인, 부서 트리, 역할별 메뉴 권한, 작업 이력 기록을 매번 새로 개발합니다.",
+        "메뉴를 추가하거나 권한을 바꿀 때마다 매번 개발 수정과 재반영을 거쳐야 합니다.",
+        "부서마다 화면 스타일과 사용 방식이 달라 운영자 교육과 유지보수 비용이 커집니다."
+      ],
+      "vsAgentTitle": "SyncBoot 도입 후",
+      "vsAgentPoints": [
+        "조직도, 역할별 메뉴·버튼 권한, 한국형 전자결재, 작업 이력이 기본 구조로 준비되어 있습니다.",
+        "관리자 화면에서 메뉴와 권한을 바로 설정하고 즉시 반영할 수 있습니다.",
+        "통일된 화면 구성과 운영 규칙으로 사내 여러 업무 시스템을 일관되게 확장하고 유지보수합니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "조직도 연계 메뉴·버튼 권한 관리",
+          "description": "부서와 직무 역할에 따라 볼 수 있는 화면은 물론 조회·수정·승인 같은 세부 버튼 권한까지 관리 화면에서 제어합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "한국 기업 실무형 전자결재 및 리포트",
+          "description": "기안 작성, 다단계 결재선 지정, 승인·반려 이력 관리와 엑셀 내보내기, 요약 리포트 화면을 표준 구성으로 제공합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "관리자 작업 이력 추적",
+          "description": "누가 언제 어떤 화면에서 데이터를 조회하거나 변경했는지 기록해 내부 감사와 보안 점검에 활용합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "조직·역할 구조 등록",
+          "description": "회사의 부서 체계와 직무별 역할을 등록하고 기본 메뉴 구성을 설정합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "업무 화면 및 결재선 연결",
+          "description": "필요한 사내 업무 화면과 전자결재 양식을 표준 화면 틀에 맞춰 배치합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "권한 운영 및 이력 점검",
+          "description": "인사 이동이나 조직 개편 시 관리자 화면에서 권한을 즉시 조정하고 변경 기록을 관리합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "이미 사용 중인 기존 사내 계정이나 인사 시스템과 연동할 수 있나요?",
+          "answer": "네. 기존 그룹웨어나 사내 인증 체계, 인사 조직도 데이터를 연동해 중복 계정 관리 없이 사용할 수 있도록 구축을 지원합니다."
+        },
+        {
+          "question": "SyncBoot를 도입하면 나중에 다른 엠파시 모듈을 붙이기 쉬운가요?",
+          "answer": "네. 엠파시의 다른 업무 모듈들이 같은 기반과 권한 구조를 공유하므로, 필요한 기능이 생길 때 별도 로그인이나 화면 이질감 없이 이어 붙일 수 있습니다."
+        },
+        {
+          "question": "우리 회사만의 특수한 업무 화면도 추가 개발할 수 있나요?",
+          "answer": "물론입니다. SyncBoot는 고정된 패키지가 아니라 표준 업무 시스템 기반이므로 고객사 고유 업무 화면을 자유롭게 추가·확장할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "총괄 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "사용자·부서·권한 설정, 전자결재, 리포트, 작업 이력까지 전체 기능을 체험합니다."
+        },
+        {
+          "roleTitle": "운영 매니저",
+          "accountId": "emp_manager",
+          "demoAccessCode": "123456",
+          "scopeSummary": "일반 운영 부서 관리자 권한으로 제한된 메뉴 구성을 확인할 수 있습니다."
+        },
+        {
+          "roleTitle": "보안 감사 담당자",
+          "accountId": "emp_auditor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "작업 이력 및 보안 감사 조회 화면 중심으로 체험합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "boot-admin",
+          "label": "사내 관리 시스템 콘솔",
+          "badgeText": "boot-admin.empasy.io",
+          "cloudUrl": "https://boot-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-cms",
+      "name": "SyncCMS",
+      "subtitle": "글 작성부터 검수·다국어 발행까지 한곳에서 관리하는 웹사이트",
+      "englishRoleBadge": "SyncSeries 주력 솔루션 · 웹사이트 및 다국어 콘텐츠 관리",
+      "category": "flagship",
+      "tierBadge": "주력 솔루션",
+      "subdomain": "cms.empasy.io",
+      "repoPath": "sync-cms",
+      "canonicalApiPrefix": "/api/v1/cms",
+      "docUrl": "https://doc.empasy.com/synccms/",
+      "proposalPdfUrl": "/downloads/proposals/SyncCMS_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-cms",
+      "faIconClass": "fas fa-layer-group",
+      "techTags": [],
+      "summary": "공지사항, 보도자료, 브랜드 소개 페이지가 늘어날수록 번거로워지는 수정·승인·번역 작업을 정돈된 발행 흐름으로 관리합니다.",
+      "coreCapabilities": [
+        "멀티사이트 통합 콘텐츠 관리",
+        "작성·검수·발행 승인 흐름",
+        "검색 품질 점검 및 다국어 초안 지원"
+      ],
+      "vsLegacyTitle": "기존 웹사이트 운영 방식",
+      "vsLegacyPoints": [
+        "브랜드나 국가별 사이트가 따로 구축되어 있어 문구 하나를 고치려면 여러 곳을 각각 수정해야 합니다.",
+        "원고 검토와 게시 승인이 이메일·메신저로 오가며 최종 버전이 헷갈리기 쉽습니다.",
+        "검색 노출 설정이나 이미지 설명 누락 여부를 게시 전에 체계적으로 점검하기 어렵습니다."
+      ],
+      "vsAgentTitle": "SyncCMS 도입 후",
+      "vsAgentPoints": [
+        "여러 브랜드와 다국어 사이트의 페이지와 원고를 하나의 관리 화면에서 통합 관리합니다.",
+        "초안 작성 -> 검수 -> 승인 -> 예약 발행과 이전 버전 되돌리기까지 흐름이 기록됩니다.",
+        "게시 전에 검색 노출 항목, 접근성 기본 요소, 민감정보 포함 여부를 한 번에 점검합니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "멀티사이트 통합 콘텐츠 관리",
+          "description": "기업 홈페이지, 제품별 사이트, 글로벌 법인 페이지를 하나의 관리자 화면에서 사이트별로 나누어 운영합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "작성·검수·발행 승인 흐름",
+          "description": "작성자, 검수자, 발행 관리자 역할을 나누어 오타나 미승인 문구가 바로 공개되는 실수를 예방합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "검색 품질 점검 및 다국어 초안 지원",
+          "description": "검색엔진 기본 항목과 웹 접근성을 확인하고, 사내 용어집을 참고해 영·일·중 다국어 번역 초안을 정리합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "원고 작성 및 초안 정리",
+          "description": "에디터에서 공지·블로그·소개 페이지를 작성하고 필요한 이미지와 검색 요약 정보를 채웁니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "품질 점검 및 다국어 번역",
+          "description": "검색 노출·접근성 체크와 브랜드 용어집 기반 다국어 초안을 확인합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "담당자 승인 후 게시",
+          "description": "승인이 완료되면 즉시 또는 예약한 시간에 웹사이트에 반영되며, 이전 버전으로 복구할 수 있습니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "여러 개의 브랜드 홈페이지나 해외 법인 사이트를 한 번에 관리할 수 있나요?",
+          "answer": "네. 하나의 관리 콘솔 안에서 사이트별 메뉴·권한·다국어 버전을 분리해 운영할 수 있습니다."
+        },
+        {
+          "question": "자동 번역된 문구를 사람이 직접 다듬고 발행할 수 있나요?",
+          "answer": "네. AI 번역 초안을 확인한 뒤 담당자가 문구를 수정하고 승인해야 실제 사이트에 게시되도록 운영합니다."
+        },
+        {
+          "question": "기존 디자인을 유지하면서 콘텐츠 관리 기능만 연결할 수 있나요?",
+          "answer": "네. 기존 웹사이트 디자인은 유지하면서 콘텐츠 등록·발행·다국어 관리 기능만 연동하는 방식도 가능합니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "콘텐츠 총괄 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "사이트 관리, 원고 발행 승인, 품질 점검, 다국어 설정 전체 권한을 체험합니다."
+        },
+        {
+          "roleTitle": "편집·발행 담당자",
+          "accountId": "editor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "원고 검토 및 최종 게시 승인 흐름을 확인합니다."
+        },
+        {
+          "roleTitle": "콘텐츠 작성자",
+          "accountId": "writer",
+          "demoAccessCode": "123456",
+          "scopeSummary": "초안 작성 후 검수 요청을 올리는 작성자 화면을 체험합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "cms-admin",
+          "label": "콘텐츠 관리 콘솔",
+          "badgeText": "cms-admin.empasy.io",
+          "cloudUrl": "https://cms-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "cms-app",
+          "label": "발행 웹사이트 보기",
+          "badgeText": "cms-app.empasy.io",
+          "cloudUrl": "https://cms-app.empasy.io",
+          "buttonLabel": "웹사이트 열기",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-insight",
+      "name": "SyncInsight",
+      "subtitle": "전문 검색식 없이, 말로 물어보면 표와 차트로 답하는 데이터 조회",
+      "englishRoleBadge": "SyncSeries 데이터·AI 모듈 · SyncVerse 통합 데이터 분석",
+      "category": "data-ai",
+      "tierBadge": "확장 모듈",
+      "integrationBadge": "SyncVerse 통합",
+      "subdomain": "insight.empasy.io",
+      "repoPath": "sync-insight",
+      "canonicalApiPrefix": "/api/v1/insight",
+      "docUrl": "https://doc.empasy.com/syncinsight/",
+      "proposalPdfUrl": "/downloads/proposals/SyncInsight_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-insight",
+      "faIconClass": "fas fa-chart-line",
+      "techTags": [],
+      "summary": "간단한 집계 하나를 뽑기 위해 개발팀에 매번 데이터 추출을 요청하던 불편을 줄이고, 현업 담당자가 직접 안전하게 데이터를 탐색할 수 있도록 돕습니다.",
+      "coreCapabilities": [
+        "한국어 질문 기반 데이터 조회 및 차트",
+        "원인 요약 리포트 작성 지원",
+        "여러 업무 데이터 연결 및 출처 추적"
+      ],
+      "vsLegacyTitle": "기존 데이터 확인 방식",
+      "vsLegacyPoints": [
+        "정해진 대시보드에 없는 조건을 보려면 개발팀이나 데이터 팀에 추출을 요청하고 며칠을 기다려야 합니다.",
+        "전문 검색식을 쓰기 어려워 실무자가 엑셀로 수작업 병합을 반복하게 됩니다.",
+        "지표가 어떤 업무 데이터에서 어떻게 계산된 숫자인지 출처를 확인하기 어렵습니다."
+      ],
+      "vsAgentTitle": "SyncInsight 도입 후",
+      "vsAgentPoints": [
+        "\"지난 분기 카테고리별 매출 추이 보여줘\"처럼 일상 언어로 질문하면 조회 결과와 차트를 바로 확인합니다.",
+        "읽기 전용 조회만 허용해 실수로 운영 데이터를 수정하거나 삭제할 위험을 막아 줍니다.",
+        "생성된 조회 조건과 데이터가 어디서 왔는지 흐름도를 함께 보여 주어 결과를 검증할 수 있습니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "한국어 질문 기반 데이터 조회 및 차트",
+          "description": "질문을 입력하면 조회 조건을 자동 작성해 표와 차트로 보여 주며, 사용된 조회 조건도 투명하게 확인할 수 있습니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "원인 요약 리포트 작성 지원",
+          "description": "단순 합계 조회를 넘어 기간별 변동 요인과 관련 자료를 함께 정리해 보고서 초안 작성을 돕습니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "여러 업무 데이터 연결 및 출처 추적",
+          "description": "여러 사내 업무 데이터를 한곳에 연결하고, 각 지표가 어떤 원본 데이터에서 산출되었는지 흐름도로 확인합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "읽기 전용 데이터 연결",
+          "description": "사내 운영 데이터나 분석용 데이터를 읽기 전용 권한으로 안전하게 연결합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "일상 언어로 질문 입력",
+          "description": "궁금한 매출·주문·운영 지표를 한국어로 입력하거나 추천 질문을 선택합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "차트·근거 확인 및 공유",
+          "description": "자동 생성된 표와 차트, 조회 근거를 확인하고 보고서나 회의 자료로 활용합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "잘못된 질문으로 사내 운영 데이터가 수정되거나 지워질 위험은 없나요?",
+          "answer": "읽기 전용 조회만 실행되도록 제한되어 있으며, 데이터를 변경하거나 삭제하는 명령은 실행 단계에서 차단됩니다."
+        },
+        {
+          "question": "AI가 계산한 숫자가 맞는지 어떻게 확인할 수 있나요?",
+          "answer": "차트와 함께 실제로 사내 업무 데이터에서 조회한 조건 원문과 원본 표 데이터를 그대로 보여 주어 담당자가 직접 검증할 수 있습니다."
+        },
+        {
+          "question": "사내 데이터가 외부 AI 서비스로 나가지 않게 운영할 수 있나요?",
+          "answer": "네. 사내망 구축 환경이나 SyncLLM의 민감정보 가림 기능과 결합해 외부 유출 걱정 없이 운영할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "총괄 관리자 (공통)",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "SyncVerse 내 데이터 질문, 분석 보고서, 데이터 흐름, 연결 DB 설정 전체 메뉴를 체험합니다."
+        },
+        {
+          "roleTitle": "데이터 분석·기획 담당자",
+          "accountId": "sync_planner",
+          "demoAccessCode": "123456",
+          "scopeSummary": "DB 연결 설정을 제외한 대화형 데이터 조회, 요약 리포트, 데이터 출처 지도를 체험할 수 있습니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "insight-workbench",
+          "label": "SyncVerse 통합 분석 콘솔",
+          "description": "SyncVerse 관리 콘솔 내 [데이터 분석] 메뉴에서 한국어 데이터 질문, 분석 보고서, 데이터 흐름, DB 연결을 통합 체험합니다.",
+          "badgeText": "verse-admin.empasy.io/analytics/nl2sql",
+          "cloudUrl": "https://verse-admin.empasy.io/analytics/nl2sql",
+          "buttonLabel": "분석 화면 열기",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "insight-workspace-nl2sql",
+          "label": "SyncVerse 통합 워크스페이스 데이터 질문",
+          "description": "SyncVerse 통합 워크스페이스에서도 동일한 대화형 데이터 조회를 바로 실행할 수 있습니다.",
+          "badgeText": "verse-app.empasy.io/knowledge/nl2sql",
+          "cloudUrl": "https://verse-app.empasy.io/knowledge/nl2sql",
+          "buttonLabel": "워크스페이스 조회",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-llm",
+      "name": "SyncLLM",
+      "subtitle": "여러 AI 모델을 한곳에서 연결하고, 비용과 개인정보를 함께 관리하세요",
+      "englishRoleBadge": "SyncSeries 데이터·AI 모듈 · 사내 AI 비용 및 보안 관리",
+      "category": "data-ai",
+      "tierBadge": "확장 모듈",
+      "subdomain": "llm.empasy.io",
+      "repoPath": "sync-llm",
+      "canonicalApiPrefix": "/api/v1/llm",
+      "docUrl": "https://doc.empasy.com/syncllm/",
+      "proposalPdfUrl": "/downloads/proposals/SyncLLM_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-llm",
+      "faIconClass": "fas fa-microchip",
+      "techTags": [],
+      "summary": "기업에서 생성형 AI를 도입할 때 가장 고민되는 비용 증가, 특정 모델 장애, 개인정보 유출 우려를 중간 관리 계층에서 차분하게 통제합니다.",
+      "coreCapabilities": [
+        "유사 질문 재사용 및 모델 분배",
+        "개인정보 자동 가림 및 호출 이력 감사",
+        "장애 시 예비 모델 자동 전환"
+      ],
+      "vsLegacyTitle": "기존 개별 AI 연동 방식",
+      "vsLegacyPoints": [
+        "부서나 서비스마다 부서별 AI 이용 계정을 따로 발급받아 어디서 얼마나 비용이 나가는지 파악하기 어렵습니다.",
+        "직원이 질문 내용에 고객 연락처나 주민번호 같은 민감정보를 입력해도 그대로 외부로 전송될 위험이 있습니다.",
+        "특정 AI 서비스에 장애가 나면 연결된 사내 업무가 함께 멈춥니다."
+      ],
+      "vsAgentTitle": "SyncLLM 도입 후",
+      "vsAgentPoints": [
+        "상용 AI와 사내 전용 서버 AI를 단일 창구로 연결하고 부서·서비스별 사용량과 예산을 한눈에 관리합니다.",
+        "반복되는 유사 질문은 이전 응답을 재활용하고, 개인정보 패턴은 외부 전송 전에 자동으로 가립니다.",
+        "한 모델에 지연이나 오류가 생기면 미리 지정해 둔 예비 모델로 자동 전환해 업무 중단을 줄입니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "유사 질문 재활용 및 모델 분배",
+          "description": "간단한 요약은 가벼운 모델로, 복잡한 작업은 고성능 모델로 분배하고 반복 질문은 재활용해 불필요한 비용을 줄입니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "개인정보 자동 가림 및 사용 이력 관리",
+          "description": "주민등록번호, 전화번호, 계좌번호 등 사전에 정의한 민감정보 패턴을 전송 전 가림 처리하고 사용 이력을 남깁니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "장애 시 예비 모델 자동 전환",
+          "description": "상용 AI 서비스와 사내 전용 서버 AI의 응답 상태를 살피고 문제 발생 시 예비 모델로 자연스럽게 우회합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "사용 중인 AI 서비스 연결",
+          "description": "상용 AI 이용 계정 또는 사내 전용 서버 AI를 관리 콘솔에 등록합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "예산 한도 및 개인정보 규칙 설정",
+          "description": "부서별 월간 한도, 예비 모델 우선순위, 가림 처리할 민감정보 항목을 지정합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "사용량·절감 현황 모니터링",
+          "description": "대시보드에서 모델별 사용량 추이, 유사 질문 재활용 현황, 개인정보 가림 처리 내역을 수시로 점검합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "이미 운영 중인 사내 서비스에 SyncLLM을 붙이려면 기존 시스템을 많이 고쳐야 하나요?",
+          "answer": "표준 AI 연결 주소를 지원하므로 기존 서비스의 연결 주소와 계정 설정만 바꾸면 큰 수정 없이 연동할 수 있습니다. 상세 연동 규격은 개발자 기술 문서(doc.empasy.com/syncllm/)에서 확인하실 수 있습니다."
+        },
+        {
+          "question": "외부 클라우드 AI 대신 사내에 설치한 자체 모델만 연결해도 되나요?",
+          "answer": "네. 사내 전용 서버 AI만 단독으로 연결해 외부 인터넷이 차단된 환경에서도 안전하게 운영할 수 있습니다."
+        },
+        {
+          "question": "부서별 예산이 초과되면 어떻게 동작하나요?",
+          "answer": "설정한 비율(예: 80%, 100%)에 도달할 때 담당자에게 알림을 보내거나 추가 이용을 제한하도록 정책을 선택할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "AI 통합 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "비용 대시보드, AI 서비스 연결, 예산 한도, 개인정보 가림 이력 전체 기능을 확인합니다."
+        },
+        {
+          "roleTitle": "AI 운영 매니저",
+          "accountId": "emp_manager",
+          "demoAccessCode": "123456",
+          "scopeSummary": "일상 사용량 추이 확인 및 사용 이력 조회 중심으로 체험합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "llm-admin",
+          "label": "사내 AI 통합 관리 콘솔",
+          "badgeText": "llm-admin.empasy.io",
+          "cloudUrl": "https://llm-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-crawl",
+      "name": "SyncCrawl",
+      "subtitle": "웹사이트 구조가 바뀌어도 꾸준히 데이터를 모으는 자동 수집 도구",
+      "englishRoleBadge": "SyncSeries 데이터·AI 모듈 · 웹 데이터 자동 수집",
+      "category": "data-ai",
+      "tierBadge": "확장 모듈",
+      "subdomain": "crawl.empasy.io",
+      "repoPath": "sync-crawl",
+      "canonicalApiPrefix": "/api/v1/crawl",
+      "docUrl": "https://doc.empasy.com/synccrawl/",
+      "proposalPdfUrl": "/downloads/proposals/SyncCrawl_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-crawl",
+      "faIconClass": "fas fa-spider",
+      "techTags": [],
+      "summary": "사이트 디자인이 개편될 때마다 깨지던 기존 자동 수집 도구의 유지보수 부담을 줄이고, 수집 정책과 안전 규칙을 한 화면에서 관리합니다.",
+      "coreCapabilities": [
+        "수집 대상 및 주기 통합 관리",
+        "노이즈 제거 및 개인정보 정리",
+        "안전한 수집 정책 제어"
+      ],
+      "vsLegacyTitle": "기존 웹 데이터 수집 방식",
+      "vsLegacyPoints": [
+        "대상 사이트의 웹페이지 구성이나 메뉴 위치가 조금만 바뀌어도 수집이 멈추고 설정을 매번 다시 개발해야 합니다.",
+        "수집한 원문에 광고, 메뉴 문구, 중복 내용이 섞여 있어 분석 전 정리 작업이 오래 걸립니다.",
+        "수집 주기, 접근 속도 제한, 준수 규칙을 작업마다 따로 관리해 운영 실수가 생기기 쉽습니다."
+      ],
+      "vsAgentTitle": "SyncCrawl 도입 후",
+      "vsAgentPoints": [
+        "페이지 문맥을 함께 파악해 필요한 항목을 찾도록 설계되어 사이트 개편 시 수정 부담을 덜어 줍니다.",
+        "불필요한 광고와 메뉴를 덜어내고 정형 데이터와 문서 형태로 깔끔하게 정리해 저장합니다.",
+        "수집 대상, 실행 주기, 웹사이트 수집 허용 기준 준수 및 속도 제한 규칙을 관리 콘솔에서 일괄 제어합니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "수집 대상 및 주기 통합 관리",
+          "description": "대상 주소와 추출할 항목, 실행 주기를 관리 화면에서 설정하고 성공·실패 상태를 실시간으로 확인합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "노이즈 제거 및 개인정보 정리",
+          "description": "광고·내비게이션 등 불필요한 요소를 걸러내고 민감한 개인정보를 가림 처리해 깔끔한 데이터로 보관합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "안전한 수집 정책 제어",
+          "description": "대상 사이트에 부담을 주지 않도록 요청 속도 제한과 웹사이트 수집 허용 기준 준수 여부를 정책으로 관리합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "수집 사이트와 항목 등록",
+          "description": "데이터를 모을 공개 웹사이트 주소와 필요한 항목(제목, 가격, 공고일 등), 수집 주기를 입력합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "자동 수집 및 내용 정리",
+          "description": "정해진 주기에 맞춰 데이터를 가져오고 광고 제거와 형식 통일 작업을 수행합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "정리된 데이터 조회 및 활용",
+          "description": "저장된 결과를 화면에서 검색·다운로드하거나 사내 분석·검색 시스템으로 연결합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "대상 사이트의 수집 허용 기준을 지키면서 수집할 수 있나요?",
+          "answer": "네. 웹사이트 수집 허용 기준 준수 여부와 초당 요청 속도 제한을 기본 안전 정책으로 설정해 운영할 수 있습니다."
+        },
+        {
+          "question": "수집한 데이터는 어떤 형식으로 받아볼 수 있나요?",
+          "answer": "엑셀·표 형태 파일과 깔끔한 본문 문서 형태로 저장되며, 사내 업무 데이터나 SyncInsight 분석 도구로 바로 연결할 수 있습니다."
+        },
+        {
+          "question": "화면이 실시간으로 바뀌는 최신 웹사이트도 수집되나요?",
+          "answer": "네. 실제 웹 브라우저로 화면을 여는 방식을 지원해 일반 정적 페이지뿐 아니라 실시간으로 내용이 불러와지는 공개 페이지도 수집할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "데이터 수집 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "수집 현황 조회, 대상 사이트 설정, 결과 문서 확인 전체 기능을 체험합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "crawl-admin",
+          "label": "데이터 수집 관리 콘솔",
+          "badgeText": "crawl-admin.empasy.io",
+          "cloudUrl": "https://crawl-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-apim",
+      "name": "SyncAPIM",
+      "subtitle": "관리 누락 연동 경로까지 찾아내고 비정상 접근을 점검합니다",
+      "englishRoleBadge": "SyncSeries 보안 모듈 · 외부 연동 현황 파악 및 보안 관리",
+      "category": "security",
+      "tierBadge": "확장 모듈",
+      "subdomain": "apim.empasy.io",
+      "repoPath": "sync-apim",
+      "canonicalApiPrefix": "/api/v1/apim",
+      "docUrl": "https://doc.empasy.com/syncapim/",
+      "proposalPdfUrl": "/downloads/proposals/SyncAPIM_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-apim",
+      "faIconClass": "fas fa-shield-alt",
+      "techTags": [],
+      "summary": "서비스가 늘어나면서 파악하기 어려워진 사내 외부 연동 목록을 자동으로 정리하고, 연동 규격 불일치와 보안 위협에 빠르게 대응할 수 있도록 돕습니다.",
+      "coreCapabilities": [
+        "관리 누락 연동 경로 자동 목록화",
+        "연동 규격 불일치 및 민감정보 점검",
+        "비정상 공격 시도 확인 및 차단 정책"
+      ],
+      "vsLegacyTitle": "기존 외부 연동 관리 방식",
+      "vsLegacyPoints": [
+        "개발 과정에서 임시로 열었거나 문서화가 빠진 숨은 연동 구간이 방치되어 보안 사각지대가 생깁니다.",
+        "문서에 적혀 있지 않은 고객 정보 항목이 응답에 포함되어 나가도 바로 알아차리기 어렵습니다.",
+        "공격 시도가 발생했을 때 어떤 요청이 들어왔는지 기록을 뒤져 파악하는 데 시간이 오래 걸립니다."
+      ],
+      "vsAgentTitle": "SyncAPIM 도입 후",
+      "vsAgentPoints": [
+        "실제 오가는 통신 흐름을 분석해 등록되지 않은 숨은 연동 구간을 자동으로 찾아 정리합니다.",
+        "표준 연동 규격서와 실제 응답 내용을 비교해 정의되지 않은 민감 항목 노출을 알려 줍니다.",
+        "비정상 공격 시도의 상세 내용을 한 화면에서 확인하고 차단 규칙을 신속하게 적용할 수 있습니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "관리 누락 연동 경로 자동 목록화",
+          "description": "실제 통신 기록에서 연동 경로와 데이터 항목을 추출해 문서에서 누락된 숨은 연동 구간을 빠짐없이 파악합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "연동 규격 불일치 및 민감정보 점검",
+          "description": "등록된 표준 규격과 실제 응답을 대조해 예기치 않은 개인정보·계좌번호 등이 노출되지 않는지 확인합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "비정상 공격 시도 확인 및 차단 정책",
+          "description": "비정상 대량 호출이나 비정상 공격 시도의 상세 내역을 조회하고 상황에 맞는 차단 규칙을 적용합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "외부 연동 통신 흐름 연결",
+          "description": "운영 중인 서비스 앞단이나 운영에 부담 없는 복사 점검 구간을 연결해 실제 외부 연동 현황을 수집합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "숨은 연동 구간 및 민감정보 진단",
+          "description": "문서에 없는 관리 누락 연동 경로와 민감 데이터 포함 응답을 목록으로 분류해 우선순위를 보여 줍니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "차단·가림 정책 적용 및 추적",
+          "description": "확인이 끝난 위협 패턴에 차단 규칙과 민감정보 가림 정책을 적용하고 이력을 기록합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "이미 운영 중인 서비스 앞단에 붙이면 서비스 속도가 느려지지 않나요?",
+          "answer": "운영에 부담 없는 복사 점검 방식으로 먼저 현황을 파악한 뒤, 필요한 구간만 차단 모드로 전환할 수 있습니다."
+        },
+        {
+          "question": "기존 웹 보안 장비와 무엇이 다른가요?",
+          "answer": "기존 웹 보안 장비가 알려진 공격 차단에 집중한다면, SyncAPIM은 전체 연동 목록 자동 파악, 연동 규격 점검, 응답 내 민감정보 노출 확인까지 외부 연동 보안에 특화되어 있습니다. 상세 기술 규격은 개발자 기술 문서(doc.empasy.com/syncapim/)에서 확인하실 수 있습니다."
+        },
+        {
+          "question": "SyncWatch와 함께 쓰면 어떤 점이 좋나요?",
+          "answer": "SyncWatch가 새로 공개된 보안 취약점을 정리해 주면, SyncAPIM에서 해당 위협에 대응하는 점검·차단 규칙을 더 빠르게 반영할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "연동 보안 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "전체 연동 목록, 연동 규격 점검, 탐지 이벤트 및 차단 정책 전체 기능을 체험합니다."
+        },
+        {
+          "roleTitle": "보안 관제 담당자",
+          "accountId": "secops",
+          "demoAccessCode": "123456",
+          "scopeSummary": "실시간 위협 탐지 이벤트 조회 및 대응 화면 중심으로 체험합니다."
+        },
+        {
+          "roleTitle": "연동 설계 담당자",
+          "accountId": "apidev",
+          "demoAccessCode": "123456",
+          "scopeSummary": "전체 연동 목록과 연동 규격 불일치 점검 화면 중심으로 확인합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "apim-admin",
+          "label": "외부 연동 보안 콘솔",
+          "badgeText": "apim-admin.empasy.io",
+          "cloudUrl": "https://apim-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-watch",
+      "name": "SyncWatch",
+      "subtitle": "새로 공개되는 보안 취약점 정보를 모아 점검 규칙으로 정리합니다",
+      "englishRoleBadge": "SyncSeries 보안 모듈 · 보안 취약점 수집 및 점검 규칙 관리",
+      "category": "security",
+      "tierBadge": "확장 모듈",
+      "subdomain": "watch.empasy.io",
+      "repoPath": "sync-watch",
+      "canonicalApiPrefix": "/api/v1/watch",
+      "docUrl": "https://doc.empasy.com/syncwatch/",
+      "proposalPdfUrl": "/downloads/proposals/SyncWatch_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-watch",
+      "faIconClass": "fas fa-shield-virus",
+      "techTags": [],
+      "summary": "매일 여러 사이트에 흩어져 올라오는 보안 권고문을 담당자가 일일이 찾아 정리하던 수작업을 줄이고, 사내 점검·반영 이력을 체계적으로 남깁니다.",
+      "coreCapabilities": [
+        "국내외 공식 보안 경보 통합 수집",
+        "사전 점검 및 실시간 차단 규칙 관리",
+        "검증 후 반영 및 조치 이력 추적"
+      ],
+      "vsLegacyTitle": "기존 보안 취약점 대응 방식",
+      "vsLegacyPoints": [
+        "보안 담당자가 국내외 공식 보안 경보 사이트를 매일 수작업으로 확인하고 관련 여부를 분류해야 합니다.",
+        "취약점 공지를 확인한 뒤 실제 사전 점검 규칙이나 실시간 차단 규칙으로 옮기는 과정이 오래 걸립니다.",
+        "어떤 취약점에 대해 언제 어떤 조치를 했는지 감사 증빙 자료를 정리하기가 번거롭습니다."
+      ],
+      "vsAgentTitle": "SyncWatch 도입 후",
+      "vsAgentPoints": [
+        "주요 국내외 공식 보안 경보를 한 화면으로 모아 중요도와 영향 범위를 정리해 보여 줍니다.",
+        "검토가 끝난 취약점은 사전 점검 규칙과 외부 연동 방어 규칙으로 나누어 관리하고 반영합니다.",
+        "수집부터 규칙 검토, 반영, 조치 완료까지 전 과정을 이력으로 남겨 보안 감사에 활용합니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "국내외 공식 보안 경보 통합 수집",
+          "description": "국내외 공식 보안 경보 채널의 취약점 정보를 정기적으로 모아 중복을 정리하고 위험도별로 분류합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "사전 점검 및 실시간 차단 규칙 관리",
+          "description": "수집된 취약점을 바탕으로 개발 단계 사전 점검 규칙과 운영 단계 외부 연동 방어 규칙을 나누어 검토·관리합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "검증 후 반영 및 조치 이력 추적",
+          "description": "오탐 여부를 사전 확인한 뒤 연동된 점검 시스템에 반영하고, 조치 결과를 보안 이력으로 보관합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "최신 취약점 정보 자동 수집",
+          "description": "연결된 국내외 공식 보안 경보 채널에서 신규 취약점과 보안 권고문을 정기적으로 모읍니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "영향도 분류 및 점검 규칙 정리",
+          "description": "우리 서비스와 관련된 항목을 추려 사전 점검 규칙과 외부 연동 방어 규칙 초안을 준비합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "검토 후 반영 및 이력 기록",
+          "description": "사전 테스트와 담당자 확인을 거쳐 규칙을 반영하고, 전체 조치 내역을 기록으로 남깁니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "자동으로 만들어진 규칙이 정상 서비스 요청을 잘못 막을 우려는 없나요?",
+          "answer": "신규 규칙은 바로 운영에 적용하지 않고, 정상 요청과 공격 예시를 대조하는 사전 확인과 담당자 검토를 거쳐 반영하도록 운영합니다."
+        },
+        {
+          "question": "사내에서 자체적으로 받은 보안 진단 보고서도 함께 등록할 수 있나요?",
+          "answer": "네. 외부 공개 취약점 공지뿐 아니라 사내 보안 진단 문서를 등록해 같은 흐름으로 조치 이력을 관리할 수 있습니다."
+        },
+        {
+          "question": "SyncWatch만 단독으로 취약점 모니터링 용도로 쓸 수 있나요?",
+          "answer": "네. 단독으로 취약점 수집·분류·이력 관리 용도로 사용하거나, 필요 시 SyncAPIM·SyncVerse와 연결해 확장할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "보안 총괄 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "취약점 수집 채널, 규칙 검토, 배포 이력 전체 메뉴를 체험할 수 있습니다."
+        },
+        {
+          "roleTitle": "보안 분석 담당자",
+          "accountId": "secops",
+          "demoAccessCode": "123456",
+          "scopeSummary": "보안 이슈 원장 분석과 규칙 점검 중심으로 체험합니다."
+        },
+        {
+          "roleTitle": "보안 감사원",
+          "accountId": "auditor",
+          "demoAccessCode": "123456",
+          "scopeSummary": "조치 및 배포 이력 조회 화면을 중심으로 확인합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "watch-admin",
+          "label": "보안 위협 관리 콘솔",
+          "badgeText": "watch-admin.empasy.io",
+          "cloudUrl": "https://watch-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-shop",
+      "name": "SyncShop",
+      "subtitle": "마진 기준을 지키며 상품·가격·주문을 관리하는 쇼핑몰 솔루션",
+      "englishRoleBadge": "SyncSeries 업무 모듈 · 쇼핑몰 운영 및 가격 관리",
+      "category": "operations",
+      "tierBadge": "확장 모듈",
+      "subdomain": "shop.empasy.io",
+      "repoPath": "sync-shop",
+      "canonicalApiPrefix": "/api/v1/shop",
+      "docUrl": "https://doc.empasy.com/syncshop/",
+      "proposalPdfUrl": "/downloads/proposals/SyncShop_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-shop",
+      "faIconClass": "fas fa-shopping-bag",
+      "techTags": [],
+      "summary": "상품 등록, 주문·배송·클레임 처리, 타임딜·쿠폰 운영, 구매자용 쇼핑몰 화면까지 커머스 운영에 필요한 핵심 기능을 깔끔하게 구성했습니다.",
+      "coreCapabilities": [
+        "최소 마진 기준 확인 및 일괄 가격 관리",
+        "이전 가격 저장 및 간편 복원",
+        "주문·배송·프로모션 통합 관리"
+      ],
+      "vsLegacyTitle": "기존 쇼핑몰 운영 방식",
+      "vsLegacyPoints": [
+        "행사 때마다 MD가 엑셀로 할인율을 계산해 수동 입력하다 보면 원가 이하 판매 실수가 생기기 쉽습니다.",
+        "할인을 잘못 적용하거나 행사가 끝났을 때 수백 개 상품의 원래 가격으로 되돌리는 작업이 번거롭습니다.",
+        "프로모션 기간에 검색과 주문이 몰리면 쇼핑몰 전체 속도가 함께 느려지는 문제가 발생합니다."
+      ],
+      "vsAgentTitle": "SyncShop 도입 후",
+      "vsAgentPoints": [
+        "상품별 원가와 최소 마진 기준을 먼저 확인해 기준 아래로 내려가는 가격 변경을 사전에 걸러 줍니다.",
+        "가격을 바꿀 때마다 직전 가격 상태를 기록해 두어 필요 시 이전 가격으로 한 번에 복원합니다.",
+        "상품·검색·주문·관리 기능을 분리된 구조로 운영해 행사 기간에 방문자가 몰릴 때도 안정적으로 대응합니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "최소 마진 기준 확인 및 일괄 가격 관리",
+          "description": "카테고리나 행사 조건에 맞춰 판매가를 조정할 때 상품별 원가와 최소 마진 기준을 먼저 점검합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "이전 가격 저장 및 간편 복원",
+          "description": "가격을 일괄 수정하기 전 상태를 기록으로 남겨 두어 행사가 끝나거나 정정이 필요할 때 원래 가격으로 되돌립니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "주문·배송·프로모션 통합 관리",
+          "description": "상품 관리부터 주문 출고, 취소·반품 처리, 타임딜과 쿠폰 행사까지 관리자 화면과 구매자 쇼핑몰을 함께 제공합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "대상 상품과 마진 기준 확인",
+          "description": "가격을 조정할 상품군과 현재 재고, 설정해 둔 최소 마진 기준을 먼저 확인합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "직전 가격 저장 후 판매가 반영",
+          "description": "변경 직전의 가격 기록을 남긴 뒤 기준을 통과한 상품에 새 판매가와 행사를 적용합니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "스토어 확인 및 필요 시 원복",
+          "description": "구매자 쇼핑몰 화면에서 반영 결과를 확인하고, 행사 종료 후 저장된 기록으로 원래 가격을 복원합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "가격을 일괄 수정할 때 원가보다 싸게 올라가는 실수를 어떻게 줄이나요?",
+          "answer": "상품별 최소 마진 기준을 미리 설정해 두면, 기준보다 낮은 가격으로 변경하려는 요청을 사전에 걸러내거나 관리자 확인을 거치도록 안내합니다."
+        },
+        {
+          "question": "구매자가 보는 쇼핑몰 화면도 함께 제공되나요?",
+          "answer": "네. 관리자 콘솔과 함께 모바일·PC 반응형 구매자 쇼핑몰 화면이 함께 구성되어 있어 바로 체험해 보실 수 있습니다."
+        },
+        {
+          "question": "다른 엠파시 제품 없이 SyncShop만 단독으로 도입할 수 있나요?",
+          "answer": "네. SyncShop만 단독으로 구축해 운영할 수 있으며, 필요할 때 SyncCMS나 SyncInsight를 추가로 연결할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "쇼핑몰 총괄 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "관리 콘솔에서 상품, 재고, 주문, 쿠폰, 가격 관리 전체 기능을 체험할 수 있습니다."
+        },
+        {
+          "roleTitle": "상품 담당 MD",
+          "accountId": "productAdmin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "상품 등록, 브랜드, 가격 및 재고 관리 메뉴 중심으로 체험합니다."
+        },
+        {
+          "roleTitle": "주문·배송 담당자",
+          "accountId": "orderAdmin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "주문 조회, 출고 처리, 반품·환불 심사 메뉴 중심으로 체험합니다."
+        },
+        {
+          "roleTitle": "일반 구매자 (스토어용)",
+          "accountId": "member",
+          "demoAccessCode": "123456",
+          "scopeSummary": "구매자 쇼핑몰 화면에서 장바구니와 주문 흐름을 체험할 때 사용합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "shop-admin",
+          "label": "쇼핑몰 관리 콘솔",
+          "badgeText": "shop-admin.empasy.io",
+          "cloudUrl": "https://shop-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        },
+        {
+          "id": "shop-app",
+          "label": "구매자 쇼핑몰 화면",
+          "badgeText": "shop-app.empasy.io",
+          "cloudUrl": "https://shop-app.empasy.io",
+          "buttonLabel": "쇼핑몰 열기",
+          "isPrimary": false,
+          "isDownload": false
+        }
+      ]
+    },
+    {
+      "id": "sync-ops",
+      "name": "SyncOps",
+      "subtitle": "프로젝트별 투입 인력과 실제 손익을 엑셀 없이 확인하세요",
+      "englishRoleBadge": "SyncSeries 업무 모듈 · SI 프로젝트 및 손익 관리",
+      "category": "operations",
+      "tierBadge": "확장 모듈",
+      "subdomain": "ops.empasy.io",
+      "repoPath": "sync-ops",
+      "canonicalApiPrefix": "/api/v1/ops",
+      "docUrl": "https://doc.empasy.com/syncops/",
+      "proposalPdfUrl": "/downloads/proposals/SyncOps_Proposal.pdf",
+      "demoMode": "live",
+      "downloadAssets": [],
+      "iconBoxClass": "agent-icon-ops",
+      "faIconClass": "fas fa-briefcase",
+      "techTags": [],
+      "summary": "수주형 IT·SI 및 연구개발 기업이 여러 엑셀 파일로 관리하던 프로젝트 수익성, 인력 가동률, 법정 기한 관리 업무를 한 화면으로 모았습니다.",
+      "coreCapabilities": [
+        "계약 단가 vs 실제 투입 손익 비교",
+        "보증보험 · 하도급 기한 알림",
+        "인력 배정 간트 및 전자연구노트"
+      ],
+      "vsLegacyTitle": "기존 SI 사업 관리 방식",
+      "vsLegacyPoints": [
+        "프로젝트별 투입 인력과 실제 원가가 여러 엑셀 파일에 흩어져 있어 적자 위험을 뒤늦게 알게 됩니다.",
+        "입찰·계약·선급금·하자보증 만기일이나 하도급 지급 기한을 수작업으로 챙기다 누락 위험이 생깁니다.",
+        "투입 예정·철수 예정 인력 현황을 한눈에 보기 어려워 인력 배치 의사결정이 늦어집니다."
+      ],
+      "vsAgentTitle": "SyncOps 도입 후",
+      "vsAgentPoints": [
+        "계약 단가와 실제 투입 인건비를 자동 대조해 프로젝트별 수익 현황을 수시로 확인합니다.",
+        "4대 보증보험 만기와 하도급 법정 기한이 다가오면 대시보드와 알림으로 미리 알려 줍니다.",
+        "인력별 기술 등급과 월간 투입 일정을 간트 차트로 한눈에 보며 배치 계획을 세웁니다."
+      ],
+      "richFeatures": [
+        {
+          "badgeNo": "01",
+          "title": "계약 단가 vs 실제 투입 손익 비교",
+          "description": "계획 대비 실제 투입 공수와 인건비를 프로젝트별로 비교해 수익이 줄어드는 신호를 조기에 파악합니다."
+        },
+        {
+          "badgeNo": "02",
+          "title": "보증보험 · 하도급 기한 알림",
+          "description": "입찰·계약·선급금·하자보증 증권 만기일과 하도급 대금 지급 일정을 놓치지 않도록 한 화면에서 추적합니다."
+        },
+        {
+          "badgeNo": "03",
+          "title": "인력 배정 간트 및 전자연구노트",
+          "description": "엔지니어별 투입·철수 일정과 월간 투입률을 시각적으로 관리하고, R&D 과제의 연구노트 작성 이력을 함께 보관합니다."
+        }
+      ],
+      "processSteps": [
+        {
+          "stepNo": 1,
+          "title": "프로젝트 계약 및 인력 계획 등록",
+          "description": "수주 금액, 계약 기간, 투입 예정 인력과 보증보험 일정을 등록합니다."
+        },
+        {
+          "stepNo": 2,
+          "title": "실투입 현황 및 기한 자동 집계",
+          "description": "월별 투입 현황이 쌓이면 프로젝트별 손익과 인력 가동률, 임박한 기한이 자동으로 정리됩니다."
+        },
+        {
+          "stepNo": 3,
+          "title": "경영 현황 확인 및 선제 대응",
+          "description": "공수가 초과되는 프로젝트나 만기 임박 증권을 미리 확인해 일정과 리소스를 조정합니다."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "중소·중견 IT 서비스 기업이나 연구개발 법인에 맞나요?",
+          "answer": "네. 수주 계약 기반의 SI·SM 프로젝트와 정부 R&D 과제를 함께 수행하는 국내 기업의 실무 흐름에 맞춰 설계되었습니다."
+        },
+        {
+          "question": "역할에 따라 임원·PM·재무 담당자가 보는 화면을 나눌 수 있나요?",
+          "answer": "네. SyncBoot 권한 구조를 기반으로 직책과 담당 프로젝트에 따라 조회 가능한 손익과 인건비 범위를 세밀하게 제한할 수 있습니다."
+        },
+        {
+          "question": "기존에 쓰던 엑셀 데이터를 옮겨 올 수 있나요?",
+          "answer": "네. 프로젝트 목록, 인력 정보, 계약 내역 등 기존 엑셀 자료를 양식에 맞춰 일괄 등록하고 이어서 관리할 수 있습니다."
+        }
+      ],
+      "cliSimulation": {
+        "command": "",
+        "roleTag": "",
+        "roleSummary": "",
+        "outputLines": []
+      },
+      "mcpTools": [],
+      "dbTables": [],
+      "demoAccounts": [
+        {
+          "roleTitle": "총괄 관리자",
+          "accountId": "admin",
+          "demoAccessCode": "123456",
+          "scopeSummary": "전사 손익 현황, 계약·보증 관리, 인력 배정, 연구노트 전체 기능을 확인합니다."
+        },
+        {
+          "roleTitle": "사업 총괄 매니저 (PMO)",
+          "accountId": "choiyj",
+          "demoAccessCode": "123456",
+          "scopeSummary": "다수 프로젝트 손익 비교와 인력 가동률 관리 중심으로 체험합니다."
+        },
+        {
+          "roleTitle": "프로젝트 매니저 (PM)",
+          "accountId": "hongkd",
+          "demoAccessCode": "123456",
+          "scopeSummary": "담당 프로젝트의 투입 공수와 일정 관리 화면을 확인합니다."
+        },
+        {
+          "roleTitle": "재무·정산 담당자",
+          "accountId": "jungde",
+          "demoAccessCode": "123456",
+          "scopeSummary": "매출·매입 정산과 보증보험·하도급 기한 관리 화면을 확인합니다."
+        }
+      ],
+      "entryLinks": [
+        {
+          "id": "ops-admin",
+          "label": "SI 사업운영 관리 콘솔",
+          "badgeText": "ops-admin.empasy.io",
+          "cloudUrl": "https://ops-admin.empasy.io",
+          "buttonLabel": "관리 콘솔 열기",
+          "isPrimary": true,
+          "isDownload": false
+        }
+      ]
+    }
+  ],
+  "infraServices": []
+}
